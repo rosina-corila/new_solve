@@ -1,1208 +1,3893 @@
-[
-  {
-    "id": "idrodinamica",
-    "uri": "https://solve.corila.it/vocabolario/temi/idrodinamica",
-    "label": "Idrodinamica e scambi mare-laguna",
-    "label_en": "Hydrodynamics and sea-lagoon exchanges",
-    "definizione": "Maree, livelli, correnti, onde e scambi d'acqua alle bocche di porto.",
-    "keyword": "solve-idrodinamica",
-    "sottotemi": [
-      {
-        "id": "idro-livello",
-        "uri": "https://solve.corila.it/vocabolario/temi/idro-livello",
-        "label": "Livello del mare e maree",
-        "label_en": "Sea level and tides",
-        "definizione": "Misure di livello e marea: reti mareografiche (RMN, RMLV, ICPSM).",
-        "keyword": "solve-idro-livello",
-        "match": [
+{
+  "nvs_letto_il": "2026-11-25",
+  "temi": [
+    {
+      "id": "idrodinamica",
+      "uri": "https://solve.corila.it/vocabolario/temi/idrodinamica",
+      "label": "Idrodinamica e scambi mare-laguna",
+      "label_en": "Hydrodynamics and sea-lagoon exchanges",
+      "definizione": "Maree, livelli, correnti, onde e scambi d'acqua alle bocche di porto.",
+      "keyword": "solve-idrodinamica",
+      "note": "",
+      "classificazione": {
+        "p03": [
           {
-            "rel": "closeMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/D032/"
+            "code": "D032",
+            "label": "Sea level"
           },
           {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/ASLV/"
+            "code": "D030",
+            "label": "Currents"
           },
           {
-            "rel": "broadMatch",
-            "uri": "http://inspire.ec.europa.eu/theme/ef"
+            "code": "D034",
+            "label": "Waves"
+          },
+          {
+            "code": "H002",
+            "label": "Construction and structures"
+          }
+        ],
+        "p08": [
+          {
+            "code": "DS03",
+            "label": "Physical oceanography"
+          },
+          {
+            "code": "DS12",
+            "label": "Human activities"
+          },
+          {
+            "code": "DS10",
+            "label": "Environment"
+          }
+        ],
+        "inspire": [
+          {
+            "code": "el",
+            "label": "Elevazione"
+          },
+          {
+            "code": "of",
+            "label": "Elementi geografici oceanografici"
+          },
+          {
+            "code": "us",
+            "label": "Servizi di pubblica utilità"
+          }
+        ],
+        "iso": [
+          {
+            "code": "014",
+            "label": "oceans"
+          },
+          {
+            "code": "006",
+            "label": "elevation"
           }
         ]
       },
-      {
-        "id": "idro-correnti",
-        "uri": "https://solve.corila.it/vocabolario/temi/idro-correnti",
-        "label": "Correnti e portate alle bocche",
-        "label_en": "Currents and inlet fluxes",
-        "definizione": "Velocità delle correnti e portate di scambio mare-laguna (ADCP, bocche di porto).",
-        "keyword": "solve-idro-correnti",
-        "match": [
+      "sottotemi": [
+        {
+          "id": "idro-livello",
+          "uri": "https://solve.corila.it/vocabolario/temi/idro-livello",
+          "label": "Livello del mare e maree",
+          "label_en": "Sea level and tides",
+          "definizione": "Misure di livello e marea: reti mareografiche (RMN, RMLV, ICPSM).",
+          "keyword": "solve-idro-livello",
+          "correlati": [
+            {
+              "id": "clima-scenari",
+              "label": "Scenari e simulazioni"
+            },
+            {
+              "id": "idro-opere",
+              "label": "Opere alle bocche e MOSE"
+            }
+          ],
+          "classificazione": {
+            "p02": [
+              {
+                "code": "ASLV",
+                "label": "Sea level",
+                "origine": "manuale"
+              }
+            ],
+            "p03": [
+              {
+                "code": "D032",
+                "label": "Sea level",
+                "origine": "NVS"
+              }
+            ],
+            "p08": [
+              {
+                "code": "DS03",
+                "label": "Physical oceanography",
+                "origine": "NVS"
+              }
+            ],
+            "inspire": [
+              {
+                "code": "el",
+                "label": "Elevazione",
+                "origine": "NVS"
+              }
+            ],
+            "iso": [
+              {
+                "code": "014",
+                "label": "oceans",
+                "origine": "NVS"
+              },
+              {
+                "code": "006",
+                "label": "elevation",
+                "origine": "NVS"
+              }
+            ],
+            "msfd": [
+              {
+                "code": "IN1_6_3",
+                "label": "Physical, hydrological and chemical conditions",
+                "origine": "NVS"
+              }
+            ]
+          },
+          "note": ""
+        },
+        {
+          "id": "idro-correnti",
+          "uri": "https://solve.corila.it/vocabolario/temi/idro-correnti",
+          "label": "Correnti e portate alle bocche",
+          "label_en": "Currents and inlet fluxes",
+          "definizione": "Velocità delle correnti e portate di scambio mare-laguna (ADCP, bocche di porto).",
+          "keyword": "solve-idro-correnti",
+          "correlati": [
+            {
+              "id": "sedimenti-dinamica",
+              "label": "Erosione e sedimentazione"
+            }
+          ],
+          "classificazione": {
+            "p02": [
+              {
+                "code": "RFVL",
+                "label": "Horizontal velocity of the water column (currents)",
+                "origine": "manuale"
+              }
+            ],
+            "p03": [
+              {
+                "code": "D030",
+                "label": "Currents",
+                "origine": "NVS"
+              }
+            ],
+            "p08": [
+              {
+                "code": "DS03",
+                "label": "Physical oceanography",
+                "origine": "NVS"
+              }
+            ],
+            "inspire": [
+              {
+                "code": "of",
+                "label": "Elementi geografici oceanografici",
+                "origine": "NVS"
+              }
+            ],
+            "iso": [
+              {
+                "code": "014",
+                "label": "oceans",
+                "origine": "NVS"
+              }
+            ],
+            "msfd": [
+              {
+                "code": "IN1_6_3",
+                "label": "Physical, hydrological and chemical conditions",
+                "origine": "NVS"
+              }
+            ]
+          },
+          "note": ""
+        },
+        {
+          "id": "idro-onde",
+          "uri": "https://solve.corila.it/vocabolario/temi/idro-onde",
+          "label": "Onde",
+          "label_en": "Waves",
+          "definizione": "Altezza, periodo e direzione del moto ondoso.",
+          "keyword": "solve-idro-onde",
+          "correlati": [
+            {
+              "id": "clima-meteo",
+              "label": "Meteorologia"
+            }
+          ],
+          "classificazione": {
+            "p02": [
+              {
+                "code": "WVST",
+                "label": "Wave height and period statistics",
+                "origine": "manuale"
+              }
+            ],
+            "p03": [
+              {
+                "code": "D034",
+                "label": "Waves",
+                "origine": "NVS"
+              }
+            ],
+            "p08": [
+              {
+                "code": "DS03",
+                "label": "Physical oceanography",
+                "origine": "NVS"
+              }
+            ],
+            "inspire": [
+              {
+                "code": "of",
+                "label": "Elementi geografici oceanografici",
+                "origine": "NVS"
+              }
+            ],
+            "iso": [
+              {
+                "code": "014",
+                "label": "oceans",
+                "origine": "NVS"
+              }
+            ],
+            "msfd": [
+              {
+                "code": "IN1_6_3",
+                "label": "Physical, hydrological and chemical conditions",
+                "origine": "NVS"
+              }
+            ]
+          },
+          "note": ""
+        },
+        {
+          "id": "idro-opere",
+          "uri": "https://solve.corila.it/vocabolario/temi/idro-opere",
+          "label": "Opere alle bocche e MOSE",
+          "label_en": "Inlet works and MOSE",
+          "definizione": "Strutture alle bocche di porto e funzionamento del sistema MOSE.",
+          "keyword": "solve-idro-opere",
+          "correlati": [
+            {
+              "id": "idro-livello",
+              "label": "Livello del mare e maree"
+            }
+          ],
+          "classificazione": {
+            "p02": [],
+            "p03": [
+              {
+                "code": "H002",
+                "label": "Construction and structures",
+                "origine": "manuale"
+              }
+            ],
+            "p08": [
+              {
+                "code": "DS12",
+                "label": "Human activities",
+                "origine": "NVS"
+              },
+              {
+                "code": "DS10",
+                "label": "Environment",
+                "origine": "NVS"
+              }
+            ],
+            "inspire": [
+              {
+                "code": "us",
+                "label": "Servizi di pubblica utilità",
+                "origine": "manuale"
+              }
+            ],
+            "iso": [],
+            "msfd": []
+          },
+          "note": "Nessun parametro P02: aggancio manuale al gruppo e al tema INSPIRE"
+        }
+      ]
+    },
+    {
+      "id": "apporti",
+      "uri": "https://solve.corila.it/vocabolario/temi/apporti",
+      "label": "Apporti e pressioni",
+      "label_en": "Inputs and pressures",
+      "definizione": "Ciò che arriva in laguna dal bacino scolante, dall'atmosfera e dalle attività: acque dolci, carichi, deposizioni, rumore.",
+      "keyword": "solve-apporti",
+      "note": "Include aria e rumore dei cantieri (da confermare)",
+      "classificazione": {
+        "p03": [
           {
-            "rel": "closeMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/D030/"
+            "code": "O005",
+            "label": "Fluxes"
           },
           {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/RFVL/"
+            "code": "H001",
+            "label": "Pollution"
           },
           {
-            "rel": "broadMatch",
-            "uri": "http://inspire.ec.europa.eu/theme/of"
+            "code": "D030",
+            "label": "Currents"
+          },
+          {
+            "code": "D020",
+            "label": "Other physical oceanographic measurements"
+          },
+          {
+            "code": "M005",
+            "label": "Atmospheric chemistry"
+          },
+          {
+            "code": "C035",
+            "label": "Metal and metalloid concentrations"
+          },
+          {
+            "code": "D005",
+            "label": "Acoustics"
+          }
+        ],
+        "p08": [
+          {
+            "code": "DS06",
+            "label": "Cross-discipline"
+          },
+          {
+            "code": "DS12",
+            "label": "Human activities"
+          },
+          {
+            "code": "DS10",
+            "label": "Environment"
+          },
+          {
+            "code": "DS03",
+            "label": "Physical oceanography"
+          },
+          {
+            "code": "DS05",
+            "label": "Atmosphere"
+          },
+          {
+            "code": "DS02",
+            "label": "Chemical oceanography"
+          }
+        ],
+        "inspire": [
+          {
+            "code": "hy",
+            "label": "Idrografia"
+          },
+          {
+            "code": "ef",
+            "label": "Impianti di monitoraggio ambientale"
+          },
+          {
+            "code": "ge",
+            "label": "Geologia"
+          },
+          {
+            "code": "ac",
+            "label": "Condizioni atmosferiche"
+          },
+          {
+            "code": "of",
+            "label": "Elementi geografici oceanografici"
+          },
+          {
+            "code": "hh",
+            "label": "Salute umana e sicurezza"
+          }
+        ],
+        "iso": [
+          {
+            "code": "007",
+            "label": "environment"
+          },
+          {
+            "code": "004",
+            "label": "climatologyMeteorologyAtmosphere"
+          },
+          {
+            "code": "014",
+            "label": "oceans"
           }
         ]
       },
-      {
-        "id": "idro-onde",
-        "uri": "https://solve.corila.it/vocabolario/temi/idro-onde",
-        "label": "Onde",
-        "label_en": "Waves",
-        "definizione": "Altezza, periodo e direzione del moto ondoso.",
-        "keyword": "solve-idro-onde",
-        "match": [
+      "sottotemi": [
+        {
+          "id": "apporti-fiumi",
+          "uri": "https://solve.corila.it/vocabolario/temi/apporti-fiumi",
+          "label": "Fiumi e portate",
+          "label_en": "Rivers and discharges",
+          "definizione": "Portate e livelli dei corsi d'acqua del bacino scolante e dei fiumi (es. Livenza).",
+          "keyword": "solve-apporti-fiumi",
+          "correlati": [
+            {
+              "id": "apporti-carichi",
+              "label": "Carichi dal bacino scolante"
+            },
+            {
+              "id": "apporti-falda",
+              "label": "Acque sotterranee e cuneo salino"
+            },
+            {
+              "id": "base-idrografia",
+              "label": "Idrografia e bacini"
+            }
+          ],
+          "classificazione": {
+            "p02": [
+              {
+                "code": "RVDS",
+                "label": "River flow and discharge",
+                "origine": "manuale"
+              },
+              {
+                "code": "LRWL",
+                "label": "Lake and river water level parameters",
+                "origine": "manuale"
+              }
+            ],
+            "p03": [
+              {
+                "code": "O005",
+                "label": "Fluxes",
+                "origine": "NVS"
+              },
+              {
+                "code": "H001",
+                "label": "Pollution",
+                "origine": "NVS"
+              },
+              {
+                "code": "D030",
+                "label": "Currents",
+                "origine": "NVS"
+              },
+              {
+                "code": "D020",
+                "label": "Other physical oceanographic measurements",
+                "origine": "NVS"
+              }
+            ],
+            "p08": [
+              {
+                "code": "DS06",
+                "label": "Cross-discipline",
+                "origine": "NVS"
+              },
+              {
+                "code": "DS12",
+                "label": "Human activities",
+                "origine": "NVS"
+              },
+              {
+                "code": "DS10",
+                "label": "Environment",
+                "origine": "NVS"
+              },
+              {
+                "code": "DS03",
+                "label": "Physical oceanography",
+                "origine": "NVS"
+              }
+            ],
+            "inspire": [
+              {
+                "code": "hy",
+                "label": "Idrografia",
+                "origine": "NVS"
+              }
+            ],
+            "iso": [],
+            "msfd": []
+          },
+          "note": ""
+        },
+        {
+          "id": "apporti-carichi",
+          "uri": "https://solve.corila.it/vocabolario/temi/apporti-carichi",
+          "label": "Carichi dal bacino scolante",
+          "label_en": "Catchment loads",
+          "definizione": "Carichi di nutrienti e contaminanti trasportati dal bacino scolante verso la laguna.",
+          "keyword": "solve-apporti-carichi",
+          "correlati": [
+            {
+              "id": "apporti-fiumi",
+              "label": "Fiumi e portate"
+            },
+            {
+              "id": "colonna-nutrienti",
+              "label": "Nutrienti"
+            }
+          ],
+          "classificazione": {
+            "p02": [
+              {
+                "code": "CFTM",
+                "label": "Contaminant fluxes between the terrestrial and marine environment",
+                "origine": "manuale"
+              }
+            ],
+            "p03": [
+              {
+                "code": "O005",
+                "label": "Fluxes",
+                "origine": "NVS"
+              },
+              {
+                "code": "H001",
+                "label": "Pollution",
+                "origine": "NVS"
+              }
+            ],
+            "p08": [
+              {
+                "code": "DS06",
+                "label": "Cross-discipline",
+                "origine": "NVS"
+              },
+              {
+                "code": "DS12",
+                "label": "Human activities",
+                "origine": "NVS"
+              },
+              {
+                "code": "DS10",
+                "label": "Environment",
+                "origine": "NVS"
+              }
+            ],
+            "inspire": [
+              {
+                "code": "ef",
+                "label": "Impianti di monitoraggio ambientale",
+                "origine": "NVS"
+              }
+            ],
+            "iso": [
+              {
+                "code": "007",
+                "label": "environment",
+                "origine": "NVS"
+              }
+            ],
+            "msfd": []
+          },
+          "note": ""
+        },
+        {
+          "id": "apporti-falda",
+          "uri": "https://solve.corila.it/vocabolario/temi/apporti-falda",
+          "label": "Acque sotterranee e cuneo salino",
+          "label_en": "Groundwater and saltwater intrusion",
+          "definizione": "Livello e qualità della falda, risalita del cuneo salino.",
+          "keyword": "solve-apporti-falda",
+          "correlati": [
+            {
+              "id": "apporti-fiumi",
+              "label": "Fiumi e portate"
+            },
+            {
+              "id": "habitat-vegetazione",
+              "label": "Vegetazione di barena e costiera"
+            }
+          ],
+          "classificazione": {
+            "p02": [],
+            "p03": [],
+            "p08": [],
+            "inspire": [
+              {
+                "code": "ge",
+                "label": "Geologia",
+                "origine": "manuale"
+              },
+              {
+                "code": "hy",
+                "label": "Idrografia",
+                "origine": "manuale"
+              }
+            ],
+            "iso": [],
+            "msfd": []
+          },
+          "note": "SeaDataNet non copre le acque sotterranee: solo temi INSPIRE"
+        },
+        {
+          "id": "apporti-aria",
+          "uri": "https://solve.corila.it/vocabolario/temi/apporti-aria",
+          "label": "Qualità dell'aria e deposizioni",
+          "label_en": "Air quality and atmospheric deposition",
+          "definizione": "Polveri (PM10), IPA, metalli e deposizioni atmosferiche.",
+          "keyword": "solve-apporti-aria",
+          "correlati": [
+            {
+              "id": "clima-meteo",
+              "label": "Meteorologia"
+            }
+          ],
+          "classificazione": {
+            "p02": [
+              {
+                "code": "ATPC",
+                "label": "Atmospheric particulates",
+                "origine": "manuale"
+              },
+              {
+                "code": "ATDP",
+                "label": "Atmospheric deposition rates",
+                "origine": "manuale"
+              },
+              {
+                "code": "MTAT",
+                "label": "Metal concentrations in the atmosphere",
+                "origine": "manuale"
+              },
+              {
+                "code": "GP050",
+                "label": "Concentration of polycyclic aromatic hydrocarbons (PAHs) in the atmosphere",
+                "origine": "manuale"
+              }
+            ],
+            "p03": [
+              {
+                "code": "M005",
+                "label": "Atmospheric chemistry",
+                "origine": "NVS"
+              },
+              {
+                "code": "O005",
+                "label": "Fluxes",
+                "origine": "NVS"
+              },
+              {
+                "code": "C035",
+                "label": "Metal and metalloid concentrations",
+                "origine": "NVS"
+              },
+              {
+                "code": "H001",
+                "label": "Pollution",
+                "origine": "NVS"
+              }
+            ],
+            "p08": [
+              {
+                "code": "DS05",
+                "label": "Atmosphere",
+                "origine": "NVS"
+              },
+              {
+                "code": "DS06",
+                "label": "Cross-discipline",
+                "origine": "NVS"
+              },
+              {
+                "code": "DS02",
+                "label": "Chemical oceanography",
+                "origine": "NVS"
+              },
+              {
+                "code": "DS12",
+                "label": "Human activities",
+                "origine": "NVS"
+              },
+              {
+                "code": "DS10",
+                "label": "Environment",
+                "origine": "NVS"
+              }
+            ],
+            "inspire": [
+              {
+                "code": "ac",
+                "label": "Condizioni atmosferiche",
+                "origine": "NVS"
+              },
+              {
+                "code": "of",
+                "label": "Elementi geografici oceanografici",
+                "origine": "NVS"
+              },
+              {
+                "code": "hh",
+                "label": "Salute umana e sicurezza",
+                "origine": "NVS"
+              }
+            ],
+            "iso": [
+              {
+                "code": "004",
+                "label": "climatologyMeteorologyAtmosphere",
+                "origine": "NVS"
+              },
+              {
+                "code": "014",
+                "label": "oceans",
+                "origine": "NVS"
+              },
+              {
+                "code": "007",
+                "label": "environment",
+                "origine": "NVS"
+              }
+            ],
+            "msfd": []
+          },
+          "note": ""
+        },
+        {
+          "id": "apporti-rumore",
+          "uri": "https://solve.corila.it/vocabolario/temi/apporti-rumore",
+          "label": "Rumore",
+          "label_en": "Noise",
+          "definizione": "Rumore aereo e subacqueo legato a cantieri e traffico.",
+          "keyword": "solve-apporti-rumore",
+          "correlati": [],
+          "classificazione": {
+            "p02": [
+              {
+                "code": "NOYS",
+                "label": "Acoustic noise in the water column",
+                "origine": "manuale"
+              }
+            ],
+            "p03": [
+              {
+                "code": "D005",
+                "label": "Acoustics",
+                "origine": "NVS"
+              }
+            ],
+            "p08": [
+              {
+                "code": "DS03",
+                "label": "Physical oceanography",
+                "origine": "NVS"
+              }
+            ],
+            "inspire": [
+              {
+                "code": "of",
+                "label": "Elementi geografici oceanografici",
+                "origine": "NVS"
+              },
+              {
+                "code": "hh",
+                "label": "Salute umana e sicurezza",
+                "origine": "manuale"
+              }
+            ],
+            "iso": [
+              {
+                "code": "014",
+                "label": "oceans",
+                "origine": "NVS"
+              }
+            ],
+            "msfd": []
+          },
+          "note": "NOYS copre solo il rumore subacqueo; per il rumore aereo tema INSPIRE hh"
+        }
+      ]
+    },
+    {
+      "id": "colonna",
+      "uri": "https://solve.corila.it/vocabolario/temi/colonna",
+      "label": "Colonna d'acqua",
+      "label_en": "Water column",
+      "definizione": "Proprietà fisiche, chimiche e biologiche dell'acqua lagunare e costiera.",
+      "keyword": "solve-colonna",
+      "note": "",
+      "classificazione": {
+        "p03": [
           {
-            "rel": "closeMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/D034/"
+            "code": "D025",
+            "label": "Water column temperature and salinity"
           },
           {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/WVST/"
+            "code": "C015",
+            "label": "Dissolved gases"
           },
           {
-            "rel": "broadMatch",
-            "uri": "http://inspire.ec.europa.eu/theme/of"
+            "code": "C040",
+            "label": "Nutrients"
+          },
+          {
+            "code": "C005",
+            "label": "Carbon, nitrogen and phosphorus"
+          },
+          {
+            "code": "B035",
+            "label": "Pigments"
+          },
+          {
+            "code": "B070",
+            "label": "Biota abundance, biomass and diversity"
+          },
+          {
+            "code": "B030",
+            "label": "Phytoplankton and microphytobenthos"
+          },
+          {
+            "code": "G015",
+            "label": "Suspended particulate material"
+          },
+          {
+            "code": "D015",
+            "label": "Optical properties"
+          },
+          {
+            "code": "C035",
+            "label": "Metal and metalloid concentrations"
+          },
+          {
+            "code": "C025",
+            "label": "Hydrocarbons"
+          },
+          {
+            "code": "H001",
+            "label": "Pollution"
+          },
+          {
+            "code": "C055",
+            "label": "PCBs and organic micropollutants"
+          },
+          {
+            "code": "H007",
+            "label": "Area Management/Designation"
+          }
+        ],
+        "p08": [
+          {
+            "code": "DS03",
+            "label": "Physical oceanography"
+          },
+          {
+            "code": "DS02",
+            "label": "Chemical oceanography"
+          },
+          {
+            "code": "DS01",
+            "label": "Biological oceanography"
+          },
+          {
+            "code": "DS04",
+            "label": "Marine geology and Bathymetry"
+          },
+          {
+            "code": "DS12",
+            "label": "Human activities"
+          },
+          {
+            "code": "DS10",
+            "label": "Environment"
+          }
+        ],
+        "inspire": [
+          {
+            "code": "of",
+            "label": "Elementi geografici oceanografici"
+          },
+          {
+            "code": "sd",
+            "label": "Distribuzione delle specie"
+          },
+          {
+            "code": "hh",
+            "label": "Salute umana e sicurezza"
+          },
+          {
+            "code": "am",
+            "label": "Zone sottoposte a gestione e limitazioni"
+          }
+        ],
+        "iso": [
+          {
+            "code": "014",
+            "label": "oceans"
+          },
+          {
+            "code": "002",
+            "label": "biota"
+          },
+          {
+            "code": "007",
+            "label": "environment"
           }
         ]
       },
-      {
-        "id": "idro-opere",
-        "uri": "https://solve.corila.it/vocabolario/temi/idro-opere",
-        "label": "Opere alle bocche e MOSE",
-        "label_en": "Inlet works and MOSE",
-        "definizione": "Strutture alle bocche di porto e funzionamento del sistema MOSE.",
-        "keyword": "solve-idro-opere",
-        "match": [
+      "sottotemi": [
+        {
+          "id": "colonna-ts",
+          "uri": "https://solve.corila.it/vocabolario/temi/colonna-ts",
+          "label": "Temperatura e salinità",
+          "label_en": "Temperature and salinity",
+          "definizione": "Temperatura e salinità dell'acqua (sonde, CTD, stazioni fisse).",
+          "keyword": "solve-colonna-ts",
+          "correlati": [],
+          "classificazione": {
+            "p02": [
+              {
+                "code": "TEMP",
+                "label": "Temperature of the water column",
+                "origine": "manuale"
+              },
+              {
+                "code": "PSAL",
+                "label": "Salinity of the water column",
+                "origine": "manuale"
+              }
+            ],
+            "p03": [
+              {
+                "code": "D025",
+                "label": "Water column temperature and salinity",
+                "origine": "NVS"
+              }
+            ],
+            "p08": [
+              {
+                "code": "DS03",
+                "label": "Physical oceanography",
+                "origine": "NVS"
+              }
+            ],
+            "inspire": [
+              {
+                "code": "of",
+                "label": "Elementi geografici oceanografici",
+                "origine": "NVS"
+              }
+            ],
+            "iso": [
+              {
+                "code": "014",
+                "label": "oceans",
+                "origine": "NVS"
+              }
+            ],
+            "msfd": [
+              {
+                "code": "IN1_6_3",
+                "label": "Physical, hydrological and chemical conditions",
+                "origine": "NVS"
+              }
+            ]
+          },
+          "note": ""
+        },
+        {
+          "id": "colonna-ossigeno",
+          "uri": "https://solve.corila.it/vocabolario/temi/colonna-ossigeno",
+          "label": "Ossigeno disciolto",
+          "label_en": "Dissolved oxygen",
+          "definizione": "Concentrazione e saturazione dell'ossigeno disciolto.",
+          "keyword": "solve-colonna-ossigeno",
+          "correlati": [
+            {
+              "id": "colonna-clorofilla",
+              "label": "Clorofilla e fitoplancton"
+            }
+          ],
+          "classificazione": {
+            "p02": [
+              {
+                "code": "DOXY",
+                "label": "Dissolved oxygen parameters in the water column",
+                "origine": "manuale"
+              }
+            ],
+            "p03": [
+              {
+                "code": "C015",
+                "label": "Dissolved gases",
+                "origine": "NVS"
+              }
+            ],
+            "p08": [
+              {
+                "code": "DS02",
+                "label": "Chemical oceanography",
+                "origine": "NVS"
+              }
+            ],
+            "inspire": [
+              {
+                "code": "of",
+                "label": "Elementi geografici oceanografici",
+                "origine": "NVS"
+              }
+            ],
+            "iso": [
+              {
+                "code": "014",
+                "label": "oceans",
+                "origine": "NVS"
+              }
+            ],
+            "msfd": [
+              {
+                "code": "IN1_6_3",
+                "label": "Physical, hydrological and chemical conditions",
+                "origine": "NVS"
+              }
+            ]
+          },
+          "note": ""
+        },
+        {
+          "id": "colonna-nutrienti",
+          "uri": "https://solve.corila.it/vocabolario/temi/colonna-nutrienti",
+          "label": "Nutrienti",
+          "label_en": "Nutrients",
+          "definizione": "Azoto, fosforo e silice disciolti.",
+          "keyword": "solve-colonna-nutrienti",
+          "correlati": [
+            {
+              "id": "apporti-carichi",
+              "label": "Carichi dal bacino scolante"
+            },
+            {
+              "id": "colonna-clorofilla",
+              "label": "Clorofilla e fitoplancton"
+            }
+          ],
+          "classificazione": {
+            "p02": [
+              {
+                "code": "NTRA",
+                "label": "Nitrate concentration parameters in the water column",
+                "origine": "manuale"
+              },
+              {
+                "code": "NTRI",
+                "label": "Nitrite concentration parameters in the water column",
+                "origine": "manuale"
+              },
+              {
+                "code": "PHOS",
+                "label": "Phosphate concentration parameters in the water column",
+                "origine": "manuale"
+              },
+              {
+                "code": "SLCA",
+                "label": "Silicate concentration parameters in the water column",
+                "origine": "manuale"
+              },
+              {
+                "code": "TDIN",
+                "label": "Dissolved inorganic nitrogen concentration in the water column",
+                "origine": "manuale"
+              }
+            ],
+            "p03": [
+              {
+                "code": "C040",
+                "label": "Nutrients",
+                "origine": "NVS"
+              },
+              {
+                "code": "C005",
+                "label": "Carbon, nitrogen and phosphorus",
+                "origine": "NVS"
+              }
+            ],
+            "p08": [
+              {
+                "code": "DS02",
+                "label": "Chemical oceanography",
+                "origine": "NVS"
+              }
+            ],
+            "inspire": [
+              {
+                "code": "of",
+                "label": "Elementi geografici oceanografici",
+                "origine": "NVS"
+              }
+            ],
+            "iso": [
+              {
+                "code": "014",
+                "label": "oceans",
+                "origine": "NVS"
+              }
+            ],
+            "msfd": [
+              {
+                "code": "IN5_1_1",
+                "label": "Nutrients concentration in the water column",
+                "origine": "NVS"
+              },
+              {
+                "code": "IN5_1_2",
+                "label": "Nutrient ratios",
+                "origine": "NVS"
+              }
+            ]
+          },
+          "note": ""
+        },
+        {
+          "id": "colonna-clorofilla",
+          "uri": "https://solve.corila.it/vocabolario/temi/colonna-clorofilla",
+          "label": "Clorofilla e fitoplancton",
+          "label_en": "Chlorophyll and phytoplankton",
+          "definizione": "Clorofilla e composizione del fitoplancton.",
+          "keyword": "solve-colonna-clorofilla",
+          "correlati": [
+            {
+              "id": "biologia-plancton",
+              "label": "Plancton"
+            },
+            {
+              "id": "colonna-nutrienti",
+              "label": "Nutrienti"
+            },
+            {
+              "id": "colonna-ossigeno",
+              "label": "Ossigeno disciolto"
+            }
+          ],
+          "classificazione": {
+            "p02": [
+              {
+                "code": "CPWC",
+                "label": "Chlorophyll pigment concentrations in water bodies",
+                "origine": "manuale"
+              },
+              {
+                "code": "PATX",
+                "label": "Phytoplankton taxonomic abundance in water bodies",
+                "origine": "manuale"
+              }
+            ],
+            "p03": [
+              {
+                "code": "B035",
+                "label": "Pigments",
+                "origine": "NVS"
+              },
+              {
+                "code": "B070",
+                "label": "Biota abundance, biomass and diversity",
+                "origine": "NVS"
+              },
+              {
+                "code": "B030",
+                "label": "Phytoplankton and microphytobenthos",
+                "origine": "NVS"
+              }
+            ],
+            "p08": [
+              {
+                "code": "DS01",
+                "label": "Biological oceanography",
+                "origine": "NVS"
+              }
+            ],
+            "inspire": [
+              {
+                "code": "of",
+                "label": "Elementi geografici oceanografici",
+                "origine": "NVS"
+              },
+              {
+                "code": "sd",
+                "label": "Distribuzione delle specie",
+                "origine": "NVS"
+              }
+            ],
+            "iso": [
+              {
+                "code": "002",
+                "label": "biota",
+                "origine": "NVS"
+              },
+              {
+                "code": "014",
+                "label": "oceans",
+                "origine": "NVS"
+              }
+            ],
+            "msfd": [
+              {
+                "code": "IN5_2_2",
+                "label": "Water transparency related to increase in suspended algae",
+                "origine": "NVS"
+              },
+              {
+                "code": "IN2_1_1",
+                "label": "Trends in abundance, temporal occurrence and spatial distribution of non-indigenous species",
+                "origine": "NVS"
+              },
+              {
+                "code": "IN1_2_1",
+                "label": "Population abundance and/or biomass",
+                "origine": "NVS"
+              },
+              {
+                "code": "IN1_7_1",
+                "label": "Composition and relative proportions of ecosystem components",
+                "origine": "NVS"
+              },
+              {
+                "code": "IN1_1_2",
+                "label": "Distributional pattern within the range",
+                "origine": "NVS"
+              },
+              {
+                "code": "IN4_3_1",
+                "label": "Abundance trends of functionally important selected groups/species",
+                "origine": "NVS"
+              },
+              {
+                "code": "IN1_1_1",
+                "label": "Distributional range",
+                "origine": "NVS"
+              },
+              {
+                "code": "IN5_2_4",
+                "label": "Species shift in floristic composition caused by human activities",
+                "origine": "NVS"
+              }
+            ]
+          },
+          "note": ""
+        },
+        {
+          "id": "colonna-torbidita",
+          "uri": "https://solve.corila.it/vocabolario/temi/colonna-torbidita",
+          "label": "Torbidità e trasparenza",
+          "label_en": "Turbidity and transparency",
+          "definizione": "Solidi sospesi, torbidità, trasparenza (disco di Secchi).",
+          "keyword": "solve-colonna-torbidita",
+          "correlati": [
+            {
+              "id": "habitat-fanerogame",
+              "label": "Fanerogame e macroalghe"
+            },
+            {
+              "id": "sedimenti-dinamica",
+              "label": "Erosione e sedimentazione"
+            }
+          ],
+          "classificazione": {
+            "p02": [
+              {
+                "code": "TSED",
+                "label": "Concentration of suspended particulate material in the water column",
+                "origine": "manuale"
+              },
+              {
+                "code": "SECC",
+                "label": "Secchi disk depth",
+                "origine": "manuale"
+              }
+            ],
+            "p03": [
+              {
+                "code": "G015",
+                "label": "Suspended particulate material",
+                "origine": "NVS"
+              },
+              {
+                "code": "D015",
+                "label": "Optical properties",
+                "origine": "NVS"
+              }
+            ],
+            "p08": [
+              {
+                "code": "DS04",
+                "label": "Marine geology and Bathymetry",
+                "origine": "NVS"
+              },
+              {
+                "code": "DS03",
+                "label": "Physical oceanography",
+                "origine": "NVS"
+              }
+            ],
+            "inspire": [
+              {
+                "code": "of",
+                "label": "Elementi geografici oceanografici",
+                "origine": "NVS"
+              }
+            ],
+            "iso": [
+              {
+                "code": "014",
+                "label": "oceans",
+                "origine": "NVS"
+              }
+            ],
+            "msfd": [
+              {
+                "code": "IN1_6_3",
+                "label": "Physical, hydrological and chemical conditions",
+                "origine": "NVS"
+              },
+              {
+                "code": "IN5_3_1",
+                "label": "Abundance of perennial seaweeds and seagrasses",
+                "origine": "NVS"
+              },
+              {
+                "code": "IN5_2_2",
+                "label": "Water transparency related to increase in suspended algae",
+                "origine": "NVS"
+              }
+            ]
+          },
+          "note": ""
+        },
+        {
+          "id": "colonna-contaminanti",
+          "uri": "https://solve.corila.it/vocabolario/temi/colonna-contaminanti",
+          "label": "Contaminanti nell'acqua",
+          "label_en": "Contaminants in water",
+          "definizione": "Metalli, IPA, PCB, PFAS e altri microinquinanti nell'acqua.",
+          "keyword": "solve-colonna-contaminanti",
+          "correlati": [
+            {
+              "id": "sedimenti-contaminanti",
+              "label": "Contaminanti nei sedimenti"
+            }
+          ],
+          "classificazione": {
+            "p02": [
+              {
+                "code": "MTWD",
+                "label": "Dissolved metal concentrations in the water column",
+                "origine": "manuale"
+              },
+              {
+                "code": "MTWT",
+                "label": "Total metal concentrations in water bodies",
+                "origine": "manuale"
+              },
+              {
+                "code": "PCHW",
+                "label": "Concentration of polycyclic aromatic hydrocarbons (PAHs) in the water column",
+                "origine": "manuale"
+              },
+              {
+                "code": "PPWC",
+                "label": "Concentration of polychlorobiphenyls (PCBs) in the water column",
+                "origine": "manuale"
+              },
+              {
+                "code": "WCOC",
+                "label": "Concentration of other organic contaminants in the water column",
+                "origine": "manuale"
+              }
+            ],
+            "p03": [
+              {
+                "code": "C035",
+                "label": "Metal and metalloid concentrations",
+                "origine": "NVS"
+              },
+              {
+                "code": "C025",
+                "label": "Hydrocarbons",
+                "origine": "NVS"
+              },
+              {
+                "code": "H001",
+                "label": "Pollution",
+                "origine": "NVS"
+              },
+              {
+                "code": "C055",
+                "label": "PCBs and organic micropollutants",
+                "origine": "NVS"
+              }
+            ],
+            "p08": [
+              {
+                "code": "DS02",
+                "label": "Chemical oceanography",
+                "origine": "NVS"
+              },
+              {
+                "code": "DS12",
+                "label": "Human activities",
+                "origine": "NVS"
+              },
+              {
+                "code": "DS10",
+                "label": "Environment",
+                "origine": "NVS"
+              }
+            ],
+            "inspire": [
+              {
+                "code": "of",
+                "label": "Elementi geografici oceanografici",
+                "origine": "NVS"
+              },
+              {
+                "code": "hh",
+                "label": "Salute umana e sicurezza",
+                "origine": "NVS"
+              }
+            ],
+            "iso": [
+              {
+                "code": "014",
+                "label": "oceans",
+                "origine": "NVS"
+              },
+              {
+                "code": "007",
+                "label": "environment",
+                "origine": "NVS"
+              }
+            ],
+            "msfd": [
+              {
+                "code": "IN8_1_1",
+                "label": "Concentration of the contaminants",
+                "origine": "NVS"
+              }
+            ]
+          },
+          "note": ""
+        },
+        {
+          "id": "colonna-stato",
+          "uri": "https://solve.corila.it/vocabolario/temi/colonna-stato",
+          "label": "Stato ecologico e chimico (WFD)",
+          "label_en": "Ecological and chemical status (WFD)",
+          "definizione": "Classificazione dei corpi idrici secondo la Direttiva Quadro Acque.",
+          "keyword": "solve-colonna-stato",
+          "correlati": [],
+          "classificazione": {
+            "p02": [],
+            "p03": [
+              {
+                "code": "H007",
+                "label": "Area Management/Designation",
+                "origine": "manuale"
+              }
+            ],
+            "p08": [
+              {
+                "code": "DS12",
+                "label": "Human activities",
+                "origine": "NVS"
+              }
+            ],
+            "inspire": [
+              {
+                "code": "am",
+                "label": "Zone sottoposte a gestione e limitazioni",
+                "origine": "manuale"
+              }
+            ],
+            "iso": [],
+            "msfd": []
+          },
+          "note": "Concetto normativo: nessun parametro P02"
+        }
+      ]
+    },
+    {
+      "id": "sedimenti",
+      "uri": "https://solve.corila.it/vocabolario/temi/sedimenti",
+      "label": "Sedimenti e fondali",
+      "label_en": "Sediments and seabed",
+      "definizione": "Composizione, contaminazione e dinamica dei sedimenti e del sottosuolo.",
+      "keyword": "solve-sedimenti",
+      "note": "",
+      "classificazione": {
+        "p03": [
           {
-            "rel": "broadMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P08/current/DS12/"
+            "code": "G040",
+            "label": "Rock and sediment physical properties"
           },
           {
-            "rel": "closeMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/H002/"
+            "code": "G035",
+            "label": "Rock and sediment chemistry"
           },
           {
-            "rel": "broadMatch",
-            "uri": "http://inspire.ec.europa.eu/theme/us"
+            "code": "C035",
+            "label": "Metal and metalloid concentrations"
+          },
+          {
+            "code": "C025",
+            "label": "Hydrocarbons"
+          },
+          {
+            "code": "H001",
+            "label": "Pollution"
+          },
+          {
+            "code": "C055",
+            "label": "PCBs and organic micropollutants"
+          },
+          {
+            "code": "C005",
+            "label": "Carbon, nitrogen and phosphorus"
+          },
+          {
+            "code": "C015",
+            "label": "Dissolved gases"
+          },
+          {
+            "code": "G050",
+            "label": "Sediment pore water chemistry"
+          },
+          {
+            "code": "GSED",
+            "label": "Rock and sediment sedimentology"
+          },
+          {
+            "code": "G030",
+            "label": "Geochronology and stratigraphy"
+          },
+          {
+            "code": "G012",
+            "label": "Sonar and seismics"
+          },
+          {
+            "code": "G060",
+            "label": "Sedimentation and erosion processes"
           }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "apporti",
-    "uri": "https://solve.corila.it/vocabolario/temi/apporti",
-    "label": "Apporti e pressioni",
-    "label_en": "Inputs and pressures",
-    "definizione": "Ciò che arriva in laguna dal bacino scolante, dall'atmosfera e dalle attività: acque dolci, carichi, deposizioni, rumore.",
-    "keyword": "solve-apporti",
-    "sottotemi": [
-      {
-        "id": "apporti-fiumi",
-        "uri": "https://solve.corila.it/vocabolario/temi/apporti-fiumi",
-        "label": "Fiumi e portate",
-        "label_en": "Rivers and discharges",
-        "definizione": "Portate e livelli dei corsi d'acqua del bacino scolante e dei fiumi (es. Livenza).",
-        "keyword": "solve-apporti-fiumi",
-        "match": [
+        ],
+        "p08": [
           {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/RVDS/"
+            "code": "DS08",
+            "label": "Terrestrial"
           },
           {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/LRWL/"
+            "code": "DS04",
+            "label": "Marine geology and Bathymetry"
           },
           {
-            "rel": "broadMatch",
-            "uri": "http://inspire.ec.europa.eu/theme/hy"
+            "code": "DS02",
+            "label": "Chemical oceanography"
+          },
+          {
+            "code": "DS12",
+            "label": "Human activities"
+          },
+          {
+            "code": "DS10",
+            "label": "Environment"
           }
-        ]
-      },
-      {
-        "id": "apporti-carichi",
-        "uri": "https://solve.corila.it/vocabolario/temi/apporti-carichi",
-        "label": "Carichi dal bacino scolante",
-        "label_en": "Catchment loads",
-        "definizione": "Carichi di nutrienti e contaminanti trasportati dal bacino scolante verso la laguna.",
-        "keyword": "solve-apporti-carichi",
-        "match": [
+        ],
+        "inspire": [
           {
-            "rel": "closeMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/C040/"
+            "code": "ge",
+            "label": "Geologia"
           },
           {
-            "rel": "closeMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/H001/"
+            "code": "so",
+            "label": "Suolo"
           },
           {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/CFTM/"
+            "code": "mr",
+            "label": "Risorse minerarie"
           },
           {
-            "rel": "broadMatch",
-            "uri": "http://inspire.ec.europa.eu/theme/hy"
+            "code": "hh",
+            "label": "Salute umana e sicurezza"
+          },
+          {
+            "code": "of",
+            "label": "Elementi geografici oceanografici"
           }
-        ]
-      },
-      {
-        "id": "apporti-falda",
-        "uri": "https://solve.corila.it/vocabolario/temi/apporti-falda",
-        "label": "Acque sotterranee e cuneo salino",
-        "label_en": "Groundwater and saltwater intrusion",
-        "definizione": "Livello e qualità della falda, risalita del cuneo salino.",
-        "keyword": "solve-apporti-falda",
-        "match": [
+        ],
+        "iso": [
           {
-            "rel": "broadMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P08/current/DS08/"
+            "code": "014",
+            "label": "oceans"
           },
           {
-            "rel": "closeMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/T001/"
+            "code": "008",
+            "label": "geoscientificInformation"
           },
           {
-            "rel": "broadMatch",
-            "uri": "http://inspire.ec.europa.eu/theme/ge"
-          }
-        ]
-      },
-      {
-        "id": "apporti-aria",
-        "uri": "https://solve.corila.it/vocabolario/temi/apporti-aria",
-        "label": "Qualità dell'aria e deposizioni",
-        "label_en": "Air quality and atmospheric deposition",
-        "definizione": "Polveri (PM10), IPA, metalli e deposizioni atmosferiche.",
-        "keyword": "solve-apporti-aria",
-        "match": [
-          {
-            "rel": "broadMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P08/current/DS05/"
-          },
-          {
-            "rel": "closeMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/M005/"
-          },
-          {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/ATPC/"
-          },
-          {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/ATDP/"
-          },
-          {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/MTAT/"
-          },
-          {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/GP050/"
-          },
-          {
-            "rel": "broadMatch",
-            "uri": "http://inspire.ec.europa.eu/theme/ac"
-          }
-        ]
-      },
-      {
-        "id": "apporti-rumore",
-        "uri": "https://solve.corila.it/vocabolario/temi/apporti-rumore",
-        "label": "Rumore",
-        "label_en": "Noise",
-        "definizione": "Rumore aereo e subacqueo legato a cantieri e traffico.",
-        "keyword": "solve-apporti-rumore",
-        "match": [
-          {
-            "rel": "closeMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/D005/"
-          },
-          {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/NOYS/"
-          },
-          {
-            "rel": "broadMatch",
-            "uri": "http://inspire.ec.europa.eu/theme/hh"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "colonna",
-    "uri": "https://solve.corila.it/vocabolario/temi/colonna",
-    "label": "Colonna d'acqua",
-    "label_en": "Water column",
-    "definizione": "Proprietà fisiche, chimiche e biologiche dell'acqua lagunare e costiera.",
-    "keyword": "solve-colonna",
-    "sottotemi": [
-      {
-        "id": "colonna-ts",
-        "uri": "https://solve.corila.it/vocabolario/temi/colonna-ts",
-        "label": "Temperatura e salinità",
-        "label_en": "Temperature and salinity",
-        "definizione": "Temperatura e salinità dell'acqua (sonde, CTD, stazioni fisse).",
-        "keyword": "solve-colonna-ts",
-        "match": [
-          {
-            "rel": "broadMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P08/current/DS03/"
-          },
-          {
-            "rel": "closeMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/D025/"
-          },
-          {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/TEMP/"
-          },
-          {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/PSAL/"
-          },
-          {
-            "rel": "broadMatch",
-            "uri": "http://inspire.ec.europa.eu/theme/of"
-          }
-        ]
-      },
-      {
-        "id": "colonna-ossigeno",
-        "uri": "https://solve.corila.it/vocabolario/temi/colonna-ossigeno",
-        "label": "Ossigeno disciolto",
-        "label_en": "Dissolved oxygen",
-        "definizione": "Concentrazione e saturazione dell'ossigeno disciolto.",
-        "keyword": "solve-colonna-ossigeno",
-        "match": [
-          {
-            "rel": "closeMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/C015/"
-          },
-          {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/DOXY/"
-          },
-          {
-            "rel": "broadMatch",
-            "uri": "http://inspire.ec.europa.eu/theme/of"
-          }
-        ]
-      },
-      {
-        "id": "colonna-nutrienti",
-        "uri": "https://solve.corila.it/vocabolario/temi/colonna-nutrienti",
-        "label": "Nutrienti",
-        "label_en": "Nutrients",
-        "definizione": "Azoto, fosforo e silice disciolti.",
-        "keyword": "solve-colonna-nutrienti",
-        "match": [
-          {
-            "rel": "closeMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/C040/"
-          },
-          {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/NTRA/"
-          },
-          {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/NTRI/"
-          },
-          {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/PHOS/"
-          },
-          {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/SLCA/"
-          },
-          {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/TDIN/"
-          },
-          {
-            "rel": "broadMatch",
-            "uri": "http://inspire.ec.europa.eu/theme/of"
-          }
-        ]
-      },
-      {
-        "id": "colonna-clorofilla",
-        "uri": "https://solve.corila.it/vocabolario/temi/colonna-clorofilla",
-        "label": "Clorofilla e fitoplancton",
-        "label_en": "Chlorophyll and phytoplankton",
-        "definizione": "Clorofilla e composizione del fitoplancton.",
-        "keyword": "solve-colonna-clorofilla",
-        "match": [
-          {
-            "rel": "broadMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P08/current/DS01/"
-          },
-          {
-            "rel": "closeMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/B035/"
-          },
-          {
-            "rel": "closeMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/B030/"
-          },
-          {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/CPWC/"
-          },
-          {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/PATX/"
-          },
-          {
-            "rel": "broadMatch",
-            "uri": "http://inspire.ec.europa.eu/theme/of"
-          }
-        ]
-      },
-      {
-        "id": "colonna-torbidita",
-        "uri": "https://solve.corila.it/vocabolario/temi/colonna-torbidita",
-        "label": "Torbidità e trasparenza",
-        "label_en": "Turbidity and transparency",
-        "definizione": "Solidi sospesi, torbidità, trasparenza (disco di Secchi).",
-        "keyword": "solve-colonna-torbidita",
-        "match": [
-          {
-            "rel": "closeMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/G015/"
-          },
-          {
-            "rel": "closeMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/D015/"
-          },
-          {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/TSED/"
-          },
-          {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/SECC/"
-          },
-          {
-            "rel": "broadMatch",
-            "uri": "http://inspire.ec.europa.eu/theme/of"
-          }
-        ]
-      },
-      {
-        "id": "colonna-contaminanti",
-        "uri": "https://solve.corila.it/vocabolario/temi/colonna-contaminanti",
-        "label": "Contaminanti nell'acqua",
-        "label_en": "Contaminants in water",
-        "definizione": "Metalli, IPA, PCB, PFAS e altri microinquinanti nell'acqua.",
-        "keyword": "solve-colonna-contaminanti",
-        "match": [
-          {
-            "rel": "closeMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/C035/"
-          },
-          {
-            "rel": "closeMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/C055/"
-          },
-          {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/MTWD/"
-          },
-          {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/MTWT/"
-          },
-          {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/PCHW/"
-          },
-          {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/PPWC/"
-          },
-          {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/WCOC/"
-          },
-          {
-            "rel": "broadMatch",
-            "uri": "http://inspire.ec.europa.eu/theme/of"
-          }
-        ]
-      },
-      {
-        "id": "colonna-stato",
-        "uri": "https://solve.corila.it/vocabolario/temi/colonna-stato",
-        "label": "Stato ecologico e chimico (WFD)",
-        "label_en": "Ecological and chemical status (WFD)",
-        "definizione": "Classificazione dei corpi idrici secondo la Direttiva Quadro Acque.",
-        "keyword": "solve-colonna-stato",
-        "match": [
-          {
-            "rel": "broadMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P08/current/DS10/"
-          },
-          {
-            "rel": "closeMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/H007/"
-          },
-          {
-            "rel": "broadMatch",
-            "uri": "http://inspire.ec.europa.eu/theme/am"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "sedimenti",
-    "uri": "https://solve.corila.it/vocabolario/temi/sedimenti",
-    "label": "Sedimenti e fondali",
-    "label_en": "Sediments and seabed",
-    "definizione": "Composizione, contaminazione e dinamica dei sedimenti e del sottosuolo.",
-    "keyword": "solve-sedimenti",
-    "sottotemi": [
-      {
-        "id": "sedimenti-granulometria",
-        "uri": "https://solve.corila.it/vocabolario/temi/sedimenti-granulometria",
-        "label": "Granulometria e proprietà fisiche",
-        "label_en": "Grain size and physical properties",
-        "definizione": "Granulometria, densità, contenuto d'acqua dei sedimenti.",
-        "keyword": "solve-sedimenti-granulometria",
-        "match": [
-          {
-            "rel": "closeMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/G040/"
-          },
-          {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/MNGS/"
-          },
-          {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/WCWT/"
-          },
-          {
-            "rel": "broadMatch",
-            "uri": "http://inspire.ec.europa.eu/theme/so"
-          }
-        ]
-      },
-      {
-        "id": "sedimenti-contaminanti",
-        "uri": "https://solve.corila.it/vocabolario/temi/sedimenti-contaminanti",
-        "label": "Contaminanti nei sedimenti",
-        "label_en": "Contaminants in sediments",
-        "definizione": "Metalli, IPA, PCB e altri inquinanti nei sedimenti.",
-        "keyword": "solve-sedimenti-contaminanti",
-        "match": [
-          {
-            "rel": "closeMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/G035/"
-          },
-          {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/MTSD/"
-          },
-          {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/SCAH/"
-          },
-          {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/SPCB/"
-          },
-          {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/SCOC/"
-          },
-          {
-            "rel": "broadMatch",
-            "uri": "http://inspire.ec.europa.eu/theme/so"
-          }
-        ]
-      },
-      {
-        "id": "sedimenti-organica",
-        "uri": "https://solve.corila.it/vocabolario/temi/sedimenti-organica",
-        "label": "Sostanza organica e nutrienti nei sedimenti",
-        "label_en": "Organic matter and nutrients in sediments",
-        "definizione": "Carbonio, azoto, fosforo e sostanza organica nei sedimenti; domanda di ossigeno.",
-        "keyword": "solve-sedimenti-organica",
-        "match": [
-          {
-            "rel": "closeMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/G035/"
-          },
-          {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/STOM/"
-          },
-          {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/CBSD/"
-          },
-          {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/NTSD/"
-          },
-          {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/PXSD/"
-          },
-          {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/DGPW/"
-          },
-          {
-            "rel": "broadMatch",
-            "uri": "http://inspire.ec.europa.eu/theme/so"
-          }
-        ]
-      },
-      {
-        "id": "sedimenti-stratigrafia",
-        "uri": "https://solve.corila.it/vocabolario/temi/sedimenti-stratigrafia",
-        "label": "Carotaggi e stratigrafia",
-        "label_en": "Cores and stratigraphy",
-        "definizione": "Carote, trivellate, stratigrafia e datazioni.",
-        "keyword": "solve-sedimenti-stratigrafia",
-        "match": [
-          {
-            "rel": "closeMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/G030/"
-          },
-          {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/SSTR/"
-          },
-          {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/SAGE/"
-          },
-          {
-            "rel": "broadMatch",
-            "uri": "http://inspire.ec.europa.eu/theme/ge"
-          }
-        ]
-      },
-      {
-        "id": "sedimenti-sismica",
-        "uri": "https://solve.corila.it/vocabolario/temi/sedimenti-sismica",
-        "label": "Rilievi sismici",
-        "label_en": "Seismic surveys",
-        "definizione": "Profili sismici ad alta risoluzione del sottosuolo lagunare.",
-        "keyword": "solve-sedimenti-sismica",
-        "match": [
-          {
-            "rel": "closeMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/G012/"
-          },
-          {
-            "rel": "broadMatch",
-            "uri": "http://inspire.ec.europa.eu/theme/ge"
-          }
-        ]
-      },
-      {
-        "id": "sedimenti-dinamica",
-        "uri": "https://solve.corila.it/vocabolario/temi/sedimenti-dinamica",
-        "label": "Erosione e sedimentazione",
-        "label_en": "Erosion and sedimentation",
-        "definizione": "Tassi di sedimentazione, risospensione ed erosione dei fondali.",
-        "keyword": "solve-sedimenti-dinamica",
-        "match": [
-          {
-            "rel": "closeMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/G060/"
-          },
-          {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/RACC/"
-          },
-          {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/BEST/"
-          },
-          {
-            "rel": "broadMatch",
-            "uri": "http://inspire.ec.europa.eu/theme/el"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "habitat",
-    "uri": "https://solve.corila.it/vocabolario/temi/habitat",
-    "label": "Habitat e morfologia",
-    "label_en": "Habitats and morphology",
-    "definizione": "Forme del territorio lagunare e habitat che ospitano: barene, velme, praterie, dune.",
-    "keyword": "solve-habitat",
-    "sottotemi": [
-      {
-        "id": "habitat-morfologia",
-        "uri": "https://solve.corila.it/vocabolario/temi/habitat-morfologia",
-        "label": "Batimetria e morfologia",
-        "label_en": "Bathymetry and morphology",
-        "definizione": "Batimetria, quote, morfologia di barene, canali e litorali.",
-        "keyword": "solve-habitat-morfologia",
-        "match": [
-          {
-            "rel": "broadMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P08/current/DS04/"
-          },
-          {
-            "rel": "closeMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/G005/"
-          },
-          {
-            "rel": "closeMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/GMAR/"
-          },
-          {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/MBAN/"
-          },
-          {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/COGE/"
-          },
-          {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/SBGE/"
-          },
-          {
-            "rel": "broadMatch",
-            "uri": "http://inspire.ec.europa.eu/theme/el"
-          }
-        ]
-      },
-      {
-        "id": "habitat-carte",
-        "uri": "https://solve.corila.it/vocabolario/temi/habitat-carte",
-        "label": "Carte degli habitat",
-        "label_en": "Habitat maps",
-        "definizione": "Carte degli habitat (Direttiva Habitat) e della naturalità.",
-        "keyword": "solve-habitat-carte",
-        "match": [
-          {
-            "rel": "closeMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/B050/"
-          },
-          {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/HBCH/"
-          },
-          {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/HBEX/"
-          },
-          {
-            "rel": "broadMatch",
-            "uri": "http://inspire.ec.europa.eu/theme/hb"
-          }
-        ]
-      },
-      {
-        "id": "habitat-fanerogame",
-        "uri": "https://solve.corila.it/vocabolario/temi/habitat-fanerogame",
-        "label": "Fanerogame e macroalghe",
-        "label_en": "Seagrasses and macroalgae",
-        "definizione": "Praterie di fanerogame marine e popolamenti di macroalghe.",
-        "keyword": "solve-habitat-fanerogame",
-        "match": [
-          {
-            "rel": "closeMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/B055/"
-          },
-          {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/ACNT/"
-          },
-          {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/PU02/"
-          },
-          {
-            "rel": "broadMatch",
-            "uri": "http://inspire.ec.europa.eu/theme/hb"
-          }
-        ]
-      },
-      {
-        "id": "habitat-vegetazione",
-        "uri": "https://solve.corila.it/vocabolario/temi/habitat-vegetazione",
-        "label": "Vegetazione di barena e costiera",
-        "label_en": "Saltmarsh and coastal vegetation",
-        "definizione": "Vegetazione alofila, dunale e retrodunale; carte della vegetazione reale e potenziale.",
-        "keyword": "solve-habitat-vegetazione",
-        "match": [
-          {
-            "rel": "broadMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P08/current/DS08/"
-          },
-          {
-            "rel": "closeMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/T001/"
-          },
-          {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/LVEG/"
-          },
-          {
-            "rel": "broadMatch",
-            "uri": "http://inspire.ec.europa.eu/theme/lc"
-          }
-        ]
-      },
-      {
-        "id": "habitat-protette",
-        "uri": "https://solve.corila.it/vocabolario/temi/habitat-protette",
-        "label": "Aree protette",
-        "label_en": "Protected areas",
-        "definizione": "Siti Natura 2000, Ramsar, aree marine protette, elenco EUAP.",
-        "keyword": "solve-habitat-protette",
-        "match": [
-          {
-            "rel": "broadMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P08/current/DS12/"
-          },
-          {
-            "rel": "closeMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/H007/"
-          },
-          {
-            "rel": "broadMatch",
-            "uri": "http://inspire.ec.europa.eu/theme/ps"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "biologia",
-    "uri": "https://solve.corila.it/vocabolario/temi/biologia",
-    "label": "Comunità biologiche",
-    "label_en": "Biological communities",
-    "definizione": "Specie e popolamenti animali e vegetali della laguna e del litorale.",
-    "keyword": "solve-biologia",
-    "sottotemi": [
-      {
-        "id": "biologia-avifauna",
-        "uri": "https://solve.corila.it/vocabolario/temi/biologia-avifauna",
-        "label": "Avifauna",
-        "label_en": "Birds",
-        "definizione": "Censimenti, colonie e nidificazioni di uccelli acquatici.",
-        "keyword": "solve-biologia-avifauna",
-        "match": [
-          {
-            "rel": "closeMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/B015/"
-          },
-          {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/BRDA/"
-          },
-          {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/BRDD/"
-          },
-          {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/GP004/"
-          },
-          {
-            "rel": "broadMatch",
-            "uri": "http://inspire.ec.europa.eu/theme/sd"
+            "code": "007",
+            "label": "environment"
           }
         ]
       },
-      {
-        "id": "biologia-pesci",
-        "uri": "https://solve.corila.it/vocabolario/temi/biologia-pesci",
-        "label": "Ittiofauna",
-        "label_en": "Fish",
-        "definizione": "Popolamenti ittici e campionamenti di pesci.",
-        "keyword": "solve-biologia-pesci",
-        "match": [
+      "sottotemi": [
+        {
+          "id": "sedimenti-granulometria",
+          "uri": "https://solve.corila.it/vocabolario/temi/sedimenti-granulometria",
+          "label": "Granulometria e proprietà fisiche",
+          "label_en": "Grain size and physical properties",
+          "definizione": "Granulometria, densità, contenuto d'acqua dei sedimenti.",
+          "keyword": "solve-sedimenti-granulometria",
+          "correlati": [],
+          "classificazione": {
+            "p02": [
+              {
+                "code": "MNGS",
+                "label": "Sediment grain size parameters",
+                "origine": "manuale"
+              },
+              {
+                "code": "WCWT",
+                "label": "Sediment water content, porosity and surface area",
+                "origine": "manuale"
+              }
+            ],
+            "p03": [
+              {
+                "code": "G040",
+                "label": "Rock and sediment physical properties",
+                "origine": "NVS"
+              }
+            ],
+            "p08": [
+              {
+                "code": "DS08",
+                "label": "Terrestrial",
+                "origine": "NVS"
+              },
+              {
+                "code": "DS04",
+                "label": "Marine geology and Bathymetry",
+                "origine": "NVS"
+              }
+            ],
+            "inspire": [
+              {
+                "code": "ge",
+                "label": "Geologia",
+                "origine": "NVS"
+              },
+              {
+                "code": "so",
+                "label": "Suolo",
+                "origine": "NVS"
+              }
+            ],
+            "iso": [
+              {
+                "code": "014",
+                "label": "oceans",
+                "origine": "NVS"
+              },
+              {
+                "code": "008",
+                "label": "geoscientificInformation",
+                "origine": "NVS"
+              }
+            ],
+            "msfd": [
+              {
+                "code": "IN1_6_3",
+                "label": "Physical, hydrological and chemical conditions",
+                "origine": "NVS"
+              }
+            ]
+          },
+          "note": ""
+        },
+        {
+          "id": "sedimenti-contaminanti",
+          "uri": "https://solve.corila.it/vocabolario/temi/sedimenti-contaminanti",
+          "label": "Contaminanti nei sedimenti",
+          "label_en": "Contaminants in sediments",
+          "definizione": "Metalli, IPA, PCB e altri inquinanti nei sedimenti.",
+          "keyword": "solve-sedimenti-contaminanti",
+          "correlati": [
+            {
+              "id": "biologia-benthos",
+              "label": "Benthos e molluschi"
+            },
+            {
+              "id": "colonna-contaminanti",
+              "label": "Contaminanti nell'acqua"
+            }
+          ],
+          "classificazione": {
+            "p02": [
+              {
+                "code": "MTSD",
+                "label": "Metal concentrations in sediment",
+                "origine": "manuale"
+              },
+              {
+                "code": "SCAH",
+                "label": "Concentration of polycyclic aromatic hydrocarbons (PAHs) in sediment samples",
+                "origine": "manuale"
+              },
+              {
+                "code": "SPCB",
+                "label": "Concentration of polychlorobiphenyls (PCBs) in sediment samples",
+                "origine": "manuale"
+              },
+              {
+                "code": "SCOC",
+                "label": "Concentration of other organic contaminants in sediment samples",
+                "origine": "manuale"
+              }
+            ],
+            "p03": [
+              {
+                "code": "G035",
+                "label": "Rock and sediment chemistry",
+                "origine": "NVS"
+              },
+              {
+                "code": "C035",
+                "label": "Metal and metalloid concentrations",
+                "origine": "NVS"
+              },
+              {
+                "code": "C025",
+                "label": "Hydrocarbons",
+                "origine": "NVS"
+              },
+              {
+                "code": "H001",
+                "label": "Pollution",
+                "origine": "NVS"
+              },
+              {
+                "code": "C055",
+                "label": "PCBs and organic micropollutants",
+                "origine": "NVS"
+              }
+            ],
+            "p08": [
+              {
+                "code": "DS08",
+                "label": "Terrestrial",
+                "origine": "NVS"
+              },
+              {
+                "code": "DS04",
+                "label": "Marine geology and Bathymetry",
+                "origine": "NVS"
+              },
+              {
+                "code": "DS02",
+                "label": "Chemical oceanography",
+                "origine": "NVS"
+              },
+              {
+                "code": "DS12",
+                "label": "Human activities",
+                "origine": "NVS"
+              },
+              {
+                "code": "DS10",
+                "label": "Environment",
+                "origine": "NVS"
+              }
+            ],
+            "inspire": [
+              {
+                "code": "mr",
+                "label": "Risorse minerarie",
+                "origine": "NVS"
+              },
+              {
+                "code": "ge",
+                "label": "Geologia",
+                "origine": "NVS"
+              },
+              {
+                "code": "hh",
+                "label": "Salute umana e sicurezza",
+                "origine": "NVS"
+              }
+            ],
+            "iso": [
+              {
+                "code": "014",
+                "label": "oceans",
+                "origine": "NVS"
+              },
+              {
+                "code": "008",
+                "label": "geoscientificInformation",
+                "origine": "NVS"
+              },
+              {
+                "code": "007",
+                "label": "environment",
+                "origine": "NVS"
+              }
+            ],
+            "msfd": [
+              {
+                "code": "IN8_1_1",
+                "label": "Concentration of the contaminants",
+                "origine": "NVS"
+              }
+            ]
+          },
+          "note": ""
+        },
+        {
+          "id": "sedimenti-organica",
+          "uri": "https://solve.corila.it/vocabolario/temi/sedimenti-organica",
+          "label": "Sostanza organica e nutrienti nei sedimenti",
+          "label_en": "Organic matter and nutrients in sediments",
+          "definizione": "Carbonio, azoto, fosforo e sostanza organica nei sedimenti; domanda di ossigeno.",
+          "keyword": "solve-sedimenti-organica",
+          "correlati": [],
+          "classificazione": {
+            "p02": [
+              {
+                "code": "STOM",
+                "label": "Concentration of organic matter in sediments",
+                "origine": "manuale"
+              },
+              {
+                "code": "CBSD",
+                "label": "Carbon concentrations in sediment",
+                "origine": "manuale"
+              },
+              {
+                "code": "NTSD",
+                "label": "Nitrogen concentrations in sediment",
+                "origine": "manuale"
+              },
+              {
+                "code": "PXSD",
+                "label": "Phosphorus concentrations in sediment",
+                "origine": "manuale"
+              },
+              {
+                "code": "DGPW",
+                "label": "Dissolved oxygen parameters for sediments",
+                "origine": "manuale"
+              }
+            ],
+            "p03": [
+              {
+                "code": "G035",
+                "label": "Rock and sediment chemistry",
+                "origine": "NVS"
+              },
+              {
+                "code": "C005",
+                "label": "Carbon, nitrogen and phosphorus",
+                "origine": "NVS"
+              },
+              {
+                "code": "C015",
+                "label": "Dissolved gases",
+                "origine": "NVS"
+              },
+              {
+                "code": "G050",
+                "label": "Sediment pore water chemistry",
+                "origine": "NVS"
+              }
+            ],
+            "p08": [
+              {
+                "code": "DS08",
+                "label": "Terrestrial",
+                "origine": "NVS"
+              },
+              {
+                "code": "DS04",
+                "label": "Marine geology and Bathymetry",
+                "origine": "NVS"
+              },
+              {
+                "code": "DS02",
+                "label": "Chemical oceanography",
+                "origine": "NVS"
+              }
+            ],
+            "inspire": [
+              {
+                "code": "ge",
+                "label": "Geologia",
+                "origine": "NVS"
+              }
+            ],
+            "iso": [
+              {
+                "code": "014",
+                "label": "oceans",
+                "origine": "NVS"
+              },
+              {
+                "code": "008",
+                "label": "geoscientificInformation",
+                "origine": "NVS"
+              }
+            ],
+            "msfd": []
+          },
+          "note": ""
+        },
+        {
+          "id": "sedimenti-stratigrafia",
+          "uri": "https://solve.corila.it/vocabolario/temi/sedimenti-stratigrafia",
+          "label": "Carotaggi e stratigrafia",
+          "label_en": "Cores and stratigraphy",
+          "definizione": "Carote, trivellate, stratigrafia e datazioni.",
+          "keyword": "solve-sedimenti-stratigrafia",
+          "correlati": [],
+          "classificazione": {
+            "p02": [
+              {
+                "code": "SSTR",
+                "label": "Sedimentary structure",
+                "origine": "manuale"
+              },
+              {
+                "code": "SAGE",
+                "label": "Sediment age",
+                "origine": "manuale"
+              }
+            ],
+            "p03": [
+              {
+                "code": "GSED",
+                "label": "Rock and sediment sedimentology",
+                "origine": "NVS"
+              },
+              {
+                "code": "G030",
+                "label": "Geochronology and stratigraphy",
+                "origine": "NVS"
+              }
+            ],
+            "p08": [
+              {
+                "code": "DS04",
+                "label": "Marine geology and Bathymetry",
+                "origine": "NVS"
+              },
+              {
+                "code": "DS08",
+                "label": "Terrestrial",
+                "origine": "NVS"
+              }
+            ],
+            "inspire": [
+              {
+                "code": "ge",
+                "label": "Geologia",
+                "origine": "NVS"
+              }
+            ],
+            "iso": [
+              {
+                "code": "008",
+                "label": "geoscientificInformation",
+                "origine": "NVS"
+              },
+              {
+                "code": "014",
+                "label": "oceans",
+                "origine": "NVS"
+              }
+            ],
+            "msfd": []
+          },
+          "note": ""
+        },
+        {
+          "id": "sedimenti-sismica",
+          "uri": "https://solve.corila.it/vocabolario/temi/sedimenti-sismica",
+          "label": "Rilievi sismici",
+          "label_en": "Seismic surveys",
+          "definizione": "Profili sismici ad alta risoluzione del sottosuolo lagunare.",
+          "keyword": "solve-sedimenti-sismica",
+          "correlati": [],
+          "classificazione": {
+            "p02": [],
+            "p03": [
+              {
+                "code": "G012",
+                "label": "Sonar and seismics",
+                "origine": "manuale"
+              }
+            ],
+            "p08": [
+              {
+                "code": "DS04",
+                "label": "Marine geology and Bathymetry",
+                "origine": "NVS"
+              }
+            ],
+            "inspire": [
+              {
+                "code": "ge",
+                "label": "Geologia",
+                "origine": "manuale"
+              }
+            ],
+            "iso": [],
+            "msfd": []
+          },
+          "note": "Nessun parametro P02: aggancio manuale"
+        },
+        {
+          "id": "sedimenti-dinamica",
+          "uri": "https://solve.corila.it/vocabolario/temi/sedimenti-dinamica",
+          "label": "Erosione e sedimentazione",
+          "label_en": "Erosion and sedimentation",
+          "definizione": "Tassi di sedimentazione, risospensione ed erosione dei fondali.",
+          "keyword": "solve-sedimenti-dinamica",
+          "correlati": [
+            {
+              "id": "colonna-torbidita",
+              "label": "Torbidità e trasparenza"
+            },
+            {
+              "id": "idro-correnti",
+              "label": "Correnti e portate alle bocche"
+            }
+          ],
+          "classificazione": {
+            "p02": [
+              {
+                "code": "RACC",
+                "label": "Sediment accumulation rate",
+                "origine": "manuale"
+              },
+              {
+                "code": "BEST",
+                "label": "Sediment resuspension",
+                "origine": "manuale"
+              }
+            ],
+            "p03": [
+              {
+                "code": "G060",
+                "label": "Sedimentation and erosion processes",
+                "origine": "NVS"
+              }
+            ],
+            "p08": [
+              {
+                "code": "DS08",
+                "label": "Terrestrial",
+                "origine": "NVS"
+              },
+              {
+                "code": "DS04",
+                "label": "Marine geology and Bathymetry",
+                "origine": "NVS"
+              }
+            ],
+            "inspire": [
+              {
+                "code": "ge",
+                "label": "Geologia",
+                "origine": "NVS"
+              },
+              {
+                "code": "of",
+                "label": "Elementi geografici oceanografici",
+                "origine": "NVS"
+              }
+            ],
+            "iso": [
+              {
+                "code": "014",
+                "label": "oceans",
+                "origine": "NVS"
+              },
+              {
+                "code": "008",
+                "label": "geoscientificInformation",
+                "origine": "NVS"
+              }
+            ],
+            "msfd": []
+          },
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "habitat",
+      "uri": "https://solve.corila.it/vocabolario/temi/habitat",
+      "label": "Habitat e morfologia",
+      "label_en": "Habitats and morphology",
+      "definizione": "Forme del territorio lagunare e habitat che ospitano: barene, velme, praterie, dune.",
+      "keyword": "solve-habitat",
+      "note": "",
+      "classificazione": {
+        "p03": [
           {
-            "rel": "closeMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/B020/"
+            "code": "T001",
+            "label": "Terrestrial"
           },
           {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/FATX/"
+            "code": "GMAR",
+            "label": "Marine geomorphology"
           },
           {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/FCNT/"
+            "code": "B050",
+            "label": "Habitat"
           },
           {
-            "rel": "broadMatch",
-            "uri": "http://inspire.ec.europa.eu/theme/sd"
+            "code": "B055",
+            "label": "Macroalgae and seagrass"
+          },
+          {
+            "code": "B070",
+            "label": "Biota abundance, biomass and diversity"
+          },
+          {
+            "code": "H007",
+            "label": "Area Management/Designation"
+          }
+        ],
+        "p08": [
+          {
+            "code": "DS04",
+            "label": "Marine geology and Bathymetry"
+          },
+          {
+            "code": "DS10",
+            "label": "Environment"
+          },
+          {
+            "code": "DS01",
+            "label": "Biological oceanography"
+          },
+          {
+            "code": "DS12",
+            "label": "Human activities"
+          }
+        ],
+        "inspire": [
+          {
+            "code": "el",
+            "label": "Elevazione"
+          },
+          {
+            "code": "hy",
+            "label": "Idrografia"
+          },
+          {
+            "code": "ge",
+            "label": "Geologia"
+          },
+          {
+            "code": "hb",
+            "label": "Habitat e biotopi"
+          },
+          {
+            "code": "sd",
+            "label": "Distribuzione delle specie"
+          },
+          {
+            "code": "lc",
+            "label": "Copertura del suolo"
+          },
+          {
+            "code": "ps",
+            "label": "Siti protetti"
+          }
+        ],
+        "iso": [
+          {
+            "code": "014",
+            "label": "oceans"
+          },
+          {
+            "code": "008",
+            "label": "geoscientificInformation"
+          },
+          {
+            "code": "007",
+            "label": "environment"
+          },
+          {
+            "code": "002",
+            "label": "biota"
           }
         ]
       },
-      {
-        "id": "biologia-benthos",
-        "uri": "https://solve.corila.it/vocabolario/temi/biologia-benthos",
-        "label": "Benthos e molluschi",
-        "label_en": "Benthos and molluscs",
-        "definizione": "Macrozoobenthos, bivalvi e specie bentoniche (es. Pinna nobilis, Chamelea gallina).",
-        "keyword": "solve-biologia-benthos",
-        "match": [
+      "sottotemi": [
+        {
+          "id": "habitat-morfologia",
+          "uri": "https://solve.corila.it/vocabolario/temi/habitat-morfologia",
+          "label": "Batimetria e morfologia",
+          "label_en": "Bathymetry and morphology",
+          "definizione": "Batimetria, quote, morfologia di barene, canali e litorali.",
+          "keyword": "solve-habitat-morfologia",
+          "correlati": [
+            {
+              "id": "habitat-vegetazione",
+              "label": "Vegetazione di barena e costiera"
+            }
+          ],
+          "classificazione": {
+            "p02": [
+              {
+                "code": "MBAN",
+                "label": "Bathymetry and Elevation",
+                "origine": "manuale"
+              },
+              {
+                "code": "COGE",
+                "label": "Coastal geomorphology",
+                "origine": "manuale"
+              },
+              {
+                "code": "SBGE",
+                "label": "Seabed geomorphology",
+                "origine": "manuale"
+              }
+            ],
+            "p03": [
+              {
+                "code": "T001",
+                "label": "Terrestrial",
+                "origine": "NVS"
+              },
+              {
+                "code": "GMAR",
+                "label": "Marine geomorphology",
+                "origine": "NVS"
+              }
+            ],
+            "p08": [
+              {
+                "code": "DS04",
+                "label": "Marine geology and Bathymetry",
+                "origine": "NVS"
+              }
+            ],
+            "inspire": [
+              {
+                "code": "el",
+                "label": "Elevazione",
+                "origine": "NVS"
+              },
+              {
+                "code": "hy",
+                "label": "Idrografia",
+                "origine": "NVS"
+              },
+              {
+                "code": "ge",
+                "label": "Geologia",
+                "origine": "NVS"
+              }
+            ],
+            "iso": [
+              {
+                "code": "014",
+                "label": "oceans",
+                "origine": "NVS"
+              },
+              {
+                "code": "008",
+                "label": "geoscientificInformation",
+                "origine": "NVS"
+              },
+              {
+                "code": "007",
+                "label": "environment",
+                "origine": "NVS"
+              }
+            ],
+            "msfd": []
+          },
+          "note": ""
+        },
+        {
+          "id": "habitat-carte",
+          "uri": "https://solve.corila.it/vocabolario/temi/habitat-carte",
+          "label": "Carte degli habitat",
+          "label_en": "Habitat maps",
+          "definizione": "Carte degli habitat (Direttiva Habitat) e della naturalità.",
+          "keyword": "solve-habitat-carte",
+          "correlati": [
+            {
+              "id": "habitat-protette",
+              "label": "Aree protette"
+            }
+          ],
+          "classificazione": {
+            "p02": [
+              {
+                "code": "HBCH",
+                "label": "Habitat characterisation",
+                "origine": "manuale"
+              },
+              {
+                "code": "HBEX",
+                "label": "Habitat extent",
+                "origine": "manuale"
+              }
+            ],
+            "p03": [
+              {
+                "code": "B050",
+                "label": "Habitat",
+                "origine": "NVS"
+              }
+            ],
+            "p08": [
+              {
+                "code": "DS10",
+                "label": "Environment",
+                "origine": "NVS"
+              }
+            ],
+            "inspire": [
+              {
+                "code": "hb",
+                "label": "Habitat e biotopi",
+                "origine": "NVS"
+              }
+            ],
+            "iso": [
+              {
+                "code": "002",
+                "label": "biota",
+                "origine": "NVS"
+              },
+              {
+                "code": "007",
+                "label": "environment",
+                "origine": "NVS"
+              }
+            ],
+            "msfd": [
+              {
+                "code": "IN6_1_2",
+                "label": "Extent of the seabed affected by human activities",
+                "origine": "NVS"
+              },
+              {
+                "code": "IN1_7_1",
+                "label": "Composition and relative proportions of ecosystem components",
+                "origine": "NVS"
+              },
+              {
+                "code": "IN1_4_2",
+                "label": "Distributional pattern",
+                "origine": "NVS"
+              },
+              {
+                "code": "IN6_1_1",
+                "label": "Type, abundance, biomass and areal extent of relevant biogenic substrate",
+                "origine": "NVS"
+              },
+              {
+                "code": "IN1_4_1",
+                "label": "Distributional range",
+                "origine": "NVS"
+              }
+            ]
+          },
+          "note": ""
+        },
+        {
+          "id": "habitat-fanerogame",
+          "uri": "https://solve.corila.it/vocabolario/temi/habitat-fanerogame",
+          "label": "Fanerogame e macroalghe",
+          "label_en": "Seagrasses and macroalgae",
+          "definizione": "Praterie di fanerogame marine e popolamenti di macroalghe.",
+          "keyword": "solve-habitat-fanerogame",
+          "correlati": [
+            {
+              "id": "biologia-benthos",
+              "label": "Benthos e molluschi"
+            },
+            {
+              "id": "biologia-pesci",
+              "label": "Ittiofauna"
+            },
+            {
+              "id": "colonna-torbidita",
+              "label": "Torbidità e trasparenza"
+            }
+          ],
+          "classificazione": {
+            "p02": [
+              {
+                "code": "ACNT",
+                "label": "Macroalgae and seagrass taxonomy-related counts",
+                "origine": "manuale"
+              },
+              {
+                "code": "PU02",
+                "label": "Macroalgae generic abundance in water bodies",
+                "origine": "manuale"
+              }
+            ],
+            "p03": [
+              {
+                "code": "B055",
+                "label": "Macroalgae and seagrass",
+                "origine": "NVS"
+              },
+              {
+                "code": "B070",
+                "label": "Biota abundance, biomass and diversity",
+                "origine": "NVS"
+              }
+            ],
+            "p08": [
+              {
+                "code": "DS01",
+                "label": "Biological oceanography",
+                "origine": "NVS"
+              }
+            ],
+            "inspire": [
+              {
+                "code": "sd",
+                "label": "Distribuzione delle specie",
+                "origine": "NVS"
+              }
+            ],
+            "iso": [
+              {
+                "code": "002",
+                "label": "biota",
+                "origine": "NVS"
+              },
+              {
+                "code": "014",
+                "label": "oceans",
+                "origine": "NVS"
+              }
+            ],
+            "msfd": [
+              {
+                "code": "IN2_1_1",
+                "label": "Trends in abundance, temporal occurrence and spatial distribution of non-indigenous species",
+                "origine": "NVS"
+              },
+              {
+                "code": "IN1_2_1",
+                "label": "Population abundance and/or biomass",
+                "origine": "NVS"
+              },
+              {
+                "code": "IN1_7_1",
+                "label": "Composition and relative proportions of ecosystem components",
+                "origine": "NVS"
+              },
+              {
+                "code": "IN1_1_2",
+                "label": "Distributional pattern within the range",
+                "origine": "NVS"
+              },
+              {
+                "code": "IN4_3_1",
+                "label": "Abundance trends of functionally important selected groups/species",
+                "origine": "NVS"
+              },
+              {
+                "code": "IN1_1_1",
+                "label": "Distributional range",
+                "origine": "NVS"
+              },
+              {
+                "code": "IN1_1_3",
+                "label": "Area covered by the species",
+                "origine": "NVS"
+              },
+              {
+                "code": "IN5_3_1",
+                "label": "Abundance of perennial seaweeds and seagrasses",
+                "origine": "NVS"
+              }
+            ]
+          },
+          "note": ""
+        },
+        {
+          "id": "habitat-vegetazione",
+          "uri": "https://solve.corila.it/vocabolario/temi/habitat-vegetazione",
+          "label": "Vegetazione di barena e costiera",
+          "label_en": "Saltmarsh and coastal vegetation",
+          "definizione": "Vegetazione alofila, dunale e retrodunale; carte della vegetazione reale e potenziale.",
+          "keyword": "solve-habitat-vegetazione",
+          "correlati": [
+            {
+              "id": "apporti-falda",
+              "label": "Acque sotterranee e cuneo salino"
+            },
+            {
+              "id": "biologia-alloctone",
+              "label": "Specie alloctone invasive"
+            },
+            {
+              "id": "biologia-avifauna",
+              "label": "Avifauna"
+            },
+            {
+              "id": "habitat-morfologia",
+              "label": "Batimetria e morfologia"
+            }
+          ],
+          "classificazione": {
+            "p02": [
+              {
+                "code": "LVEG",
+                "label": "Land vegetation",
+                "origine": "manuale"
+              }
+            ],
+            "p03": [
+              {
+                "code": "T001",
+                "label": "Terrestrial",
+                "origine": "NVS"
+              }
+            ],
+            "p08": [],
+            "inspire": [
+              {
+                "code": "lc",
+                "label": "Copertura del suolo",
+                "origine": "NVS"
+              }
+            ],
+            "iso": [
+              {
+                "code": "002",
+                "label": "biota",
+                "origine": "NVS"
+              }
+            ],
+            "msfd": []
+          },
+          "note": ""
+        },
+        {
+          "id": "habitat-protette",
+          "uri": "https://solve.corila.it/vocabolario/temi/habitat-protette",
+          "label": "Aree protette",
+          "label_en": "Protected areas",
+          "definizione": "Siti Natura 2000, Ramsar, aree marine protette, elenco EUAP.",
+          "keyword": "solve-habitat-protette",
+          "correlati": [
+            {
+              "id": "habitat-carte",
+              "label": "Carte degli habitat"
+            },
+            {
+              "id": "usi-pianificazione",
+              "label": "Pianificazione e vincoli"
+            }
+          ],
+          "classificazione": {
+            "p02": [],
+            "p03": [
+              {
+                "code": "H007",
+                "label": "Area Management/Designation",
+                "origine": "manuale"
+              }
+            ],
+            "p08": [
+              {
+                "code": "DS12",
+                "label": "Human activities",
+                "origine": "NVS"
+              }
+            ],
+            "inspire": [
+              {
+                "code": "ps",
+                "label": "Siti protetti",
+                "origine": "manuale"
+              }
+            ],
+            "iso": [],
+            "msfd": []
+          },
+          "note": "Nessun parametro P02: aggancio manuale"
+        }
+      ]
+    },
+    {
+      "id": "biologia",
+      "uri": "https://solve.corila.it/vocabolario/temi/biologia",
+      "label": "Comunità biologiche",
+      "label_en": "Biological communities",
+      "definizione": "Specie e popolamenti animali e vegetali della laguna e del litorale.",
+      "keyword": "solve-biologia",
+      "note": "",
+      "classificazione": {
+        "p03": [
           {
-            "rel": "closeMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/B070/"
+            "code": "B015",
+            "label": "Birds, mammals and reptiles"
           },
           {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/ZBTX/"
+            "code": "B070",
+            "label": "Biota abundance, biomass and diversity"
           },
           {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/MFAB/"
+            "code": "B020",
+            "label": "Fish"
           },
           {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/SABB/"
+            "code": "G055",
+            "label": "Rock and sediment biota"
           },
           {
-            "rel": "broadMatch",
-            "uri": "http://inspire.ec.europa.eu/theme/sd"
+            "code": "H004",
+            "label": "Fisheries"
+          },
+          {
+            "code": "B030",
+            "label": "Phytoplankton and microphytobenthos"
+          },
+          {
+            "code": "B045",
+            "label": "Zooplankton"
+          },
+          {
+            "code": "B007",
+            "label": "Biota composition"
+          },
+          {
+            "code": "T001",
+            "label": "Terrestrial"
+          }
+        ],
+        "p08": [
+          {
+            "code": "DS01",
+            "label": "Biological oceanography"
+          },
+          {
+            "code": "DS11",
+            "label": "Fisheries and aquaculture"
+          },
+          {
+            "code": "DS08",
+            "label": "Terrestrial"
+          },
+          {
+            "code": "DS04",
+            "label": "Marine geology and Bathymetry"
+          },
+          {
+            "code": "DS12",
+            "label": "Human activities"
+          },
+          {
+            "code": "DS02",
+            "label": "Chemical oceanography"
+          }
+        ],
+        "inspire": [
+          {
+            "code": "sd",
+            "label": "Distribuzione delle specie"
+          }
+        ],
+        "iso": [
+          {
+            "code": "002",
+            "label": "biota"
+          },
+          {
+            "code": "014",
+            "label": "oceans"
           }
         ]
       },
-      {
-        "id": "biologia-plancton",
-        "uri": "https://solve.corila.it/vocabolario/temi/biologia-plancton",
-        "label": "Plancton",
-        "label_en": "Plankton",
-        "definizione": "Fitoplancton e zooplancton.",
-        "keyword": "solve-biologia-plancton",
-        "match": [
+      "sottotemi": [
+        {
+          "id": "biologia-avifauna",
+          "uri": "https://solve.corila.it/vocabolario/temi/biologia-avifauna",
+          "label": "Avifauna",
+          "label_en": "Birds",
+          "definizione": "Censimenti, colonie e nidificazioni di uccelli acquatici.",
+          "keyword": "solve-biologia-avifauna",
+          "correlati": [
+            {
+              "id": "habitat-vegetazione",
+              "label": "Vegetazione di barena e costiera"
+            }
+          ],
+          "classificazione": {
+            "p02": [
+              {
+                "code": "BRDA",
+                "label": "Bird counts",
+                "origine": "manuale"
+              },
+              {
+                "code": "BRDD",
+                "label": "Bird taxonomy-related abundance per unit area of surface",
+                "origine": "manuale"
+              },
+              {
+                "code": "GP004",
+                "label": "Bird reproduction",
+                "origine": "manuale"
+              }
+            ],
+            "p03": [
+              {
+                "code": "B015",
+                "label": "Birds, mammals and reptiles",
+                "origine": "NVS"
+              },
+              {
+                "code": "B070",
+                "label": "Biota abundance, biomass and diversity",
+                "origine": "NVS"
+              }
+            ],
+            "p08": [
+              {
+                "code": "DS01",
+                "label": "Biological oceanography",
+                "origine": "NVS"
+              }
+            ],
+            "inspire": [
+              {
+                "code": "sd",
+                "label": "Distribuzione delle specie",
+                "origine": "NVS"
+              }
+            ],
+            "iso": [
+              {
+                "code": "002",
+                "label": "biota",
+                "origine": "NVS"
+              }
+            ],
+            "msfd": [
+              {
+                "code": "IN1_2_1",
+                "label": "Population abundance and/or biomass",
+                "origine": "NVS"
+              },
+              {
+                "code": "IN1_7_1",
+                "label": "Composition and relative proportions of ecosystem components",
+                "origine": "NVS"
+              },
+              {
+                "code": "IN1_1_2",
+                "label": "Distributional pattern within the range",
+                "origine": "NVS"
+              },
+              {
+                "code": "IN4_3_1",
+                "label": "Abundance trends of functionally important selected groups/species",
+                "origine": "NVS"
+              },
+              {
+                "code": "IN1_1_1",
+                "label": "Distributional range",
+                "origine": "NVS"
+              },
+              {
+                "code": "IN2_1_1",
+                "label": "Trends in abundance, temporal occurrence and spatial distribution of non-indigenous species",
+                "origine": "NVS"
+              },
+              {
+                "code": "IN1_3_1",
+                "label": "Population demographic characteristics",
+                "origine": "NVS"
+              }
+            ]
+          },
+          "note": ""
+        },
+        {
+          "id": "biologia-pesci",
+          "uri": "https://solve.corila.it/vocabolario/temi/biologia-pesci",
+          "label": "Ittiofauna",
+          "label_en": "Fish",
+          "definizione": "Popolamenti ittici e campionamenti di pesci.",
+          "keyword": "solve-biologia-pesci",
+          "correlati": [
+            {
+              "id": "habitat-fanerogame",
+              "label": "Fanerogame e macroalghe"
+            },
+            {
+              "id": "usi-pesca",
+              "label": "Pesca e acquacoltura"
+            }
+          ],
+          "classificazione": {
+            "p02": [
+              {
+                "code": "FATX",
+                "label": "Fish abundance in water bodies",
+                "origine": "manuale"
+              },
+              {
+                "code": "FCNT",
+                "label": "Fish taxonomy-related counts",
+                "origine": "manuale"
+              }
+            ],
+            "p03": [
+              {
+                "code": "B070",
+                "label": "Biota abundance, biomass and diversity",
+                "origine": "NVS"
+              },
+              {
+                "code": "B020",
+                "label": "Fish",
+                "origine": "NVS"
+              }
+            ],
+            "p08": [
+              {
+                "code": "DS01",
+                "label": "Biological oceanography",
+                "origine": "NVS"
+              },
+              {
+                "code": "DS11",
+                "label": "Fisheries and aquaculture",
+                "origine": "NVS"
+              }
+            ],
+            "inspire": [
+              {
+                "code": "sd",
+                "label": "Distribuzione delle specie",
+                "origine": "NVS"
+              }
+            ],
+            "iso": [
+              {
+                "code": "002",
+                "label": "biota",
+                "origine": "NVS"
+              },
+              {
+                "code": "014",
+                "label": "oceans",
+                "origine": "NVS"
+              }
+            ],
+            "msfd": [
+              {
+                "code": "IN2_1_1",
+                "label": "Trends in abundance, temporal occurrence and spatial distribution of non-indigenous species",
+                "origine": "NVS"
+              },
+              {
+                "code": "IN1_2_1",
+                "label": "Population abundance and/or biomass",
+                "origine": "NVS"
+              },
+              {
+                "code": "IN1_7_1",
+                "label": "Composition and relative proportions of ecosystem components",
+                "origine": "NVS"
+              },
+              {
+                "code": "IN1_1_2",
+                "label": "Distributional pattern within the range",
+                "origine": "NVS"
+              },
+              {
+                "code": "IN4_3_1",
+                "label": "Abundance trends of functionally important selected groups/species",
+                "origine": "NVS"
+              },
+              {
+                "code": "IN1_1_1",
+                "label": "Distributional range",
+                "origine": "NVS"
+              },
+              {
+                "code": "IN4_1_1",
+                "label": "Performance of key predator species",
+                "origine": "NVS"
+              }
+            ]
+          },
+          "note": ""
+        },
+        {
+          "id": "biologia-benthos",
+          "uri": "https://solve.corila.it/vocabolario/temi/biologia-benthos",
+          "label": "Benthos e molluschi",
+          "label_en": "Benthos and molluscs",
+          "definizione": "Macrozoobenthos, bivalvi e specie bentoniche (es. Pinna nobilis, Chamelea gallina).",
+          "keyword": "solve-biologia-benthos",
+          "correlati": [
+            {
+              "id": "habitat-fanerogame",
+              "label": "Fanerogame e macroalghe"
+            },
+            {
+              "id": "sedimenti-contaminanti",
+              "label": "Contaminanti nei sedimenti"
+            },
+            {
+              "id": "usi-pesca",
+              "label": "Pesca e acquacoltura"
+            }
+          ],
+          "classificazione": {
+            "p02": [
+              {
+                "code": "ZBTX",
+                "label": "Zoobenthos taxonomic abundance",
+                "origine": "manuale"
+              },
+              {
+                "code": "MFAB",
+                "label": "Zoobenthos generic abundance",
+                "origine": "manuale"
+              },
+              {
+                "code": "SABB",
+                "label": "Shellfish abundance and biomass in water bodies",
+                "origine": "manuale"
+              }
+            ],
+            "p03": [
+              {
+                "code": "B070",
+                "label": "Biota abundance, biomass and diversity",
+                "origine": "NVS"
+              },
+              {
+                "code": "G055",
+                "label": "Rock and sediment biota",
+                "origine": "NVS"
+              },
+              {
+                "code": "H004",
+                "label": "Fisheries",
+                "origine": "NVS"
+              }
+            ],
+            "p08": [
+              {
+                "code": "DS01",
+                "label": "Biological oceanography",
+                "origine": "NVS"
+              },
+              {
+                "code": "DS08",
+                "label": "Terrestrial",
+                "origine": "NVS"
+              },
+              {
+                "code": "DS04",
+                "label": "Marine geology and Bathymetry",
+                "origine": "NVS"
+              },
+              {
+                "code": "DS11",
+                "label": "Fisheries and aquaculture",
+                "origine": "NVS"
+              },
+              {
+                "code": "DS12",
+                "label": "Human activities",
+                "origine": "NVS"
+              }
+            ],
+            "inspire": [
+              {
+                "code": "sd",
+                "label": "Distribuzione delle specie",
+                "origine": "NVS"
+              }
+            ],
+            "iso": [
+              {
+                "code": "002",
+                "label": "biota",
+                "origine": "NVS"
+              },
+              {
+                "code": "014",
+                "label": "oceans",
+                "origine": "NVS"
+              }
+            ],
+            "msfd": [
+              {
+                "code": "IN2_1_1",
+                "label": "Trends in abundance, temporal occurrence and spatial distribution of non-indigenous species",
+                "origine": "NVS"
+              },
+              {
+                "code": "IN1_2_1",
+                "label": "Population abundance and/or biomass",
+                "origine": "NVS"
+              },
+              {
+                "code": "IN1_7_1",
+                "label": "Composition and relative proportions of ecosystem components",
+                "origine": "NVS"
+              },
+              {
+                "code": "IN1_1_2",
+                "label": "Distributional pattern within the range",
+                "origine": "NVS"
+              },
+              {
+                "code": "IN4_3_1",
+                "label": "Abundance trends of functionally important selected groups/species",
+                "origine": "NVS"
+              },
+              {
+                "code": "IN1_1_1",
+                "label": "Distributional range",
+                "origine": "NVS"
+              },
+              {
+                "code": "IN1_1_3",
+                "label": "Area covered by the species",
+                "origine": "NVS"
+              }
+            ]
+          },
+          "note": ""
+        },
+        {
+          "id": "biologia-plancton",
+          "uri": "https://solve.corila.it/vocabolario/temi/biologia-plancton",
+          "label": "Plancton",
+          "label_en": "Plankton",
+          "definizione": "Fitoplancton e zooplancton.",
+          "keyword": "solve-biologia-plancton",
+          "correlati": [
+            {
+              "id": "colonna-clorofilla",
+              "label": "Clorofilla e fitoplancton"
+            }
+          ],
+          "classificazione": {
+            "p02": [
+              {
+                "code": "PATX",
+                "label": "Phytoplankton taxonomic abundance in water bodies",
+                "origine": "manuale"
+              },
+              {
+                "code": "ZATX",
+                "label": "Zooplankton taxonomy-related abundance per unit volume of the water column",
+                "origine": "manuale"
+              }
+            ],
+            "p03": [
+              {
+                "code": "B070",
+                "label": "Biota abundance, biomass and diversity",
+                "origine": "NVS"
+              },
+              {
+                "code": "B030",
+                "label": "Phytoplankton and microphytobenthos",
+                "origine": "NVS"
+              },
+              {
+                "code": "B045",
+                "label": "Zooplankton",
+                "origine": "NVS"
+              }
+            ],
+            "p08": [
+              {
+                "code": "DS01",
+                "label": "Biological oceanography",
+                "origine": "NVS"
+              }
+            ],
+            "inspire": [
+              {
+                "code": "sd",
+                "label": "Distribuzione delle specie",
+                "origine": "NVS"
+              }
+            ],
+            "iso": [
+              {
+                "code": "002",
+                "label": "biota",
+                "origine": "NVS"
+              },
+              {
+                "code": "014",
+                "label": "oceans",
+                "origine": "NVS"
+              }
+            ],
+            "msfd": [
+              {
+                "code": "IN2_1_1",
+                "label": "Trends in abundance, temporal occurrence and spatial distribution of non-indigenous species",
+                "origine": "NVS"
+              },
+              {
+                "code": "IN1_2_1",
+                "label": "Population abundance and/or biomass",
+                "origine": "NVS"
+              },
+              {
+                "code": "IN1_7_1",
+                "label": "Composition and relative proportions of ecosystem components",
+                "origine": "NVS"
+              },
+              {
+                "code": "IN1_1_2",
+                "label": "Distributional pattern within the range",
+                "origine": "NVS"
+              },
+              {
+                "code": "IN4_3_1",
+                "label": "Abundance trends of functionally important selected groups/species",
+                "origine": "NVS"
+              },
+              {
+                "code": "IN1_1_1",
+                "label": "Distributional range",
+                "origine": "NVS"
+              },
+              {
+                "code": "IN5_2_4",
+                "label": "Species shift in floristic composition caused by human activities",
+                "origine": "NVS"
+              }
+            ]
+          },
+          "note": ""
+        },
+        {
+          "id": "biologia-alloctone",
+          "uri": "https://solve.corila.it/vocabolario/temi/biologia-alloctone",
+          "label": "Specie alloctone invasive",
+          "label_en": "Invasive alien species",
+          "definizione": "Specie alloctone invasive animali e vegetali e azioni di contrasto.",
+          "keyword": "solve-biologia-alloctone",
+          "correlati": [
+            {
+              "id": "habitat-vegetazione",
+              "label": "Vegetazione di barena e costiera"
+            }
+          ],
+          "classificazione": {
+            "p02": [],
+            "p03": [
+              {
+                "code": "B007",
+                "label": "Biota composition",
+                "origine": "manuale"
+              }
+            ],
+            "p08": [
+              {
+                "code": "DS01",
+                "label": "Biological oceanography",
+                "origine": "NVS"
+              },
+              {
+                "code": "DS02",
+                "label": "Chemical oceanography",
+                "origine": "NVS"
+              }
+            ],
+            "inspire": [
+              {
+                "code": "sd",
+                "label": "Distribuzione delle specie",
+                "origine": "manuale"
+              }
+            ],
+            "iso": [],
+            "msfd": []
+          },
+          "note": "Nessun parametro P02 specifico"
+        },
+        {
+          "id": "biologia-terrestri",
+          "uri": "https://solve.corila.it/vocabolario/temi/biologia-terrestri",
+          "label": "Fauna terrestre e invertebrati",
+          "label_en": "Terrestrial fauna and invertebrates",
+          "definizione": "Invertebrati terrestri (es. coleotteri) e fauna dei litorali.",
+          "keyword": "solve-biologia-terrestri",
+          "correlati": [],
+          "classificazione": {
+            "p02": [],
+            "p03": [
+              {
+                "code": "T001",
+                "label": "Terrestrial",
+                "origine": "manuale"
+              }
+            ],
+            "p08": [],
+            "inspire": [
+              {
+                "code": "sd",
+                "label": "Distribuzione delle specie",
+                "origine": "manuale"
+              }
+            ],
+            "iso": [],
+            "msfd": []
+          },
+          "note": "Nessun parametro P02: aggancio manuale"
+        }
+      ]
+    },
+    {
+      "id": "clima",
+      "uri": "https://solve.corila.it/vocabolario/temi/clima",
+      "label": "Clima e scenari",
+      "label_en": "Climate and scenarios",
+      "definizione": "Condizioni meteorologiche, tendenze climatiche e scenari futuri.",
+      "keyword": "solve-clima",
+      "note": "",
+      "classificazione": {
+        "p03": [
           {
-            "rel": "closeMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/B030/"
+            "code": "M010",
+            "label": "Meteorology"
+          }
+        ],
+        "p08": [
+          {
+            "code": "DS05",
+            "label": "Atmosphere"
+          }
+        ],
+        "inspire": [
+          {
+            "code": "ac",
+            "label": "Condizioni atmosferiche"
           },
           {
-            "rel": "closeMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/B045/"
+            "code": "mf",
+            "label": "Elementi geografici meteorologici"
           },
           {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/PATX/"
-          },
+            "code": "nz",
+            "label": "Zone a rischio naturale"
+          }
+        ],
+        "iso": [
           {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/ZATX/"
-          },
-          {
-            "rel": "broadMatch",
-            "uri": "http://inspire.ec.europa.eu/theme/sd"
+            "code": "004",
+            "label": "climatologyMeteorologyAtmosphere"
           }
         ]
       },
-      {
-        "id": "biologia-alloctone",
-        "uri": "https://solve.corila.it/vocabolario/temi/biologia-alloctone",
-        "label": "Specie alloctone invasive",
-        "label_en": "Invasive alien species",
-        "definizione": "Specie alloctone invasive animali e vegetali e azioni di contrasto.",
-        "keyword": "solve-biologia-alloctone",
-        "match": [
+      "sottotemi": [
+        {
+          "id": "clima-meteo",
+          "uri": "https://solve.corila.it/vocabolario/temi/clima-meteo",
+          "label": "Meteorologia",
+          "label_en": "Meteorology",
+          "definizione": "Temperatura dell'aria, vento, precipitazioni, pressione.",
+          "keyword": "solve-clima-meteo",
+          "correlati": [
+            {
+              "id": "apporti-aria",
+              "label": "Qualità dell'aria e deposizioni"
+            },
+            {
+              "id": "idro-onde",
+              "label": "Onde"
+            }
+          ],
+          "classificazione": {
+            "p02": [
+              {
+                "code": "CDTA",
+                "label": "Air temperature",
+                "origine": "manuale"
+              },
+              {
+                "code": "EWSB",
+                "label": "Wind strength and direction",
+                "origine": "manuale"
+              },
+              {
+                "code": "CPRP",
+                "label": "Precipitation and evaporation",
+                "origine": "manuale"
+              },
+              {
+                "code": "CAPH",
+                "label": "Air pressure",
+                "origine": "manuale"
+              }
+            ],
+            "p03": [
+              {
+                "code": "M010",
+                "label": "Meteorology",
+                "origine": "NVS"
+              }
+            ],
+            "p08": [
+              {
+                "code": "DS05",
+                "label": "Atmosphere",
+                "origine": "NVS"
+              }
+            ],
+            "inspire": [
+              {
+                "code": "ac",
+                "label": "Condizioni atmosferiche",
+                "origine": "NVS"
+              },
+              {
+                "code": "mf",
+                "label": "Elementi geografici meteorologici",
+                "origine": "NVS"
+              }
+            ],
+            "iso": [
+              {
+                "code": "004",
+                "label": "climatologyMeteorologyAtmosphere",
+                "origine": "NVS"
+              }
+            ],
+            "msfd": []
+          },
+          "note": ""
+        },
+        {
+          "id": "clima-scenari",
+          "uri": "https://solve.corila.it/vocabolario/temi/clima-scenari",
+          "label": "Scenari e simulazioni",
+          "label_en": "Scenarios and simulations",
+          "definizione": "Scenari climatici e simulazioni modellistiche (es. emissioni, innalzamento del mare).",
+          "keyword": "solve-clima-scenari",
+          "correlati": [
+            {
+              "id": "idro-livello",
+              "label": "Livello del mare e maree"
+            }
+          ],
+          "classificazione": {
+            "p02": [],
+            "p03": [
+              {
+                "code": "M010",
+                "label": "Meteorology",
+                "origine": "manuale"
+              }
+            ],
+            "p08": [
+              {
+                "code": "DS05",
+                "label": "Atmosphere",
+                "origine": "NVS"
+              }
+            ],
+            "inspire": [
+              {
+                "code": "nz",
+                "label": "Zone a rischio naturale",
+                "origine": "manuale"
+              }
+            ],
+            "iso": [],
+            "msfd": []
+          },
+          "note": "Concetto di contesto: nessun parametro P02"
+        }
+      ]
+    },
+    {
+      "id": "usi",
+      "uri": "https://solve.corila.it/vocabolario/temi/usi",
+      "label": "Servizi ecosistemici e usi",
+      "label_en": "Ecosystem services and uses",
+      "definizione": "Attività umane, usi del mare e della laguna, patrimonio, pianificazione.",
+      "keyword": "solve-usi",
+      "note": "",
+      "classificazione": {
+        "p03": [
           {
-            "rel": "closeMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/B007/"
+            "code": "H004",
+            "label": "Fisheries"
           },
           {
-            "rel": "broadMatch",
-            "uri": "http://inspire.ec.europa.eu/theme/sd"
+            "code": "H006",
+            "label": "Aquaculture"
+          },
+          {
+            "code": "H016",
+            "label": "Transport"
+          },
+          {
+            "code": "H010",
+            "label": "Energy"
+          },
+          {
+            "code": "H015",
+            "label": "Tourism"
+          },
+          {
+            "code": "H009",
+            "label": "Cultural Heritage"
+          },
+          {
+            "code": "H007",
+            "label": "Area Management/Designation"
+          }
+        ],
+        "p08": [
+          {
+            "code": "DS11",
+            "label": "Fisheries and aquaculture"
+          },
+          {
+            "code": "DS12",
+            "label": "Human activities"
+          }
+        ],
+        "inspire": [
+          {
+            "code": "sd",
+            "label": "Distribuzione delle specie"
+          },
+          {
+            "code": "hb",
+            "label": "Habitat e biotopi"
+          },
+          {
+            "code": "af",
+            "label": "Impianti agricoli e di acquacoltura"
+          },
+          {
+            "code": "tn",
+            "label": "Reti di trasporto"
+          },
+          {
+            "code": "er",
+            "label": "Risorse energetiche"
+          },
+          {
+            "code": "us",
+            "label": "Servizi di pubblica utilità"
+          },
+          {
+            "code": "ps",
+            "label": "Siti protetti"
+          },
+          {
+            "code": "am",
+            "label": "Zone sottoposte a gestione e limitazioni"
+          }
+        ],
+        "iso": [
+          {
+            "code": "005",
+            "label": "economy"
           }
         ]
       },
-      {
-        "id": "biologia-terrestri",
-        "uri": "https://solve.corila.it/vocabolario/temi/biologia-terrestri",
-        "label": "Fauna terrestre e invertebrati",
-        "label_en": "Terrestrial fauna and invertebrates",
-        "definizione": "Invertebrati terrestri (es. coleotteri) e fauna dei litorali.",
-        "keyword": "solve-biologia-terrestri",
-        "match": [
-          {
-            "rel": "broadMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P08/current/DS08/"
+      "sottotemi": [
+        {
+          "id": "usi-pesca",
+          "uri": "https://solve.corila.it/vocabolario/temi/usi-pesca",
+          "label": "Pesca e acquacoltura",
+          "label_en": "Fisheries and aquaculture",
+          "definizione": "Attività di pesca, concessioni, molluschicoltura e ostricoltura.",
+          "keyword": "solve-usi-pesca",
+          "correlati": [
+            {
+              "id": "biologia-benthos",
+              "label": "Benthos e molluschi"
+            },
+            {
+              "id": "biologia-pesci",
+              "label": "Ittiofauna"
+            }
+          ],
+          "classificazione": {
+            "p02": [
+              {
+                "code": "FCST",
+                "label": "Fish and shellfish catch statistics",
+                "origine": "manuale"
+              },
+              {
+                "code": "FEFF",
+                "label": "Fishing effort",
+                "origine": "manuale"
+              }
+            ],
+            "p03": [
+              {
+                "code": "H004",
+                "label": "Fisheries",
+                "origine": "NVS"
+              },
+              {
+                "code": "H006",
+                "label": "Aquaculture",
+                "origine": "manuale"
+              }
+            ],
+            "p08": [
+              {
+                "code": "DS11",
+                "label": "Fisheries and aquaculture",
+                "origine": "NVS"
+              },
+              {
+                "code": "DS12",
+                "label": "Human activities",
+                "origine": "NVS"
+              }
+            ],
+            "inspire": [
+              {
+                "code": "sd",
+                "label": "Distribuzione delle specie",
+                "origine": "NVS"
+              },
+              {
+                "code": "hb",
+                "label": "Habitat e biotopi",
+                "origine": "NVS"
+              },
+              {
+                "code": "af",
+                "label": "Impianti agricoli e di acquacoltura",
+                "origine": "manuale"
+              }
+            ],
+            "iso": [
+              {
+                "code": "005",
+                "label": "economy",
+                "origine": "NVS"
+              }
+            ],
+            "msfd": []
           },
-          {
-            "rel": "closeMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/T001/"
+          "note": "H006 Aquaculture aggiunto a mano: FCST e FEFF coprono solo la pesca"
+        },
+        {
+          "id": "usi-trasporti",
+          "uri": "https://solve.corila.it/vocabolario/temi/usi-trasporti",
+          "label": "Navigazione e porti",
+          "label_en": "Shipping and ports",
+          "definizione": "Traffico navale, porti e rotte.",
+          "keyword": "solve-usi-trasporti",
+          "correlati": [],
+          "classificazione": {
+            "p02": [],
+            "p03": [
+              {
+                "code": "H016",
+                "label": "Transport",
+                "origine": "manuale"
+              }
+            ],
+            "p08": [
+              {
+                "code": "DS12",
+                "label": "Human activities",
+                "origine": "NVS"
+              }
+            ],
+            "inspire": [
+              {
+                "code": "tn",
+                "label": "Reti di trasporto",
+                "origine": "manuale"
+              }
+            ],
+            "iso": [],
+            "msfd": []
           },
+          "note": "Nessun parametro P02: aggancio manuale"
+        },
+        {
+          "id": "usi-energia",
+          "uri": "https://solve.corila.it/vocabolario/temi/usi-energia",
+          "label": "Energia",
+          "label_en": "Energy",
+          "definizione": "Impianti energetici in mare (es. eolico).",
+          "keyword": "solve-usi-energia",
+          "correlati": [],
+          "classificazione": {
+            "p02": [],
+            "p03": [
+              {
+                "code": "H010",
+                "label": "Energy",
+                "origine": "manuale"
+              }
+            ],
+            "p08": [
+              {
+                "code": "DS12",
+                "label": "Human activities",
+                "origine": "NVS"
+              }
+            ],
+            "inspire": [
+              {
+                "code": "er",
+                "label": "Risorse energetiche",
+                "origine": "manuale"
+              }
+            ],
+            "iso": [],
+            "msfd": []
+          },
+          "note": "Nessun parametro P02: aggancio manuale"
+        },
+        {
+          "id": "usi-turismo",
+          "uri": "https://solve.corila.it/vocabolario/temi/usi-turismo",
+          "label": "Turismo e fruizione",
+          "label_en": "Tourism and recreation",
+          "definizione": "Turismo, fruizione, percorsi e servizi ai visitatori.",
+          "keyword": "solve-usi-turismo",
+          "correlati": [],
+          "classificazione": {
+            "p02": [],
+            "p03": [
+              {
+                "code": "H015",
+                "label": "Tourism",
+                "origine": "manuale"
+              }
+            ],
+            "p08": [
+              {
+                "code": "DS12",
+                "label": "Human activities",
+                "origine": "NVS"
+              }
+            ],
+            "inspire": [
+              {
+                "code": "us",
+                "label": "Servizi di pubblica utilità",
+                "origine": "manuale"
+              }
+            ],
+            "iso": [],
+            "msfd": []
+          },
+          "note": "Nessun parametro P02: aggancio manuale"
+        },
+        {
+          "id": "usi-patrimonio",
+          "uri": "https://solve.corila.it/vocabolario/temi/usi-patrimonio",
+          "label": "Patrimonio culturale",
+          "label_en": "Cultural heritage",
+          "definizione": "Beni culturali, archeologici e paesaggistici, relitti.",
+          "keyword": "solve-usi-patrimonio",
+          "correlati": [],
+          "classificazione": {
+            "p02": [],
+            "p03": [
+              {
+                "code": "H009",
+                "label": "Cultural Heritage",
+                "origine": "manuale"
+              }
+            ],
+            "p08": [
+              {
+                "code": "DS12",
+                "label": "Human activities",
+                "origine": "NVS"
+              }
+            ],
+            "inspire": [
+              {
+                "code": "ps",
+                "label": "Siti protetti",
+                "origine": "manuale"
+              }
+            ],
+            "iso": [],
+            "msfd": []
+          },
+          "note": "Nessun parametro P02: aggancio manuale"
+        },
+        {
+          "id": "usi-pianificazione",
+          "uri": "https://solve.corila.it/vocabolario/temi/usi-pianificazione",
+          "label": "Pianificazione e vincoli",
+          "label_en": "Planning and restrictions",
+          "definizione": "Pianificazione dello spazio marittimo, zonizzazioni, vincoli, attori.",
+          "keyword": "solve-usi-pianificazione",
+          "correlati": [
+            {
+              "id": "habitat-protette",
+              "label": "Aree protette"
+            }
+          ],
+          "classificazione": {
+            "p02": [],
+            "p03": [
+              {
+                "code": "H007",
+                "label": "Area Management/Designation",
+                "origine": "manuale"
+              }
+            ],
+            "p08": [
+              {
+                "code": "DS12",
+                "label": "Human activities",
+                "origine": "NVS"
+              }
+            ],
+            "inspire": [
+              {
+                "code": "am",
+                "label": "Zone sottoposte a gestione e limitazioni",
+                "origine": "manuale"
+              }
+            ],
+            "iso": [],
+            "msfd": []
+          },
+          "note": "Nessun parametro P02: aggancio manuale"
+        }
+      ]
+    },
+    {
+      "id": "base",
+      "uri": "https://solve.corila.it/vocabolario/temi/base",
+      "label": "Base cartografica",
+      "label_en": "Base mapping",
+      "definizione": "Strati di riferimento: confini, idrografia, toponimi, immagini, griglie.",
+      "keyword": "solve-base",
+      "note": "Nodo trasversale: fuori dal grafo o nodo a parte (da decidere)",
+      "classificazione": {
+        "p03": [
           {
-            "rel": "broadMatch",
-            "uri": "http://inspire.ec.europa.eu/theme/sd"
+            "code": "Z005",
+            "label": "Administration and dimensions"
           }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "clima",
-    "uri": "https://solve.corila.it/vocabolario/temi/clima",
-    "label": "Clima e scenari",
-    "label_en": "Climate and scenarios",
-    "definizione": "Condizioni meteorologiche, tendenze climatiche e scenari futuri.",
-    "keyword": "solve-clima",
-    "sottotemi": [
-      {
-        "id": "clima-meteo",
-        "uri": "https://solve.corila.it/vocabolario/temi/clima-meteo",
-        "label": "Meteorologia",
-        "label_en": "Meteorology",
-        "definizione": "Temperatura dell'aria, vento, precipitazioni, pressione.",
-        "keyword": "solve-clima-meteo",
-        "match": [
+        ],
+        "p08": [],
+        "inspire": [
           {
-            "rel": "closeMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/M010/"
+            "code": "au",
+            "label": "Unità amministrative"
           },
           {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/CDTA/"
+            "code": "hy",
+            "label": "Idrografia"
           },
           {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/EWSB/"
-          },
-          {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/CPRP/"
-          },
-          {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/CAPH/"
-          },
-          {
-            "rel": "broadMatch",
-            "uri": "http://inspire.ec.europa.eu/theme/mf"
+            "code": "oi",
+            "label": "Orto immagini"
           }
-        ]
+        ],
+        "iso": []
       },
-      {
-        "id": "clima-scenari",
-        "uri": "https://solve.corila.it/vocabolario/temi/clima-scenari",
-        "label": "Scenari e simulazioni",
-        "label_en": "Scenarios and simulations",
-        "definizione": "Scenari climatici e simulazioni modellistiche (es. emissioni, innalzamento del mare).",
-        "keyword": "solve-clima-scenari",
-        "match": [
-          {
-            "rel": "closeMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/M010/"
+      "sottotemi": [
+        {
+          "id": "base-confini",
+          "uri": "https://solve.corila.it/vocabolario/temi/base-confini",
+          "label": "Confini amministrativi",
+          "label_en": "Administrative boundaries",
+          "definizione": "Comuni, regioni, compartimenti, conterminazione lagunare.",
+          "keyword": "solve-base-confini",
+          "correlati": [],
+          "classificazione": {
+            "p02": [],
+            "p03": [
+              {
+                "code": "Z005",
+                "label": "Administration and dimensions",
+                "origine": "manuale"
+              }
+            ],
+            "p08": [],
+            "inspire": [
+              {
+                "code": "au",
+                "label": "Unità amministrative",
+                "origine": "manuale"
+              }
+            ],
+            "iso": [],
+            "msfd": []
           },
-          {
-            "rel": "broadMatch",
-            "uri": "http://inspire.ec.europa.eu/theme/nz"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "usi",
-    "uri": "https://solve.corila.it/vocabolario/temi/usi",
-    "label": "Servizi ecosistemici e usi",
-    "label_en": "Ecosystem services and uses",
-    "definizione": "Attività umane, usi del mare e della laguna, patrimonio, pianificazione.",
-    "keyword": "solve-usi",
-    "sottotemi": [
-      {
-        "id": "usi-pesca",
-        "uri": "https://solve.corila.it/vocabolario/temi/usi-pesca",
-        "label": "Pesca e acquacoltura",
-        "label_en": "Fisheries and aquaculture",
-        "definizione": "Attività di pesca, concessioni, molluschicoltura e ostricoltura.",
-        "keyword": "solve-usi-pesca",
-        "match": [
-          {
-            "rel": "closeMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/H004/"
+          "note": ""
+        },
+        {
+          "id": "base-idrografia",
+          "uri": "https://solve.corila.it/vocabolario/temi/base-idrografia",
+          "label": "Idrografia e bacini",
+          "label_en": "Hydrography and catchments",
+          "definizione": "Reticolo idrografico, bacini idrografici, specchi d'acqua.",
+          "keyword": "solve-base-idrografia",
+          "correlati": [
+            {
+              "id": "apporti-fiumi",
+              "label": "Fiumi e portate"
+            }
+          ],
+          "classificazione": {
+            "p02": [],
+            "p03": [],
+            "p08": [],
+            "inspire": [
+              {
+                "code": "hy",
+                "label": "Idrografia",
+                "origine": "manuale"
+              }
+            ],
+            "iso": [],
+            "msfd": []
           },
-          {
-            "rel": "closeMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/H006/"
+          "note": ""
+        },
+        {
+          "id": "base-immagini",
+          "uri": "https://solve.corila.it/vocabolario/temi/base-immagini",
+          "label": "Immagini e rilievi",
+          "label_en": "Imagery and surveys",
+          "definizione": "Ortofoto, rilievi da drone, raster di riferimento.",
+          "keyword": "solve-base-immagini",
+          "correlati": [],
+          "classificazione": {
+            "p02": [],
+            "p03": [],
+            "p08": [],
+            "inspire": [
+              {
+                "code": "oi",
+                "label": "Orto immagini",
+                "origine": "manuale"
+              }
+            ],
+            "iso": [],
+            "msfd": []
           },
-          {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/FCST/"
-          },
-          {
-            "rel": "narrowMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/FEFF/"
-          },
-          {
-            "rel": "broadMatch",
-            "uri": "http://inspire.ec.europa.eu/theme/af"
-          }
-        ]
-      },
-      {
-        "id": "usi-trasporti",
-        "uri": "https://solve.corila.it/vocabolario/temi/usi-trasporti",
-        "label": "Navigazione e porti",
-        "label_en": "Shipping and ports",
-        "definizione": "Traffico navale, porti e rotte.",
-        "keyword": "solve-usi-trasporti",
-        "match": [
-          {
-            "rel": "closeMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/H016/"
-          },
-          {
-            "rel": "broadMatch",
-            "uri": "http://inspire.ec.europa.eu/theme/tn"
-          }
-        ]
-      },
-      {
-        "id": "usi-energia",
-        "uri": "https://solve.corila.it/vocabolario/temi/usi-energia",
-        "label": "Energia",
-        "label_en": "Energy",
-        "definizione": "Impianti energetici in mare (es. eolico).",
-        "keyword": "solve-usi-energia",
-        "match": [
-          {
-            "rel": "closeMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/H010/"
-          },
-          {
-            "rel": "broadMatch",
-            "uri": "http://inspire.ec.europa.eu/theme/er"
-          }
-        ]
-      },
-      {
-        "id": "usi-turismo",
-        "uri": "https://solve.corila.it/vocabolario/temi/usi-turismo",
-        "label": "Turismo e fruizione",
-        "label_en": "Tourism and recreation",
-        "definizione": "Turismo, fruizione, percorsi e servizi ai visitatori.",
-        "keyword": "solve-usi-turismo",
-        "match": [
-          {
-            "rel": "closeMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/H015/"
-          },
-          {
-            "rel": "broadMatch",
-            "uri": "http://inspire.ec.europa.eu/theme/us"
-          }
-        ]
-      },
-      {
-        "id": "usi-patrimonio",
-        "uri": "https://solve.corila.it/vocabolario/temi/usi-patrimonio",
-        "label": "Patrimonio culturale",
-        "label_en": "Cultural heritage",
-        "definizione": "Beni culturali, archeologici e paesaggistici, relitti.",
-        "keyword": "solve-usi-patrimonio",
-        "match": [
-          {
-            "rel": "closeMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/H009/"
-          },
-          {
-            "rel": "broadMatch",
-            "uri": "http://inspire.ec.europa.eu/theme/ps"
-          }
-        ]
-      },
-      {
-        "id": "usi-pianificazione",
-        "uri": "https://solve.corila.it/vocabolario/temi/usi-pianificazione",
-        "label": "Pianificazione e vincoli",
-        "label_en": "Planning and restrictions",
-        "definizione": "Pianificazione dello spazio marittimo, zonizzazioni, vincoli, attori.",
-        "keyword": "solve-usi-pianificazione",
-        "match": [
-          {
-            "rel": "closeMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/H007/"
-          },
-          {
-            "rel": "broadMatch",
-            "uri": "http://inspire.ec.europa.eu/theme/am"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "base",
-    "uri": "https://solve.corila.it/vocabolario/temi/base",
-    "label": "Base cartografica",
-    "label_en": "Base mapping",
-    "definizione": "Strati di riferimento: confini, idrografia, toponimi, immagini, griglie.",
-    "keyword": "solve-base",
-    "sottotemi": [
-      {
-        "id": "base-confini",
-        "uri": "https://solve.corila.it/vocabolario/temi/base-confini",
-        "label": "Confini amministrativi",
-        "label_en": "Administrative boundaries",
-        "definizione": "Comuni, regioni, compartimenti, conterminazione lagunare.",
-        "keyword": "solve-base-confini",
-        "match": [
-          {
-            "rel": "closeMatch",
-            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/Z005/"
-          },
-          {
-            "rel": "broadMatch",
-            "uri": "http://inspire.ec.europa.eu/theme/au"
-          }
-        ]
-      },
-      {
-        "id": "base-idrografia",
-        "uri": "https://solve.corila.it/vocabolario/temi/base-idrografia",
-        "label": "Idrografia e bacini",
-        "label_en": "Hydrography and catchments",
-        "definizione": "Reticolo idrografico, bacini idrografici, specchi d'acqua.",
-        "keyword": "solve-base-idrografia",
-        "match": [
-          {
-            "rel": "broadMatch",
-            "uri": "http://inspire.ec.europa.eu/theme/hy"
-          }
-        ]
-      },
-      {
-        "id": "base-immagini",
-        "uri": "https://solve.corila.it/vocabolario/temi/base-immagini",
-        "label": "Immagini e rilievi",
-        "label_en": "Imagery and surveys",
-        "definizione": "Ortofoto, rilievi da drone, raster di riferimento.",
-        "keyword": "solve-base-immagini",
-        "match": [
-          {
-            "rel": "broadMatch",
-            "uri": "http://inspire.ec.europa.eu/theme/oi"
-          }
-        ]
-      }
-    ]
-  }
-]
+          "note": ""
+        }
+      ]
+    }
+  ]
+}

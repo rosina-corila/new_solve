@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SOLVe – esplora la laguna</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* VOICE: sistema osservativo, calmo e preciso: il dato al centro, niente rivista
+   IDEA: una carta nautica della laguna in cui le componenti dell'ecosistema sono costellazioni
+   PICTURE: la costellazione delle 8 componenti attorno alla laguna, legami ecosistemici come rotte
+   COLOUR and TYPE: acqua di laguna (verde-azzurro profondo), barena (verde salso), un accento ocra di briccola; Newsreader + Public Sans
+   LAYOUT: domanda e costellazione nel primo schermo, sotto i sottotemi e l'elenco dei layer */
+:root{color-scheme:light dark;
+--bg:light-dark(#f3f6f4,#0c1a1c);--panel:light-dark(#ffffff,#122427);--ink:light-dark(#10292c,#e4eeec);--quiet:light-dark(#4f6a6b,#9db6b4);
+--line:light-dark(#d5e1de,#24403f);--water:light-dark(#0f5f66,#5cc3c2);--marsh:light-dark(#4f7d3a,#9ccf7d);--ochre:light-dark(#b0642a,#e5a061);
+--tint:light-dark(#e3eeeb,#17302f)}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 "Public Sans",system-ui,sans-serif;overflow-x:clip}
+a{color:var(--water)}
+.band{padding:clamp(24px,4vw,56px) max(5vw,16px)}
+.top{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.35fr);gap:clamp(16px,3vw,40px);align-items:center;max-width:1240px;margin:0 auto}
+.kick{font-size:14px;color:var(--quiet);margin:0 0 10px}
+h1{font:500 clamp(32px,4.6vw,50px)/1.05 "Newsreader",Georgia,serif;margin:0 0 16px;text-wrap:balance}
+.lead{max-width:34em;color:var(--quiet);margin:0 0 20px}
+.search{display:flex;gap:8px;max-width:28em}
+.search input{flex:1;font:16px "Public Sans",sans-serif;padding:11px 14px;border:1px solid var(--line);border-radius:10px;background:var(--panel);color:var(--ink);min-height:44px}
+.search input:focus-visible,button:focus-visible,.chip:focus-visible{outline:2px solid var(--water);outline-offset:2px}
+.stats{display:flex;gap:22px;margin-top:20px;font-size:14px;color:var(--quiet)}
+.stats b{display:block;font:500 26px "Newsreader",serif;color:var(--ink)}
+.fig{position:relative;aspect-ratio:1.52}
+.fig>svg{position:absolute;inset:0;width:100%;height:100%}
+.node{cursor:pointer}
+.node circle.halo{fill:var(--water);opacity:.12;transition:opacity .25s}
+.node:hover circle.halo,.node.on circle.halo{opacity:.3}
+.node circle.core{fill:var(--panel);stroke:var(--water);stroke-width:2}
+.node.on circle.core{fill:var(--water)}
+.node text{fill:var(--ink);font:500 16px "Public Sans",sans-serif;pointer-events:none}
+.node text.n{fill:var(--quiet);font-size:13.5px;font-weight:400}
+.node.on text.n{fill:var(--quiet)}
+.route{stroke:var(--ochre);stroke-dasharray:3 5;fill:none;opacity:.55}
+.route.on{opacity:1;stroke-width:2}
+.center text{font:500 18px "Newsreader",serif;fill:var(--ink)}
+@media (prefers-reduced-motion:no-preference){.drift{animation:drift 9s ease-in-out infinite alternate}.d2{animation-duration:11s}.d3{animation-duration:13s}
+@keyframes drift{from{transform:translate(0,0)}to{transform:translate(3px,-4px)}}}
+.base{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:10px;font-size:13px;color:var(--quiet)}
+.wrap{max-width:1240px;margin:0 auto}
+.thead{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:12px;border-top:1px solid var(--line);padding-top:24px}
+h2{font:500 clamp(24px,3vw,32px)/1.1 "Newsreader",serif;margin:0}
+.def{color:var(--quiet);margin:6px 0 16px;max-width:60em}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 10px}
+.chip{border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:999px;padding:8px 14px;font:14px "Public Sans",sans-serif;cursor:pointer;min-height:40px}
+.chip small{color:var(--quiet);margin-left:4px}
+.chip.on{background:var(--water);border-color:var(--water);color:var(--bg)}
+.chip.on small{color:var(--bg)}
+.chip.rel{border-style:dashed;border-color:var(--ochre)}
+.see{font-size:13px;color:var(--quiet);margin:4px 0 18px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.list{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 18px;display:flex;flex-direction:column;gap:8px}
+.card h3{font:500 17px/1.3 "Public Sans",sans-serif;margin:0}
+.meta{font-size:13px;color:var(--quiet);display:flex;gap:10px;flex-wrap:wrap}
+.tag{font-size:12px;background:var(--tint);border-radius:6px;padding:2px 8px;color:var(--ink)}
+.ab{font-size:14px;color:var(--quiet);margin:0;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.card .go{margin-top:auto;font-size:14px;font-weight:500;text-decoration:none}
+.empty{color:var(--quiet);padding:20px 0}
+.more{margin:18px auto 0;display:block}
+button{font:14px "Public Sans",sans-serif;border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:10px;padding:10px 16px;cursor:pointer;min-height:44px}
+.note{font-size:13px;color:var(--quiet);border-top:1px solid var(--line);margin-top:32px;padding-top:14px}
+@media(max-width:820px){.top{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:520px){.node text{font-size:21px}.node text.n{font-size:17px}.stats{gap:14px}.fig{margin:0 -12px}}
+</style>
+</head>
+<body>
+<section class="band">
+ <div class="top">
+  <div>
+   <p class="kick">SOLVe · Sistema Osservativo della Laguna di Venezia · prototipo</p>
+   <h1>Cosa vuoi sapere sulla laguna di Venezia?</h1>
+   <p class="lead">Scegli una componente dell'ecosistema nella costellazione: troverai i dati di SOLVe che la descrivono. Le linee tratteggiate sono i legami ecosistemici tra le componenti.</p>
+   <form class="search" id="sf" role="search"><input id="q" type="search" placeholder="ossigeno, fanerogame, Livenza…" aria-label="Cerca tra i layer"><button type="submit">Cerca</button></form>
+   <div class="stats" id="stats"></div>
+  </div>
+  <div class="fig" id="fig"><svg id="sky" viewBox="-90 0 820 540" role="img" aria-label="Costellazione delle componenti della laguna"></svg></div>
+ </div>
+</section>
+<section class="band" style="padding-top:0">
+ <div class="wrap">
+  <div id="res"><p class="empty">Caricamento del catalogo…</p></div>
+  <p class="note">Prototipo del 25/11/2026: i layer pubblici di SOLVe sono stati assegnati ai temi con regole automatiche sul titolo e sull'abstract, ancora da rivedere. Il vocabolario dei temi è in revisione (bozza v0.2).</p>
+ </div>
+</section>
+<script>
+{
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const TIPO = {dataset:'Layer', map:'Mappa', dashboard:'Dashboard', geostory:'Geostoria'};
+const SOLVE = 'https://solve.corila.it/catalogue/#/';
+let T = [], L = [], M = {}, S = {}, shown = 24, query = '';
+
+const sky = document.getElementById('sky');
+function layout() {
+  const macro = T.filter(m => m.id !== 'base');
+  const cx = 320, cy = 270, rx = 215, ry = 200;
+  macro.forEach((m, i) => { const a = -Math.PI / 2 + i * 2 * Math.PI / macro.length; m.x = cx + rx * Math.cos(a); m.y = cy + ry * Math.sin(a); });
+  const pair = {};
+  macro.forEach(m => m.s.forEach(s => s.r.forEach(r => { const o = S[r].m; if (o !== m.id && o !== 'base') { const k = [m.id, o].sort().join('~'); pair[k] = (pair[k] || 0) + 1; } })));
+  const routes = Object.entries(pair).map(([k, n]) => { const [a, b] = k.split('~'); const A = M[a], B = M[b];
+    const mx = (A.x + B.x) / 2, my = (A.y + B.y) / 2, qx = mx + (cx - mx) * 0.35, qy = my + (cy - my) * 0.35;
+    return `<path class="route" data-a="${a}" data-b="${b}" d="M${A.x},${A.y} Q${qx},${qy} ${B.x},${B.y}" stroke-width="${0.8 + n * 0.5}"/>`; }).join('');
+  const max = Math.max(...macro.map(m => m.count));
+  const nodes = macro.map((m, i) => { const r = 14 + 22 * Math.sqrt(m.count / max);
+    const right = m.x >= cx - 4, tx = right ? r + 8 : -r - 8, anchor = right ? 'start' : 'end';
+    const lines = m.l.length > 18 ? [m.l.slice(0, m.l.lastIndexOf(' ', 18)), m.l.slice(m.l.lastIndexOf(' ', 18) + 1)] : [m.l];
+    return `<g class="drift d${i % 3 + 1}"><g class="node" data-id="${m.id}" tabindex="0" role="button" aria-label="${esc(m.l)}, ${m.count} risorse" transform="translate(${m.x},${m.y})">
+      <circle class="halo" r="${r + 10}"/><circle class="core" r="${r}"/>
+      ${lines.map((t, j) => `<text x="${tx}" y="${(j - (lines.length - 1) / 2) * 15 + 1}" text-anchor="${anchor}" dominant-baseline="middle">${esc(t)}</text>`).join('')}
+      <text class="n" x="${tx}" y="${(lines.length) * 8 + 10}" text-anchor="${anchor}">${m.count} risorse</text></g></g>`; }).join('');
+  sky.innerHTML = `<g>${routes}</g><g class="center"><circle cx="${cx}" cy="${cy}" r="58" fill="var(--tint)"/><circle cx="${cx}" cy="${cy}" r="58" fill="none" stroke="var(--line)"/>
+    <text x="${cx}" y="${cy - 4}" text-anchor="middle">Laguna</text><text x="${cx}" y="${cy + 16}" text-anchor="middle">di Venezia</text></g>${nodes}`;
+  sky.querySelectorAll('.node').forEach(n => { n.onclick = () => go(n.dataset.id); n.onkeydown = e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); go(n.dataset.id); } }; });
+}
+function mark(mid) {
+  sky.querySelectorAll('.node').forEach(n => n.classList.toggle('on', n.dataset.id === mid));
+  sky.querySelectorAll('.route').forEach(p => p.classList.toggle('on', p.dataset.a === mid || p.dataset.b === mid));
+}
+const inTema = (l, id) => S[id] ? l.sub.includes(id) : l.mac.includes(id);
+function matches(l) { if (!query) return true; const q = query.toLowerCase(); return (l.ti + ' ' + l.ab).toLowerCase().includes(q); }
+function card(l) {
+  const subs = l.sub.map(s => `<span class="tag">${esc(S[s]?.l || s)}</span>`).join('');
+  return `<article class="card"><div class="meta"><span>${esc(TIPO[l.t] || l.t)}</span>${l.dt ? `<span>${esc(l.dt.slice(0, 4))}</span>` : ''}</div>
+    <h3>${esc(l.ti)}</h3>${l.ab && !/^no abstract/i.test(l.ab) ? `<p class="ab">${esc(l.ab)}</p>` : ''}
+    <div class="meta">${subs}</div><a class="go" href="${SOLVE}${esc(l.t)}/${esc(l.pk)}" target="_blank" rel="noopener">Apri in SOLVe ↗</a></article>`;
+}
+function render() {
+  const id = decodeURIComponent(location.hash.slice(1));
+  const res = document.getElementById('res');
+  let title, def = '', items, chips = '', see = '';
+  const sub = S[id], mac = M[id] || (sub && M[sub.m]);
+  mark(mac ? mac.id : null);
+  if (mac) {
+    items = L.filter(l => inTema(l, id) && matches(l));
+    title = sub ? sub.l : mac.l; def = sub ? sub.d : mac.d;
+    chips = `<button class="chip ${sub ? '' : 'on'}" data-go="${mac.id}">Tutto il tema<small>${L.filter(l => l.mac.includes(mac.id)).length}</small></button>` +
+      mac.s.map(s => { const n = L.filter(l => l.sub.includes(s.id)).length; return `<button class="chip ${s.id === id ? 'on' : ''}" data-go="${s.id}">${esc(s.l)}<small>${n}</small></button>`; }).join('');
+    if (sub && sub.r.length) see = `<div class="see">Vedi anche:${sub.r.map(r => `<button class="chip rel" data-go="${r}">${esc(S[r].l)}</button>`).join('')}</div>`;
+  } else {
+    items = query ? L.filter(matches) : [];
+    title = query ? `Risultati per "${esc(query)}"` : 'Scegli una componente';
+    def = query ? '' : 'Oppure cerca una parola. Gli strati di base (confini, idrografia, immagini) sono raccolti qui sotto.';
+    const base = M.base;
+    if (base && !query) chips = base.s.map(s => `<button class="chip" data-go="${s.id}">${esc(s.l)}<small>${L.filter(l => l.sub.includes(s.id)).length}</small></button>`).join('');
+  }
+  const list = items.slice(0, shown).map(card).join('');
+  res.innerHTML = `<div class="thead"><h2>${title}</h2>${mac || query ? `<span class="meta">${items.length} risorse${query && mac ? ` con "${esc(query)}"` : ''}</span>` : ''}</div>
+    <p class="def">${esc(def)}</p><div class="chips">${chips}</div>${see}
+    ${items.length ? `<div class="list">${list}</div>` : (mac || query ? '<p class="empty">Nessuna risorsa per questa scelta: prova un altro sottotema o togli la parola cercata.</p>' : '')}
+    ${items.length > shown ? `<button class="more" id="more">Mostra altre ${Math.min(24, items.length - shown)}</button>` : ''}`;
+  res.querySelectorAll('[data-go]').forEach(b => b.onclick = () => { shown = 24; location.hash = b.dataset.go; });
+  const more = document.getElementById('more'); if (more) more.onclick = () => { shown += 24; render(); };
+}
+function go(id) { shown = 24; if (location.hash.slice(1) === id) render(); else location.hash = id; document.getElementById('res').scrollIntoView({behavior: 'smooth', block: 'start'}); }
+document.getElementById('sf').addEventListener('submit', e => { e.preventDefault(); query = document.getElementById('q').value.trim(); shown = 24; render(); });
+window.addEventListener('hashchange', render);
+Promise.all([fetch('data/temi.json').then(r => r.json()), fetch('data/layer.json').then(r => r.json())]).then(([t, l]) => {
+  T = t; L = l;
+  T.forEach(m => { M[m.id] = m; m.s.forEach(s => { s.m = m.id; S[s.id] = s; }); m.count = L.filter(x => x.mac.includes(m.id)).length; });
+  const tot = L.length, temi = T.reduce((a, m) => a + m.s.length, 0);
+  document.getElementById('stats').innerHTML = `<span><b>${tot}</b>risorse pubbliche</span><span><b>${T.length - 1}</b>componenti</span><span><b>${temi}</b>temi</span>`;
+  layout(); render();
+}).catch(() => { document.getElementById('res').innerHTML = '<p class="empty">Non riesco a leggere i dati del prototipo (data/temi.json, data/layer.json).</p>'; });
+}
+</script>
+</body>
+</html>
