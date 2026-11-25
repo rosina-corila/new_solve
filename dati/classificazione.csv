@@ -1,0 +1,456 @@
+pk,tipo,titolo,proposta,fonte,revisione,link
+1548,map,LIFE Forestall - Vegetazione,habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/map/1548
+1547,dataset,LIFE Forestall - Vegetazione,habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/1547
+1543,dataset,Brigantine - Traiettoria ASV - Rovigno - 07/06/2026,colonna-ts colonna-ossigeno colonna-clorofilla colonna-torbidita,titolo,,https://solve.corila.it/catalogue/#/dataset/1543
+1542,dataset,Brigantine - Traiettoria ASV - 10/06/2025,colonna-ts colonna-ossigeno colonna-clorofilla colonna-torbidita,titolo,,https://solve.corila.it/catalogue/#/dataset/1542
+1539,dataset,Brigantine - Traiettoria ASV - 02/05/2026 (sabato),colonna-ts colonna-ossigeno colonna-clorofilla colonna-torbidita,titolo,,https://solve.corila.it/catalogue/#/dataset/1539
+1538,dataset,Brigantine - Traiettoria ASV - Grado - 03/05/2026,colonna-ts colonna-ossigeno colonna-clorofilla colonna-torbidita,titolo,,https://solve.corila.it/catalogue/#/dataset/1538
+1537,dataset,Brigantine - Traiettoria ASV - Monfalcone - 17/04/2026,colonna-ts colonna-ossigeno colonna-clorofilla colonna-torbidita,titolo,,https://solve.corila.it/catalogue/#/dataset/1537
+1536,dataset,Brigantine - Traiettoria ASV - test 17/04/2026 (11:02),colonna-ts colonna-ossigeno colonna-clorofilla colonna-torbidita,titolo,,https://solve.corila.it/catalogue/#/dataset/1536
+1535,dataset,Brigantine - Traiettoria ASV - test 17/04/2026 (11:49),colonna-ts colonna-ossigeno colonna-clorofilla colonna-torbidita,titolo,,https://solve.corila.it/catalogue/#/dataset/1535
+1534,dataset,Brigantine - Traiettoria ASV - Monfalcone - 11/04/2026,colonna-ts colonna-ossigeno colonna-clorofilla colonna-torbidita,titolo,,https://solve.corila.it/catalogue/#/dataset/1534
+1533,dataset,MSP Italia - Zonizzazione,usi-pianificazione,titolo,,https://solve.corila.it/catalogue/#/dataset/1533
+1532,dataset,Brigantine - Traiettoria ASV - Monfalcone - 11/04/2025,colonna-ts colonna-ossigeno colonna-clorofilla colonna-torbidita,titolo,,https://solve.corila.it/catalogue/#/dataset/1532
+1531,dataset,Brigantine - transetto test Venezia,colonna-ts colonna-ossigeno colonna-clorofilla colonna-torbidita,titolo,,https://solve.corila.it/catalogue/#/dataset/1531
+1530,dataset,Brigantine - drone test laguna Venezia,base-immagini,titolo,,https://solve.corila.it/catalogue/#/dataset/1530
+1529,dataset,Brigantine - Traiettoria ASV - test Pola,colonna-ts colonna-ossigeno colonna-clorofilla colonna-torbidita,titolo,,https://solve.corila.it/catalogue/#/dataset/1529
+1528,dataset,Brigantine - Traiettoria ASV - test Marano,colonna-ts colonna-ossigeno colonna-clorofilla colonna-torbidita,titolo,,https://solve.corila.it/catalogue/#/dataset/1528
+1522,dataset,Buffer corpi idrici fluviali (DGR 3/2022),apporti-fiumi colonna-stato,titolo,,https://solve.corila.it/catalogue/#/dataset/1522
+1519,dataset,Corpi idrici di transizione,colonna-stato,titolo,,https://solve.corila.it/catalogue/#/dataset/1519
+1518,dataset,Corpi idrici lacustri,colonna-stato,titolo,,https://solve.corila.it/catalogue/#/dataset/1518
+1517,dataset,Corpi idrici marino-costieri 2017-2019,colonna-stato,titolo,,https://solve.corila.it/catalogue/#/dataset/1517
+1458,dataset,Brigantine - Hatch - Data model GEE best practice,,,,https://solve.corila.it/catalogue/#/dataset/1458
+1457,dataset,Brigantine - Traiettoria ASV - Pola,colonna-ts colonna-ossigeno colonna-clorofilla colonna-torbidita,titolo,,https://solve.corila.it/catalogue/#/dataset/1457
+1456,dataset,Brigantine - Traiettoria ASV - Passetto,colonna-ts colonna-ossigeno colonna-clorofilla colonna-torbidita,titolo,,https://solve.corila.it/catalogue/#/dataset/1456
+1455,dataset,Brigantine - Traiettoria ASV - Numana,colonna-ts colonna-ossigeno colonna-clorofilla colonna-torbidita,titolo,,https://solve.corila.it/catalogue/#/dataset/1455
+1454,dataset,Brigantine - Traiettoria ASV - Torrette,colonna-ts colonna-ossigeno colonna-clorofilla colonna-torbidita,titolo,,https://solve.corila.it/catalogue/#/dataset/1454
+1453,dataset,Istanze impianti eolici off-shore,usi-energia,titolo,,https://solve.corila.it/catalogue/#/dataset/1453
+1424,dashboard,tursips truncatus dashboard,,,,https://solve.corila.it/catalogue/#/dashboard/1424
+1422,dataset,Tursiops truncatus,biologia,titolo,,https://solve.corila.it/catalogue/#/dataset/1422
+1421,dashboard,thalasseus sandvicensis dashboard,biologia-avifauna,titolo,,https://solve.corila.it/catalogue/#/dashboard/1421
+1420,dataset,Thalasseus sandvicensis,biologia-avifauna,titolo,,https://solve.corila.it/catalogue/#/dataset/1420
+1418,dashboard,sternula abifrons dashboard,biologia-avifauna,titolo,,https://solve.corila.it/catalogue/#/dashboard/1418
+1416,dataset,Sternula abifrons,biologia-avifauna,titolo,,https://solve.corila.it/catalogue/#/dataset/1416
+1415,dashboard,sterna hirundo dashboard,biologia-avifauna,titolo,,https://solve.corila.it/catalogue/#/dashboard/1415
+1414,dataset,Sterna hirundo,biologia-avifauna,titolo,,https://solve.corila.it/catalogue/#/dataset/1414
+1412,dashboard,somateria molissima dashboard,biologia-avifauna,titolo,,https://solve.corila.it/catalogue/#/dashboard/1412
+1410,dataset,Somateria molissima,biologia-avifauna,titolo,,https://solve.corila.it/catalogue/#/dataset/1410
+1409,dashboard,pinna nobilis dashboard,biologia-benthos,titolo,,https://solve.corila.it/catalogue/#/dashboard/1409
+1408,dataset,Pinna nobilis,biologia-benthos,titolo,,https://solve.corila.it/catalogue/#/dataset/1408
+1406,dashboard,ichthyaetus melanocephalus dashboard,biologia-avifauna,titolo,,https://solve.corila.it/catalogue/#/dashboard/1406
+1405,dataset,Ichthyaetus melanocephalus,biologia-avifauna,titolo,,https://solve.corila.it/catalogue/#/dataset/1405
+1403,dashboard,himantopus himantopus dashboard,biologia-avifauna,titolo,,https://solve.corila.it/catalogue/#/dashboard/1403
+1401,dataset,Himantopus himantopus,biologia-avifauna,titolo,,https://solve.corila.it/catalogue/#/dataset/1401
+1400,dashboard,habitat offshore dashboard,habitat-carte,titolo,,https://solve.corila.it/catalogue/#/dashboard/1400
+1397,dashboard,habitat 1170 dashboard,habitat-carte,titolo,,https://solve.corila.it/catalogue/#/dashboard/1397
+1394,dashboard,golosus aristotelis dashboard,biologia-avifauna,titolo,,https://solve.corila.it/catalogue/#/dashboard/1394
+1391,dashboard,cladocora caespitosa dashboard,biologia-benthos,titolo,,https://solve.corila.it/catalogue/#/dashboard/1391
+1389,dataset,Cladocora caespitosa,biologia-benthos,titolo,,https://solve.corila.it/catalogue/#/dataset/1389
+1388,dashboard,Poseidone - Charadrius alexandrinus - dashboard,biologia-avifauna,titolo,,https://solve.corila.it/catalogue/#/dashboard/1388
+1386,dataset,Charadrius alexandrinus,biologia-avifauna,titolo,,https://solve.corila.it/catalogue/#/dataset/1386
+1385,dashboard,Caretta caretta dashboard,biologia,titolo,,https://solve.corila.it/catalogue/#/dashboard/1385
+1381,dataset,Caretta caretta,biologia,titolo,,https://solve.corila.it/catalogue/#/dataset/1381
+1380,dashboard,Calidris Alpina,biologia-avifauna,titolo,,https://solve.corila.it/catalogue/#/dashboard/1380
+1379,map,Poseidone - Calidris alpina,biologia-avifauna,titolo,,https://solve.corila.it/catalogue/#/map/1379
+1377,dataset,Calidris alpina,biologia-avifauna,titolo,,https://solve.corila.it/catalogue/#/dataset/1377
+1342,map,Poseidone - Somateria mollissima,biologia-avifauna,titolo,,https://solve.corila.it/catalogue/#/map/1342
+1341,dataset,Poseidone - Somateria mollissima - dati,biologia-avifauna,titolo,,https://solve.corila.it/catalogue/#/dataset/1341
+1339,dataset,AdsWIM - dati,,,,https://solve.corila.it/catalogue/#/dataset/1339
+1333,dashboard,Dashboard Veneto Agricoltura - cassa di colmata,habitat-vegetazione biologia-alloctone,abstract,,https://solve.corila.it/catalogue/#/dashboard/1333
+1332,dataset,Area studio Baccharis nelle casse di colmata D-E - laguna di Venezia,habitat-vegetazione biologia-alloctone,titolo,,https://solve.corila.it/catalogue/#/dataset/1332
+1330,dataset,Google map raster - cassa di colmata,base-immagini,titolo,,https://solve.corila.it/catalogue/#/dataset/1330
+1329,dataset,Blackstoni,habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/1329
+1328,dataset,Presenza di Baccharis in Cassa di colmata,habitat-vegetazione biologia-alloctone,titolo,,https://solve.corila.it/catalogue/#/dataset/1328
+1327,dataset,Baccharis,habitat-vegetazione biologia-alloctone,titolo,,https://solve.corila.it/catalogue/#/dataset/1327
+1326,dataset,Veneto Agricoltura - Contrasto alla Baccharis - Atriplex (linee),habitat-vegetazione biologia-alloctone,titolo,,https://solve.corila.it/catalogue/#/dataset/1326
+1325,dataset,Veneto Agricoltura - Contrasto alla Baccharis - Atriplex (punti),habitat-vegetazione biologia-alloctone,titolo,,https://solve.corila.it/catalogue/#/dataset/1325
+1324,dataset,Arenaria s,habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/1324
+1323,dataset,Aristoloch,habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/1323
+1322,dataset,Aster noci,habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/1322
+1321,dataset,Anisantha,habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/1321
+1317,map,Materiale video stato di fatto cassa di colmata,biologia-alloctone,abstract,,https://solve.corila.it/catalogue/#/map/1317
+1315,dataset,Video stato di fatto febbraio 2025,base-immagini,titolo,,https://solve.corila.it/catalogue/#/dataset/1315
+1314,dataset,Volo drone,base-immagini,titolo,,https://solve.corila.it/catalogue/#/dataset/1314
+1302,dataset,Punti intervento Bosco Nordio,clima-meteo,titolo,,https://solve.corila.it/catalogue/#/dataset/1302
+1293,dataset,Monitoraggi azioni Veneto Agricoltura,,,,https://solve.corila.it/catalogue/#/dataset/1293
+1289,dataset,Veneto Agricoltura - AquaLab - aree di monitoraggio Valle Averto,colonna,titolo,,https://solve.corila.it/catalogue/#/dataset/1289
+1283,dashboard,Confronto dati monitoraggio Aqualab - Veneto Agricoltura,colonna,titolo,,https://solve.corila.it/catalogue/#/dashboard/1283
+1282,map,Azioni - IAS - Veneto Agricoltura,biologia-alloctone,abstract,,https://solve.corila.it/catalogue/#/map/1282
+1281,dataset,Veneto Agricoltura - AquaLab - monitoraggio 2024,colonna,titolo,,https://solve.corila.it/catalogue/#/dataset/1281
+1280,dataset,Veneto Agricoltura - AquaLab - monitoraggio 2025,colonna,titolo,,https://solve.corila.it/catalogue/#/dataset/1280
+1277,dataset,Veneto Agricoltura - AquaLab - monitoraggio Valle Averto,colonna,titolo,,https://solve.corila.it/catalogue/#/dataset/1277
+1272,dashboard,pinna nobilis,biologia-benthos,titolo,,https://solve.corila.it/catalogue/#/dashboard/1272
+1271,map,Pinna Nobilis Laguna di Venezia,biologia-benthos,titolo,,https://solve.corila.it/catalogue/#/map/1271
+1221,dataset,MSP Italia - Zonizzazione - Turismo,usi-turismo usi-pianificazione,titolo,,https://solve.corila.it/catalogue/#/dataset/1221
+1220,dataset,MSP Italia - Zonizzazione - Trasporto marittimo,usi-pianificazione,titolo,,https://solve.corila.it/catalogue/#/dataset/1220
+1219,dataset,MSP Italia - Zonizzazione - Telecomunicazioni,usi-pianificazione,titolo,,https://solve.corila.it/catalogue/#/dataset/1219
+1218,dataset,MSP Italia - Zonizzazione - Sicurezza,usi-pianificazione,titolo,,https://solve.corila.it/catalogue/#/dataset/1218
+1217,dataset,MSP Italia - Zonizzazione - Ricerca,usi-pianificazione,titolo,,https://solve.corila.it/catalogue/#/dataset/1217
+1216,dataset,MSP Italia - Zonizzazione - Protezione ambientale,usi-pianificazione,titolo,,https://solve.corila.it/catalogue/#/dataset/1216
+1215,dataset,MSP Italia - Zonizzazione - Sabbie relitte,usi-patrimonio usi-pianificazione,titolo,,https://solve.corila.it/catalogue/#/dataset/1215
+1214,dataset,MSP Italia - Zonizzazione - Pesca,usi-pesca usi-pianificazione,titolo,,https://solve.corila.it/catalogue/#/dataset/1214
+1213,dataset,MSP Italia - Zonizzazione - Paesaggio e patrimonio culturale,usi-patrimonio usi-pianificazione,titolo,,https://solve.corila.it/catalogue/#/dataset/1213
+1212,dataset,MSP Italia - Zonizzazione - Sedimenti,usi-pianificazione,titolo,,https://solve.corila.it/catalogue/#/dataset/1212
+1211,dataset,MSP Italia - Zonizzazione - Energia,usi-energia usi-pianificazione,titolo,,https://solve.corila.it/catalogue/#/dataset/1211
+1210,dataset,MSP Italia - Zonizzazione - Difesa costiera,usi-pianificazione,titolo,,https://solve.corila.it/catalogue/#/dataset/1210
+1209,dataset,MSP Italia - Zonizzazione - Difesa,usi-pianificazione,titolo,,https://solve.corila.it/catalogue/#/dataset/1209
+1208,dataset,MSP Italia - Zonizzazione - Acquacoltura,usi-pesca usi-pianificazione,titolo,,https://solve.corila.it/catalogue/#/dataset/1208
+1207,dataset,MSP Italia - Zonizzazione - tutti gli usi,usi-pianificazione,titolo,,https://solve.corila.it/catalogue/#/dataset/1207
+1206,dataset,Rete Natura 2000 - Veneto (aggiornamento 15/12/2023),habitat-protette,titolo,,https://solve.corila.it/catalogue/#/dataset/1206
+1204,dataset,Livenza - profili CTD La Salute di Livenza 16/09/2024,apporti-fiumi colonna-ts,titolo,,https://solve.corila.it/catalogue/#/dataset/1204
+1203,dataset,Livenza - Boccafossa,apporti-fiumi,titolo,,https://solve.corila.it/catalogue/#/dataset/1203
+1202,dataset,Livenza - L1M02C64,apporti-fiumi,titolo,,https://solve.corila.it/catalogue/#/dataset/1202
+1201,dataset,Livenza - LM1M01C64,apporti-fiumi,titolo,,https://solve.corila.it/catalogue/#/dataset/1201
+1200,dataset,Livenza - stazioni fisse,apporti-fiumi,titolo,,https://solve.corila.it/catalogue/#/dataset/1200
+1199,dataset,Livenza - idrometro Meduna di Livenza,apporti-fiumi,titolo,,https://solve.corila.it/catalogue/#/dataset/1199
+1198,dataset,Livenza - idrometro Motta di Livenza,apporti-fiumi,titolo,,https://solve.corila.it/catalogue/#/dataset/1198
+1197,dataset,Livenza - idrometro Portobuffolè,apporti-fiumi,titolo,,https://solve.corila.it/catalogue/#/dataset/1197
+1196,dataset,Livenza - idrometro La Salute di Livenza,apporti-fiumi,titolo,,https://solve.corila.it/catalogue/#/dataset/1196
+1195,dataset,Livenza - idrometro Cessalto,apporti-fiumi,titolo,,https://solve.corila.it/catalogue/#/dataset/1195
+1190,dataset,Livenza - idrografia secondaria,apporti-fiumi base-idrografia,titolo,,https://solve.corila.it/catalogue/#/dataset/1190
+1188,dashboard,Livelli idrometrici Livenza,apporti-fiumi,titolo,,https://solve.corila.it/catalogue/#/dashboard/1188
+1185,map,L'influenza della risalita del cuneo salino nel sistema idrologico del fiume Livenza,apporti-fiumi apporti-falda,titolo,,https://solve.corila.it/catalogue/#/map/1185
+1181,dataset,Fiume Livenza,apporti-fiumi,titolo,,https://solve.corila.it/catalogue/#/dataset/1181
+1179,dataset,Zero idrometrico - ARPAV,idro-livello apporti-fiumi,titolo,,https://solve.corila.it/catalogue/#/dataset/1179
+1178,dataset,Venezia - Stato ecologico 2017-2019,colonna-stato,titolo,,https://solve.corila.it/catalogue/#/dataset/1178
+1173,dataset,Stazioni SOD,,,,https://solve.corila.it/catalogue/#/dataset/1173
+1162,dataset,Poseidone - somateria mollissima,biologia-avifauna,titolo,,https://solve.corila.it/catalogue/#/dataset/1162
+1144,dataset,Poseidone - caprimulgus europaeus,biologia-avifauna,titolo,,https://solve.corila.it/catalogue/#/dataset/1144
+1143,dataset,Poseidone - lanius collurio,biologia-avifauna,titolo,,https://solve.corila.it/catalogue/#/dataset/1143
+1142,dataset,Poseidone - dryocopus martius,biologia-avifauna,titolo,,https://solve.corila.it/catalogue/#/dataset/1142
+1141,dataset,Poseidone - canis aureus,biologia-terrestri,titolo,,https://solve.corila.it/catalogue/#/dataset/1141
+1139,dataset,Poseidone - sternula albifrons,biologia-avifauna,titolo,,https://solve.corila.it/catalogue/#/dataset/1139
+1138,dataset,Poseidone - thalasseus sandvicensis,biologia-avifauna,titolo,,https://solve.corila.it/catalogue/#/dataset/1138
+1137,dataset,Poseidone - sterna hirundo,biologia-avifauna,titolo,,https://solve.corila.it/catalogue/#/dataset/1137
+1136,dataset,Poseidone - ichthyaetus melanocephalus,biologia-avifauna,titolo,,https://solve.corila.it/catalogue/#/dataset/1136
+1134,dataset,Poseidone - Calidris alpina,biologia-avifauna,titolo,,https://solve.corila.it/catalogue/#/dataset/1134
+1133,dataset,Poseidone - charadrius alexandrinus,biologia-avifauna,titolo,,https://solve.corila.it/catalogue/#/dataset/1133
+1132,dataset,Poseidone - Himantopus himantopus,biologia-avifauna,titolo,,https://solve.corila.it/catalogue/#/dataset/1132
+1129,dataset,Poseidone - Gulosus aristotelis desmarestii,biologia-avifauna,titolo,,https://solve.corila.it/catalogue/#/dataset/1129
+1126,dataset,Poseidone - Pinna nobilis in laguna (Veneto),biologia-benthos,titolo,,https://solve.corila.it/catalogue/#/dataset/1126
+1125,dataset,Poseidone - cladocora caespitosa,biologia-benthos,titolo,,https://solve.corila.it/catalogue/#/dataset/1125
+1123,map,Poseidone - Stato conservazione specie,habitat-protette,titolo,,https://solve.corila.it/catalogue/#/map/1123
+1122,dataset,Poseidone - tursiops truncatus,biologia,titolo,,https://solve.corila.it/catalogue/#/dataset/1122
+1120,dataset,Poseidone - caretta caretta,biologia,titolo,,https://solve.corila.it/catalogue/#/dataset/1120
+1114,dataset,Monitoraggio fanerogame B/5,habitat-fanerogame,titolo,,https://solve.corila.it/catalogue/#/dataset/1114
+1112,dataset,Danubius - centraline (03/05/2024),colonna,titolo,,https://solve.corila.it/catalogue/#/dataset/1112
+1109,dataset,Attori MSP PNRR Centro Nazionale Biodiversità--,usi-pianificazione,titolo,,https://solve.corila.it/catalogue/#/dataset/1109
+1103,dataset,Attori regionali MSP,usi-pianificazione,titolo,,https://solve.corila.it/catalogue/#/dataset/1103
+1102,dataset,Attori locali MSP,usi-pianificazione,titolo,,https://solve.corila.it/catalogue/#/dataset/1102
+1101,dataset,Attori distrettuali MSP,usi-pianificazione,titolo,,https://solve.corila.it/catalogue/#/dataset/1101
+1091,dataset,Danubius - dataset Italia,colonna,titolo,,https://solve.corila.it/catalogue/#/dataset/1091
+1083,dataset,Map 1 a Tracks,usi-trasporti,titolo,,https://solve.corila.it/catalogue/#/dataset/1083
+1080,dataset,Map 1 c IBA,habitat-protette biologia-avifauna,titolo,,https://solve.corila.it/catalogue/#/dataset/1080
+1079,dataset,Map 1 d Islands,,,,https://solve.corila.it/catalogue/#/dataset/1079
+1078,dataset,Map 1 b Zone Umide Costiere,habitat-carte,titolo,,https://solve.corila.it/catalogue/#/dataset/1078
+1076,geostory,Mappatura degli attori coinvolti nel processo MSP,usi-pianificazione,titolo,,https://solve.corila.it/catalogue/#/geostory/1076
+1071,dataset,Risalita Capillare nelle murature Veneziane,apporti-falda,titolo,,https://solve.corila.it/catalogue/#/dataset/1071
+1067,geostory,Monitoraggio urbano per la valutazione degli effetti di risalita capillare nelle murature veneziane,apporti-falda,titolo,,https://solve.corila.it/catalogue/#/geostory/1067
+1065,dataset,Conterminazione lagunare,habitat-morfologia,titolo,,https://solve.corila.it/catalogue/#/dataset/1065
+1064,dataset,Comuni del Veneto,base-confini,titolo,,https://solve.corila.it/catalogue/#/dataset/1064
+1030,dashboard,mappatura attori,,,,https://solve.corila.it/catalogue/#/dashboard/1030
+1029,map,Mappatura attori PSM,usi-pianificazione,abstract,,https://solve.corila.it/catalogue/#/map/1029
+1025,dataset,Intensità traffico navi cargo,usi-trasporti,titolo,,https://solve.corila.it/catalogue/#/dataset/1025
+1024,dataset,Intensità traffico navi passeggeri,usi-trasporti,titolo,,https://solve.corila.it/catalogue/#/dataset/1024
+1010,dataset,Stazioni monitoraggio rumore B8,apporti-rumore,titolo,,https://solve.corila.it/catalogue/#/dataset/1010
+1009,dataset,Monitoraggio rumore B/10 - Stazioni,apporti-rumore,titolo,,https://solve.corila.it/catalogue/#/dataset/1009
+1007,dataset,Monitoraggio avifauna - Punti d'ascolto,biologia-avifauna,titolo,,https://solve.corila.it/catalogue/#/dataset/1007
+1004,dataset,Venezia 2021 - Monconi di briccole e ostricheti 2018,biologia-benthos,titolo,,https://solve.corila.it/catalogue/#/dataset/1004
+1003,dataset,Monitoraggio vegetazione B/5 - San Felice - Habitat,habitat-carte habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/1003
+1002,dataset,Monitoraggio vegetazione B/8 - Punta Sabbioni- Habitat,habitat-carte habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/1002
+1001,dataset,Monitoraggio vegetazione B/10 - Punta Sabbioni - Habitat,habitat-carte habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/1001
+1000,dataset,Monitoraggio vegetazione B/9 - Punta Sabbioni - Habitat,habitat-carte habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/1000
+999,dataset,Monitoraggio vegetazione B/7 - Punta Sabbioni - Habitat,habitat-carte habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/999
+998,dataset,Monitoraggio vegetazione B/6 - Punta Sabbioni - Habitat,habitat-carte habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/998
+997,dataset,Monitoraggio vegetazione B/5 - Punta Sabbioni - Habitat,habitat-carte habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/997
+996,dataset,Monitoraggio vegetazione B/7 - Ca' Roman - Habitat,habitat-carte habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/996
+995,dataset,Monitoraggio vegetazione B/6 - Ca' Roman - Habitat,habitat-carte habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/995
+994,dataset,Monitoraggio vegetazione B/10 - Ca Roman - Habitat,habitat-carte habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/994
+993,dataset,Monitoraggio vegetazione B/5 - Ca' Roman - Habitat,habitat-carte habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/993
+992,dataset,Monitoraggio vegetazione B/8 - Ca' Roman- Habitat,habitat-carte habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/992
+991,dataset,Monitoraggio vegetazione B/9 - Alberoni - Habitat,habitat-carte habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/991
+990,dataset,Monitoraggio vegetazione B/7 - Alberoni- Habitat,habitat-carte habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/990
+989,dataset,Monitoraggio vegetazione B/6 - Alberoni - Habitat,habitat-carte habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/989
+988,dataset,Monitoraggio vegetazione B/5 - Alberoni - Habitat,habitat-carte habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/988
+987,dataset,Monitoraggio vegetazione B/11 - Alberoni - Habitat,habitat-carte habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/987
+986,dataset,Monitoraggio vegetazione B/10 - Alberoni - Habitat,habitat-carte habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/986
+985,dataset,Monitoraggio vegetazione dal B/1 al B/12 - Stazioni specie infestanti,habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/985
+983,dataset,Monitoraggio rumore B/8 - Stazioni,apporti-rumore,titolo,,https://solve.corila.it/catalogue/#/dataset/983
+981,dataset,Monitoraggio suolo B/1-B/10 - Ca’ Roman,idro-opere apporti-falda,abstract,,https://solve.corila.it/catalogue/#/dataset/981
+980,dataset,Monitoraggio chimico sedimenti 2012 - Stazioni,sedimenti-contaminanti,titolo,,https://solve.corila.it/catalogue/#/dataset/980
+979,dataset,Monitoraggio vegetazione B/9 - San Nicolò- Vegetazione reale,habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/979
+978,dataset,Monitoraggio vegetazione B/10 - San Nicolò - Vegetazione reale,habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/978
+977,dataset,Monitoraggio vegetazione B/9 - Punta Sabbioni - Vegetazione reale,habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/977
+968,dataset,Venezia 2021 - punti campionamento linea 2.2,,,,https://solve.corila.it/catalogue/#/dataset/968
+966,dataset,Shallows - Rilievi sismici ad alta risoluzione L2-MAV,sedimenti-sismica,titolo,,https://solve.corila.it/catalogue/#/dataset/966
+965,dataset,Piezometri,apporti-falda,titolo,,https://solve.corila.it/catalogue/#/dataset/965
+964,dataset,Monitoraggio vegetazione B/9 - Flora,habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/964
+963,dataset,Monitoraggio vegetazione B/7 - Flora,habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/963
+962,dataset,Monitoraggio vegetazione B/11 - Flora,habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/962
+961,dataset,Monitoraggio vegetazione B/10 - Flora,habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/961
+960,dataset,Monitoraggio vegetazione B/8 - Flora,habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/960
+958,dataset,Monitoraggio fanerogame B/1,habitat-fanerogame,titolo,,https://solve.corila.it/catalogue/#/dataset/958
+957,dataset,Monitoraggio fanerogame B/11,habitat-fanerogame,titolo,,https://solve.corila.it/catalogue/#/dataset/957
+956,dataset,Monitoraggio fanerogame B/10,habitat-fanerogame,titolo,,https://solve.corila.it/catalogue/#/dataset/956
+955,dataset,Monitoraggio fanerogame B/7,habitat-fanerogame,titolo,,https://solve.corila.it/catalogue/#/dataset/955
+954,dataset,Monitoraggio fanerogame B/6,habitat-fanerogame,titolo,,https://solve.corila.it/catalogue/#/dataset/954
+952,dataset,Monitoraggio fanerogame B/4,habitat-fanerogame,titolo,,https://solve.corila.it/catalogue/#/dataset/952
+951,dataset,Monitoraggio fanerogame B/3,habitat-fanerogame,titolo,,https://solve.corila.it/catalogue/#/dataset/951
+950,dataset,Monitoraggio fanerogame B/2,habitat-fanerogame,titolo,,https://solve.corila.it/catalogue/#/dataset/950
+949,dataset,Edifici rilevanti - Venezia e Città Metropolitana,base,titolo,,https://solve.corila.it/catalogue/#/dataset/949
+948,dataset,Edifici comunali - Venezia e Città Metropolitana,base,titolo,,https://solve.corila.it/catalogue/#/dataset/948
+946,dataset,Monitoraggio fanerogame B/2 - Limiti delle concessioni Tapes,habitat-fanerogame biologia-benthos usi-pesca,titolo,,https://solve.corila.it/catalogue/#/dataset/946
+945,dataset,Comuni costieri (selezione),base-confini,titolo,,https://solve.corila.it/catalogue/#/dataset/945
+944,dataset,Compartimenti marittimi,usi-trasporti,titolo,,https://solve.corila.it/catalogue/#/dataset/944
+943,dataset,Monitoraggio invertebrati terrestri (coleotteri) B/7-B/11 - Transetti,biologia-terrestri,titolo,,https://solve.corila.it/catalogue/#/dataset/943
+942,dataset,Monitoraggio invertebrati terrestri-coleotteri B/1-B/6 – Aree campionamento,biologia-terrestri,titolo,,https://solve.corila.it/catalogue/#/dataset/942
+941,dataset,Cimiteri - Venezia e Città Metropolitana,base,titolo,,https://solve.corila.it/catalogue/#/dataset/941
+940,dataset,Monitoraggio ostricheti ceste,,,,https://solve.corila.it/catalogue/#/dataset/940
+939,dataset,Shallows - Carotaggi L2-MAV,sedimenti-stratigrafia sedimenti-sismica,titolo,,https://solve.corila.it/catalogue/#/dataset/939
+938,dataset,Aree campionamento relative ai processi metabolici L3.3,,,,https://solve.corila.it/catalogue/#/dataset/938
+937,dataset,LIFE Forestall - Ecotourism map - Beni e luoghi,usi-turismo usi-patrimonio,titolo,,https://solve.corila.it/catalogue/#/dataset/937
+936,dataset,Monitoraggio avifauna B/10 - Stazioni barene artificiali,habitat-morfologia biologia-avifauna,titolo,,https://solve.corila.it/catalogue/#/dataset/936
+935,dataset,Monitoraggio avifauna B/9 - Limicoli,biologia-avifauna,titolo,,https://solve.corila.it/catalogue/#/dataset/935
+934,dataset,Monitoraggio avifauna B/7 - Limicoli,biologia-avifauna,titolo,,https://solve.corila.it/catalogue/#/dataset/934
+933,dataset,Monitoraggio avifauna B/6 - Limicoli,biologia-avifauna,titolo,,https://solve.corila.it/catalogue/#/dataset/933
+932,dataset,Monitoraggio avifauna B/5 - Limicoli,biologia-avifauna,titolo,,https://solve.corila.it/catalogue/#/dataset/932
+931,dataset,Monitoraggio avifauna B/4 - Limicoli,biologia-avifauna,titolo,,https://solve.corila.it/catalogue/#/dataset/931
+930,dataset,Monitoraggio avifauna B/10 - Censimento su barene artificiali,habitat-morfologia biologia-avifauna,titolo,,https://solve.corila.it/catalogue/#/dataset/930
+929,dataset,Monitoraggio avifauna B/9- Stazioni barene artificiali,habitat-morfologia biologia-avifauna,titolo,,https://solve.corila.it/catalogue/#/dataset/929
+928,dataset,Monitoraggio avifauna B/12- Stazioni barene artificiali,habitat-morfologia biologia-avifauna,titolo,,https://solve.corila.it/catalogue/#/dataset/928
+927,dataset,Monitoraggio avifauna B/9 - Censimento su barene artificiali,habitat-morfologia biologia-avifauna,titolo,,https://solve.corila.it/catalogue/#/dataset/927
+926,dataset,Monitoraggio avifauna B/12 - Barene artificiali,habitat-morfologia biologia-avifauna,titolo,,https://solve.corila.it/catalogue/#/dataset/926
+925,dataset,Monitoraggio avifauna B/11 - Stazioni barene artificiali,habitat-morfologia biologia-avifauna,titolo,,https://solve.corila.it/catalogue/#/dataset/925
+924,dataset,Monitoraggio avifauna B/10 - Limicoli,biologia-avifauna,titolo,,https://solve.corila.it/catalogue/#/dataset/924
+920,dataset,La Rete di Monitoraggio meteorologico - ARPAV - stazioni,clima-meteo,titolo,,https://solve.corila.it/catalogue/#/dataset/920
+919,dataset,Monitoraggio quantitativo in continuo delle acque sotterranee - ARPAV - Stazioni,apporti-falda,titolo,,https://solve.corila.it/catalogue/#/dataset/919
+918,dataset,Monitoraggio quantitativo trimestrale delle acque sotterranee - ARPAV - Stazioni,apporti-falda,titolo,,https://solve.corila.it/catalogue/#/dataset/918
+917,dataset,Rete di monitoraggio della qualità dell’aria - ARPAV - stazioni,apporti-aria,titolo,,https://solve.corila.it/catalogue/#/dataset/917
+916,dataset,Monitoraggio della qualità delle acque sotterranee - ARPAV - Stazioni,apporti-falda colonna-contaminanti,titolo,,https://solve.corila.it/catalogue/#/dataset/916
+915,dataset,Monitoraggio delle sostanze perfluoroalchiliche (PFAS) nel bacino scolante - ARPAV - Stazioni,apporti-carichi colonna-contaminanti,titolo,,https://solve.corila.it/catalogue/#/dataset/915
+914,dataset,Rete di monitoraggio automatico nel bacino scolante - ARPAV - Stazioni,apporti-carichi,titolo,,https://solve.corila.it/catalogue/#/dataset/914
+913,dataset,Monitoraggio di qualità ambientale nel bacino scolante - ARPAV - Stazioni,apporti-carichi,titolo,,https://solve.corila.it/catalogue/#/dataset/913
+912,dataset,Monitoraggio qualitativo delle Acque marino costiere - ARPAV - stazioni,colonna-stato,abstract,,https://solve.corila.it/catalogue/#/dataset/912
+911,dataset,Monitoraggio aria B/2-B/5- Stazioni di misura delle polveri ambientali,apporti-aria,titolo,,https://solve.corila.it/catalogue/#/dataset/911
+910,dataset,Monitoraggio aria B/1-B/7- Stazioni di misura degli degli Idrocarburi Policiclici Aromatici (IPA),apporti-aria,titolo,,https://solve.corila.it/catalogue/#/dataset/910
+909,dataset,Monitoraggio aria B/2-B/7- Stazioni di misura degli inquinanti gassosi,apporti-aria,titolo,,https://solve.corila.it/catalogue/#/dataset/909
+908,dataset,Monitoraggio aria B/2-B/11- Stazioni di determinazione dei metalli pesanti nel PM10,apporti-aria,titolo,,https://solve.corila.it/catalogue/#/dataset/908
+907,dataset,Aree studio/campionamento bivalvi,biologia-benthos,titolo,,https://solve.corila.it/catalogue/#/dataset/907
+905,dataset,LIFE Forestall - Azione C1 - Interventi idraulici - Dragaggio dei corsi d'acqua,apporti-fiumi,titolo,,https://solve.corila.it/catalogue/#/dataset/905
+896,dataset,Acque marine italiane (MSFD) - Adriplan,colonna-stato,titolo,,https://solve.corila.it/catalogue/#/dataset/896
+894,dataset,Fanerogame - laguna sud 2017,habitat-fanerogame,titolo,,https://solve.corila.it/catalogue/#/dataset/894
+893,dataset,Fanerogame - laguna nord 2017,habitat-fanerogame,titolo,,https://solve.corila.it/catalogue/#/dataset/893
+892,dataset,Fanerogame - laguna centro 2017,habitat-fanerogame,titolo,,https://solve.corila.it/catalogue/#/dataset/892
+887,dataset,Bacini idrografici principali,base-idrografia,titolo,,https://solve.corila.it/catalogue/#/dataset/887
+859,dataset,Legal status line,,,,https://solve.corila.it/catalogue/#/dataset/859
+851,map,Monitoraggi istituzionali,,,,https://solve.corila.it/catalogue/#/map/851
+850,map,Mappa Aree Campionamento Genetica di Popolazione,biologia,titolo,,https://solve.corila.it/catalogue/#/map/850
+849,map,Attività di campo Venezia2021,,,,https://solve.corila.it/catalogue/#/map/849
+848,map,Modus 4,,,,https://solve.corila.it/catalogue/#/map/848
+847,map,Fanerogame 2017,habitat-fanerogame,titolo,,https://solve.corila.it/catalogue/#/map/847
+846,map,Dati Venezia2021,,,,https://solve.corila.it/catalogue/#/map/846
+845,map,Stazioni di misura in laguna di Venezia,idro-livello clima-meteo,abstract,,https://solve.corila.it/catalogue/#/map/845
+844,map,Stazioni DANUBIUS,colonna,titolo,,https://solve.corila.it/catalogue/#/map/844
+843,dataset,Torbidità in continuo - L11,colonna-torbidita,titolo,,https://solve.corila.it/catalogue/#/dataset/843
+840,dataset,project hatch 1,,,,https://solve.corila.it/catalogue/#/dataset/840
+835,dataset,Curve di livello,habitat-morfologia,titolo,,https://solve.corila.it/catalogue/#/dataset/835
+834,dataset,Monitoraggio tegnue B/1-B/3 - Transetti,habitat-carte biologia-benthos,titolo,,https://solve.corila.it/catalogue/#/dataset/834
+832,dataset,Monitoraggio aria B/5 - Stazioni,apporti-aria,titolo,,https://solve.corila.it/catalogue/#/dataset/832
+831,dataset,Monitoraggio chimico acque 2060 - Stazioni,colonna-contaminanti,titolo,,https://solve.corila.it/catalogue/#/dataset/831
+830,dataset,Monitoraggio rumore B/1 - Stazioni,apporti-rumore,titolo,,https://solve.corila.it/catalogue/#/dataset/830
+827,dataset,Monitoraggio rumore B/8 - Stazioni,apporti-rumore,titolo,,https://solve.corila.it/catalogue/#/dataset/827
+823,dataset,Monitoraggio aria B/4 - Stazioni,apporti-aria,titolo,,https://solve.corila.it/catalogue/#/dataset/823
+822,dataset,Monitoraggio aria B/4 - Stazioni,apporti-aria,titolo,,https://solve.corila.it/catalogue/#/dataset/822
+821,dataset,Monitoraggio rumore B/11 - Stazioni,apporti-rumore,titolo,,https://solve.corila.it/catalogue/#/dataset/821
+820,dataset,Monitoraggio chimico sedimenti 2012 - Stazioni,sedimenti-contaminanti,titolo,,https://solve.corila.it/catalogue/#/dataset/820
+819,dataset,Monitoraggio chimico sedimenti 2012 - Stazioni,sedimenti-contaminanti,titolo,,https://solve.corila.it/catalogue/#/dataset/819
+814,dataset,Rete SAMANET - Provveditorato OO.PP.,apporti-aria,titolo,,https://solve.corila.it/catalogue/#/dataset/814
+813,dataset,PuntiQuotaCanali,base-idrografia,titolo,,https://solve.corila.it/catalogue/#/dataset/813
+545,dataset,Hatch - data model GEE,,,,https://solve.corila.it/catalogue/#/dataset/545
+194,dataset,Curve di livello centro storico Venezia,habitat-morfologia,titolo,,https://solve.corila.it/catalogue/#/dataset/194
+193,map,Monitoraggio urbano per la valutazione degli effetti di risalita capillare in murature Veneziane,apporti-falda,titolo,,https://solve.corila.it/catalogue/#/map/193
+37,dataset,Paesaggi costieri oggetto di ordinanze di interdizione,usi-patrimonio usi-pianificazione,titolo,,https://solve.corila.it/catalogue/#/dataset/37
+36,dataset,Giacimenti archeologici costieri (alert),usi-patrimonio,titolo,,https://solve.corila.it/catalogue/#/dataset/36
+35,dataset,Simboli ordinanze (dicembre 2021),usi-pianificazione,titolo,,https://solve.corila.it/catalogue/#/dataset/35
+34,dataset,MiBACT - vincoli sui beni paesaggistici,usi-patrimonio usi-pianificazione,titolo,,https://solve.corila.it/catalogue/#/dataset/34
+33,dataset,Beni culturali,usi-patrimonio,titolo,,https://solve.corila.it/catalogue/#/dataset/33
+32,dataset,Relitti e beni archeologici e architettonici,usi-patrimonio,titolo,,https://solve.corila.it/catalogue/#/dataset/32
+30,dataset,Vincoli L. 1497/39 - linee (buffer 10 km),usi-patrimonio usi-pianificazione,titolo,,https://solve.corila.it/catalogue/#/dataset/30
+29,dataset,Curve di livello (buffer 10 km),habitat-morfologia,titolo,,https://solve.corila.it/catalogue/#/dataset/29
+28,dataset,Vulcani (buffer 10 km),,,,https://solve.corila.it/catalogue/#/dataset/28
+27,dataset,Zone umide (buffer 10 km),habitat-carte,titolo,,https://solve.corila.it/catalogue/#/dataset/27
+25,dataset,Vincoli L. 1497/39 - poligoni (buffer 10 km),usi-patrimonio usi-pianificazione,titolo,,https://solve.corila.it/catalogue/#/dataset/25
+24,dataset,Vincoli L. 1497/39 - punti (buffer 10 km),usi-patrimonio usi-pianificazione,titolo,,https://solve.corila.it/catalogue/#/dataset/24
+23,dataset,MOSE - coordinate 2018,idro-opere,titolo,,https://solve.corila.it/catalogue/#/dataset/23
+22,map,Dati SELC,,,,https://solve.corila.it/catalogue/#/map/22
+21,dataset,Dormitori FS,base,titolo,,https://solve.corila.it/catalogue/#/dataset/21
+20,dataset,Punti di monitoraggio ex CORILA,,,,https://solve.corila.it/catalogue/#/dataset/20
+632,dataset,Stazioni Campionamento bongo net,biologia-pesci,titolo,,https://solve.corila.it/catalogue/#/dataset/632
+627,dataset,Stazioni campionamento sciabica,biologia-pesci,titolo,,https://solve.corila.it/catalogue/#/dataset/627
+646,dataset,Monitoraggio ostricheti palafitte bilancieri lavarieri,,,,https://solve.corila.it/catalogue/#/dataset/646
+812,dataset,Monitoraggio ostricheti monconi briccole 2018,biologia-benthos,titolo,,https://solve.corila.it/catalogue/#/dataset/812
+645,dataset,Stazioni genotipi,biologia,titolo,,https://solve.corila.it/catalogue/#/dataset/645
+617,dataset,Stazioni monitoraggio Enclosure,biologia,titolo,,https://solve.corila.it/catalogue/#/dataset/617
+648,dataset,Stazioni impatto rumore bocche di porto,idro-opere apporti-rumore,titolo,,https://solve.corila.it/catalogue/#/dataset/648
+571,dataset,Stazioni Microbiche,biologia-plancton,abstract,,https://solve.corila.it/catalogue/#/dataset/571
+613,dataset,Rete RMLV - stazioni IVMO,idro-livello,titolo,,https://solve.corila.it/catalogue/#/dataset/613
+13,dataset,Foto georeferenziate,,,,https://solve.corila.it/catalogue/#/dataset/13
+10,dataset,Hatch - progetti CAP (tipologia dati),,,,https://solve.corila.it/catalogue/#/dataset/10
+9,map,Hatch,,,,https://solve.corila.it/catalogue/#/map/9
+4,dataset,Hatch - progetti CAP,,,,https://solve.corila.it/catalogue/#/dataset/4
+585,dataset,Monitoraggio Avifauna B13,biologia-avifauna,titolo,,https://solve.corila.it/catalogue/#/dataset/585
+714,dataset,Monitoraggio avifauna B/12 - Censimento su barene artificiali,habitat-morfologia biologia-avifauna,titolo,,https://solve.corila.it/catalogue/#/dataset/714
+854,dataset,Case di riposo Venezia e Città Metropolitana,base,titolo,,https://solve.corila.it/catalogue/#/dataset/854
+796,dataset,Torbidimetri bocche di porto,idro-opere,titolo,,https://solve.corila.it/catalogue/#/dataset/796
+625,dataset,Stazioni meteo mareografiche,idro-livello clima-meteo,titolo,,https://solve.corila.it/catalogue/#/dataset/625
+808,dataset,Stazione ARPAV stato ecologico CI - WFD,colonna-stato,titolo,,https://solve.corila.it/catalogue/#/dataset/808
+570,dataset,Stazione ARPAV stato chimico CI - WFD,colonna-stato,titolo,,https://solve.corila.it/catalogue/#/dataset/570
+567,dataset,Monitoraggio acqua - sonde multiparametriche,colonna-ts,titolo,,https://solve.corila.it/catalogue/#/dataset/567
+881,dataset,Valle Averto - sito Ramsar,habitat-protette,titolo,,https://solve.corila.it/catalogue/#/dataset/881
+879,dataset,Valle Averto - confini,base-confini,titolo,,https://solve.corila.it/catalogue/#/dataset/879
+874,dataset,Aree protette - VI elenco ufficiale EUAP,habitat-protette,titolo,,https://solve.corila.it/catalogue/#/dataset/874
+873,dataset,Confini regionali 2018 (ISTAT),base-confini,titolo,,https://solve.corila.it/catalogue/#/dataset/873
+866,dataset,Idrografia (tipo 1),base-idrografia,titolo,,https://solve.corila.it/catalogue/#/dataset/866
+882,dataset,Specchi d'acqua interni,base-idrografia,titolo,,https://solve.corila.it/catalogue/#/dataset/882
+880,dataset,Porti italiani - statistiche 2015-2016,usi-trasporti,titolo,,https://solve.corila.it/catalogue/#/dataset/880
+869,dataset,Aree marine protette nazionali,habitat-protette,titolo,,https://solve.corila.it/catalogue/#/dataset/869
+810,dataset,Fanerogame - laguna centro 2017,habitat-fanerogame,titolo,,https://solve.corila.it/catalogue/#/dataset/810
+634,dataset,Modus 4 - punti campionamento - Attività B,,,,https://solve.corila.it/catalogue/#/dataset/634
+803,dataset,Modus 4 - punti campionamento - Attività A,,,,https://solve.corila.it/catalogue/#/dataset/803
+876,dataset,Strutture di dissipazione per la riduzione del fetch,clima-meteo,abstract,,https://solve.corila.it/catalogue/#/dataset/876
+761,dataset,Monitoraggio vegetazione B/10 - Punta Sabbioni - Vegetazione reale,habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/761
+608,dataset,Monitoraggio vegetazione B/10 - Alberoni - Vegetazione reale,habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/608
+770,dataset,Monitoraggio vegetazione B/9 - Alberoni - Vegetazione reale,habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/770
+644,dataset,Monitoraggio vegetazione B/11 - Ca' Roman - Vegetazione reale,habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/644
+611,dataset,Monitoraggio rumore B/2 - Stazioni,apporti-rumore,titolo,,https://solve.corila.it/catalogue/#/dataset/611
+647,dataset,Monitoraggio rumore B/3 - Stazioni,apporti-rumore,titolo,,https://solve.corila.it/catalogue/#/dataset/647
+589,dataset,Monitoraggio rumore B/4 - Stazioni,apporti-rumore,titolo,,https://solve.corila.it/catalogue/#/dataset/589
+607,dataset,Monitoraggio aria B/10 - Stazioni,apporti-aria,titolo,,https://solve.corila.it/catalogue/#/dataset/607
+574,dataset,Monitoraggio aria B/11 - Stazioni,apporti-aria,titolo,,https://solve.corila.it/catalogue/#/dataset/574
+581,dataset,Monitoraggio aria B/8 - Stazioni,apporti-aria,titolo,,https://solve.corila.it/catalogue/#/dataset/581
+595,dataset,Monitoraggio aria B/9 - Stazioni,apporti-aria,titolo,,https://solve.corila.it/catalogue/#/dataset/595
+572,dataset,Monitoraggio rumore B/12 - Stazioni,apporti-rumore,titolo,,https://solve.corila.it/catalogue/#/dataset/572
+577,dataset,Monitoraggio ittiofauna B/11-B/12 - Stazioni bongo net e sciabica,biologia-pesci,titolo,,https://solve.corila.it/catalogue/#/dataset/577
+590,dataset,Monitoraggio ittiofauna B/9 - Stazioni bongo net e sciabica,biologia-pesci,titolo,,https://solve.corila.it/catalogue/#/dataset/590
+584,dataset,Monitoraggio rumore B/6 - Stazioni,apporti-rumore,titolo,,https://solve.corila.it/catalogue/#/dataset/584
+606,dataset,Monitoraggio rumore B/7 - Stazioni,apporti-rumore,titolo,,https://solve.corila.it/catalogue/#/dataset/606
+601,dataset,Monitoraggio rumore B/8 - Stazioni,apporti-rumore,titolo,,https://solve.corila.it/catalogue/#/dataset/601
+592,dataset,Monitoraggio acqua dal B/1 al B/10 - Stazioni di misura della torbidità in continuo,colonna-torbidita,titolo,,https://solve.corila.it/catalogue/#/dataset/592
+786,dataset,Monitoraggio Vegetazione B/3 - Alberoni - Vegetazione reale,habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/786
+799,dataset,Monitoraggio vegetazione B/2 - Alberoni - Vegetazione reale,habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/799
+765,dataset,Monitoraggio vegetazione B/11 - Alberoni - Vegetazione reale,habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/765
+779,dataset,Monitoraggio vegetazione B/3 - Alberoni - Vegetazione potenziale,habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/779
+719,dataset,Monitoraggio vegetazione B/10 - S.Nicolò - Habitat,habitat-carte habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/719
+775,dataset,Monitoraggio vegetazione B/4 - Punta Sabbioni - Naturalità e qualità ambientale,habitat-carte habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/775
+767,dataset,Monitoraggio vegetazione B/2 - Alberoni - Vegetazione potenziale,habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/767
+758,dataset,Monitoraggio vegetazione B/2 - Punta Sabbioni - Naturalità e qualità ambientale,habitat-carte habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/758
+776,dataset,Monitoraggio vegetazione B/4 - Ca' Roman - Naturalità e qualità ambientale,habitat-carte habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/776
+763,dataset,Monitoraggio settore della pesca B/11-B/12 - Chamelea gallina - Lunate,biologia-benthos usi-pesca,titolo,,https://solve.corila.it/catalogue/#/dataset/763
+772,dataset,Monitoraggio vegetazione B/4 - Alberoni - Naturalità e qualità ambientale,habitat-carte habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/772
+738,dataset,Monitoraggio vegetazione B/3 - Punta Sabbioni - Naturalità e qualità ambientale,habitat-carte habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/738
+773,dataset,Monitoraggio pozze di sifonamento B/2-B/12 - Stazioni di misura,,,,https://solve.corila.it/catalogue/#/dataset/773
+753,dataset,Modus 5 - Acqua - chimica di supporto,colonna-contaminanti,titolo,,https://solve.corila.it/catalogue/#/dataset/753
+694,dataset,Monitoraggio vegetazione B/9 - San Nicolò- Habitat,habitat-carte habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/694
+683,dataset,Monitoraggio vegetazione B/8 - San Nicolò- Habitat,habitat-carte habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/683
+769,dataset,Monitoraggio vegetazione B/1- Alberoni - Vegetazione reale,habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/769
+686,dataset,Monitoraggio vegetazione B/7 - San Nicolò - Habitat,habitat-carte habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/686
+665,dataset,Monitoraggio fanerogame B/8,habitat-fanerogame,titolo,,https://solve.corila.it/catalogue/#/dataset/665
+749,dataset,Modus 5 - Acqua - sostanze prioritarie,colonna-contaminanti,titolo,,https://solve.corila.it/catalogue/#/dataset/749
+635,dataset,Profili sismica Tresse Nuovo,sedimenti-sismica,titolo,,https://solve.corila.it/catalogue/#/dataset/635
+659,dataset,Monitoraggio vegetazione B/6 - San Nicolò - Habitat,habitat-carte habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/659
+727,dataset,Mappa acustica dello stato di progetto - periodo notturno,apporti-rumore,titolo,,https://solve.corila.it/catalogue/#/dataset/727
+736,dataset,Punti di campionamento luminofori 3.4,,,,https://solve.corila.it/catalogue/#/dataset/736
+756,dataset,Monitoraggio vegetazione B/5 - San Nicolò - Vegetazione potenziale,habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/756
+654,dataset,Monitoraggio vegetazione B/11 - San Nicolò - Habitat,habitat-carte habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/654
+713,dataset,Monitoraggio vegetazione B/10 - Punta Sabbioni - Habitat,habitat-carte habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/713
+737,dataset,Monitoraggio vegetazione B/6 - San Felice - Habitat,habitat-carte habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/737
+688,dataset,Mappa acustica dello stato di fatto - periodo diurno,apporti-rumore,titolo,,https://solve.corila.it/catalogue/#/dataset/688
+750,dataset,Monitoraggio vegetazione B/5 - Ca' Roman - Vegetazione reale,habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/750
+679,dataset,PM10 90.4° percentile della concentrazione media - progetto,apporti-aria,titolo,,https://solve.corila.it/catalogue/#/dataset/679
+725,dataset,Monitoraggio avifauna B/8 - Limicoli,biologia-avifauna,titolo,,https://solve.corila.it/catalogue/#/dataset/725
+661,dataset,PM10 90.4° percentile della concentrazione media - attuale,apporti-aria,titolo,,https://solve.corila.it/catalogue/#/dataset/661
+561,dataset,CO - media della concentrazione massima sulle 8 ore simulata - progetto,apporti-aria clima-scenari,titolo,,https://solve.corila.it/catalogue/#/dataset/561
+723,dataset,NOx mappa della concentrazione media annua simulata - progetto,apporti-aria clima-scenari,titolo,,https://solve.corila.it/catalogue/#/dataset/723
+697,dataset,NOx mappa della concentrazione media annua simulata - attuale,apporti-aria clima-scenari,titolo,,https://solve.corila.it/catalogue/#/dataset/697
+707,dataset,Mappa acustica dello stato di progetto - periodo diurno,apporti-rumore,titolo,,https://solve.corila.it/catalogue/#/dataset/707
+706,dataset,Mappa acustica dello stato di fatto - periodo notturno,apporti-rumore,titolo,,https://solve.corila.it/catalogue/#/dataset/706
+726,dataset,Monitoraggio avifauna B/11 - Censimento su barene artificiali,habitat-morfologia biologia-avifauna,titolo,,https://solve.corila.it/catalogue/#/dataset/726
+556,dataset,CO - media della concentrazione massima sulle 8 ore simulata - attuale,apporti-aria clima-scenari,titolo,,https://solve.corila.it/catalogue/#/dataset/556
+689,dataset,SO2 concentrazione media annua - progetto,apporti-aria,titolo,,https://solve.corila.it/catalogue/#/dataset/689
+680,dataset,SO2 concentrazione media annua - attuale,apporti-aria,titolo,,https://solve.corila.it/catalogue/#/dataset/680
+658,dataset,Monitoraggio aria B/1-B/5- Stazioni di misura delle deposizioni atmosferiche,apporti-aria,titolo,,https://solve.corila.it/catalogue/#/dataset/658
+558,dataset,NOx - concentrazione media annua - attuale,apporti-aria,titolo,,https://solve.corila.it/catalogue/#/dataset/558
+655,dataset,NOx - concentrazione media annua - progetto,apporti-aria,titolo,,https://solve.corila.it/catalogue/#/dataset/655
+731,dataset,Monitoraggio aria B/1-B/8 - Stazione di misura in continuo del PM10,apporti-aria,titolo,,https://solve.corila.it/catalogue/#/dataset/731
+705,dataset,Monitoraggio avifauna B/11 - Limicoli,biologia-avifauna,titolo,,https://solve.corila.it/catalogue/#/dataset/705
+722,dataset,Area monitoraggio 1.4 Venezia 2021,,,,https://solve.corila.it/catalogue/#/dataset/722
+764,dataset,Monitoraggio vegetazione B/3 - San Nicolò - Vegetazione potenziale,habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/764
+712,dataset,Aree monitoraggio 1.1.1 Venezia 2021,,,,https://solve.corila.it/catalogue/#/dataset/712
+744,dataset,Monitoraggio vegetazione B/5 - San Felice - Vegetazione potenziale,habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/744
+747,dataset,Monitoraggio vegetazione B/10 - Ca' Roman - Vegetazione reale,habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/747
+690,dataset,Monitoraggio ittiofauna B/10 - Stazioni bongo net e sciabica,biologia-pesci,titolo,,https://solve.corila.it/catalogue/#/dataset/690
+562,dataset,Rete tele mareografica della laguna di Venezia - ICPSM - stazioni,idro-livello,titolo,,https://solve.corila.it/catalogue/#/dataset/562
+783,dataset,Monitoraggio vegetazione B/3 - Punta Sabbioni - Vegetazione potenziale,habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/783
+670,dataset,Monitoraggio vegetazione B/11 - Punta Sabbioni - Habitat,habitat-carte habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/670
+795,dataset,Monitoraggio vegetazione B/8 - Alberoni - Vegetazione reale,habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/795
+745,dataset,Monitoraggio vegetazione B/9 - Ca' Roman- Habitat,habitat-carte habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/745
+687,dataset,Monitoraggio ittiofauna B/9 - Stazioni parametri ambientali,biologia-pesci,titolo,,https://solve.corila.it/catalogue/#/dataset/687
+788,dataset,Monitoraggio vegetazione B/2 - Punta Sabbioni - Vegetazione potenziale,habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/788
+662,dataset,Monitoraggio ittiofauna B/12 - Stazioni parametri ambientali,biologia-pesci,titolo,,https://solve.corila.it/catalogue/#/dataset/662
+746,dataset,Monitoraggio vegetazione B/11 - Ca' Roman - Habitat,habitat-carte habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/746
+785,dataset,Monitoraggio vegetazione B/5 - Alberoni - Vegetazione reale,habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/785
+729,dataset,Monitoraggio vegetazione B/8 - Alberoni- Habitat,habitat-carte habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/729
+790,dataset,Monitoraggio vegetazione B/3 - Ca' Roman - Vegetazione potenziale,habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/790
+657,dataset,Monitoraggio ittiofauna B/11 - Stazioni parametri ambientali,biologia-pesci,titolo,,https://solve.corila.it/catalogue/#/dataset/657
+777,dataset,Monitoraggio vegetazione B/4 - Alberoni - Vegetazione reale,habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/777
+805,dataset,Monitoraggio vegetazione B/2 - Ca' Roman - Vegetazione potenziale,habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/805
+549,dataset,Monitoraggio ittiofauna B/10 - Stazioni parametri ambientali,biologia-pesci,titolo,,https://solve.corila.it/catalogue/#/dataset/549
+774,dataset,Rete SAMANET e deposimetri - Provveditorato OO.PP. - Stazioni,apporti-aria,titolo,,https://solve.corila.it/catalogue/#/dataset/774
+700,dataset,Monitoraggio vegetazione B/5 - San Nicolò - Habitat,habitat-carte habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/700
+621,dataset,Rete Mareografica Nazionale (RMN) - ISPRA - Stazioni,idro-livello,titolo,,https://solve.corila.it/catalogue/#/dataset/621
+640,dataset,Monitoraggio vegetazione B/4 - San Nicolò - Vegetazione reale,habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/640
+807,dataset,Monitoraggio aria B/2 - Stazioni,apporti-aria,titolo,,https://solve.corila.it/catalogue/#/dataset/807
+802,dataset,Monitoraggio vegetazione B/1 - Punta Sabbioni - Vegetazione reale,habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/802
+781,dataset,Monitoraggio vegetazione B/3 - Punta Sabbioni - Vegetazione reale,habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/781
+622,dataset,Monitoraggio vegetazione B/6 - Alberoni - Vegetazione reale,habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/622
+809,dataset,Trivellate CNR 2003 Bacino Zennare L3.1b,sedimenti-stratigrafia,titolo,,https://solve.corila.it/catalogue/#/dataset/809
+784,dataset,Monitoraggio vegetazione B/8 - Punta Sabbioni - Vegetazione reale,habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/784
+630,dataset,Monitoraggio vegetazione B/5 - San Nicolò - Vegetazione reale,habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/630
+782,dataset,Monitoraggio vegetazione B/7- Punta Sabbioni - Vegetazione reale,habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/782
+797,dataset,Monitoraggio vegetazione B/7 - Alberoni - Vegetazione reale,habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/797
+591,dataset,Tracciato Tresse prima ipotesi,,,,https://solve.corila.it/catalogue/#/dataset/591
+579,dataset,Monitoraggio aria B/1 - Stazioni,apporti-aria,titolo,,https://solve.corila.it/catalogue/#/dataset/579
+798,dataset,Monitoraggio vegetazione B/9 - Ca' Roman - Vegetazione reale,habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/798
+762,dataset,Monitoraggio vegetazione B/11 - Punta Sabbioni - Vegetazione reale,habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/762
+605,dataset,Sifoni relativi al Bacino Zennare 3.1b,apporti-carichi clima-scenari,abstract,,https://solve.corila.it/catalogue/#/dataset/605
+603,dataset,Monitoraggio vegetazione B/8 - San Nicolò - Vegetazione reale,habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/603
+588,dataset,Monitoraggio Macrozoobenthos dal B/5 al B/12 - Stazioni di misura,biologia-benthos,titolo,,https://solve.corila.it/catalogue/#/dataset/588
+637,dataset,Monitoraggio Vegetazione B/7 - Ca' Roman - Vegetazione reale,habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/637
+586,dataset,Monitoraggio acqua B/1-B/12 - Transetti Malamocco,colonna-torbidita,titolo,,https://solve.corila.it/catalogue/#/dataset/586
+760,dataset,Monitoraggio vegetazione B/6 - Ca' Roman - Vegetazione reale,habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/760
+593,dataset,Monitoraggio aria B/7 - Stazioni,apporti-aria,titolo,,https://solve.corila.it/catalogue/#/dataset/593
+609,dataset,Monitoraggio vegetazione B/11 - San Nicolò - Vegetazione reale,habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/609
+641,dataset,Monitoraggio vegetazione B/4 - Ca' Roman - Vegetazione reale,habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/641
+594,dataset,Monitoraggio aria B/6 - Stazioni,apporti-aria,titolo,,https://solve.corila.it/catalogue/#/dataset/594
+569,dataset,Monitoraggio acqua B/1-B/12 - Transetti Lido,colonna-torbidita,titolo,,https://solve.corila.it/catalogue/#/dataset/569
+806,dataset,Monitoraggio vegetazione B/6 - San Felice - Vegetazione reale,habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/806
+612,dataset,Monitoraggio acqua B/1-B/12 - Transetti Chioggia,colonna-torbidita,titolo,,https://solve.corila.it/catalogue/#/dataset/612
+804,dataset,Monitoraggio vegetazione B/6 - Punta Sabbioni - Vegetazione reale,habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/804
+580,dataset,Monitoraggio biologico 2013-2015 - Stazioni,biologia,titolo,,https://solve.corila.it/catalogue/#/dataset/580
+639,dataset,Monitoraggio vegetazione B/2 - Ca' Roman - Vegetazione reale,habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/639
+615,dataset,Monitoraggio aria B/3 - Stazioni,apporti-aria,titolo,,https://solve.corila.it/catalogue/#/dataset/615
+619,dataset,Monitoraggio vegetazione B/5 - Punta Sabbioni - Vegetazione reale,habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/619
+573,dataset,Monitoraggio suolo B/1-B/8 - Punta Sabbioni,idro-opere apporti-falda,abstract,,https://solve.corila.it/catalogue/#/dataset/573
+626,dataset,Monitoraggio vegetazione B/4 - Punta Sabbioni - Vegetazione reale,habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/626
+759,dataset,Monitoraggio vegetazione B/1 - Cà Roman - Vegetazione reale,habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/759
+649,dataset,Monitoraggio vegetazione B/2 - Punta Sabbioni - Vegetazione reale,habitat-vegetazione,titolo,,https://solve.corila.it/catalogue/#/dataset/649
+755,dataset,Monitoraggio settore della pesca B/11 e B/12 - Chamelea gallina - Transetti,biologia-benthos usi-pesca,titolo,,https://solve.corila.it/catalogue/#/dataset/755
+673,dataset,Attività di campo Venezia2021 - aree,,,,https://solve.corila.it/catalogue/#/dataset/673
+703,dataset,Rete Meteo-mareografica della Laguna di Venezia (RMLV) - ISPRA - Stazioni,idro-livello clima-meteo,titolo,,https://solve.corila.it/catalogue/#/dataset/703
+695,dataset,Rete SAMANET Provveditorato OO.PP. Triveneto,apporti-aria,titolo,,https://solve.corila.it/catalogue/#/dataset/695
+552,dataset,Rete di monitoraggio in continuo di parametri meteo-marini - Provveditorato OO.PP. - Stazioni,clima-meteo,titolo,,https://solve.corila.it/catalogue/#/dataset/552
+555,dataset,Carote sedimento Dese,apporti-fiumi sedimenti-stratigrafia,titolo,,https://solve.corila.it/catalogue/#/dataset/555
+563,dataset,Sedimenti superficiali laguna di Venezia,sedimenti-granulometria,titolo,,https://solve.corila.it/catalogue/#/dataset/563
+560,dataset,Carote sedimento Osellino,apporti-fiumi sedimenti-stratigrafia,titolo,,https://solve.corila.it/catalogue/#/dataset/560
+682,dataset,Attività di campo Venezia2021 - punti,,,,https://solve.corila.it/catalogue/#/dataset/682
+666,dataset,Attività di campo Venezia2021 - linee,,,,https://solve.corila.it/catalogue/#/dataset/666
