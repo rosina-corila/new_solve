@@ -1,0 +1,1208 @@
+[
+  {
+    "id": "idrodinamica",
+    "uri": "https://solve.corila.it/vocabolario/temi/idrodinamica",
+    "label": "Idrodinamica e scambi mare-laguna",
+    "label_en": "Hydrodynamics and sea-lagoon exchanges",
+    "definizione": "Maree, livelli, correnti, onde e scambi d'acqua alle bocche di porto.",
+    "keyword": "solve-idrodinamica",
+    "sottotemi": [
+      {
+        "id": "idro-livello",
+        "uri": "https://solve.corila.it/vocabolario/temi/idro-livello",
+        "label": "Livello del mare e maree",
+        "label_en": "Sea level and tides",
+        "definizione": "Misure di livello e marea: reti mareografiche (RMN, RMLV, ICPSM).",
+        "keyword": "solve-idro-livello",
+        "match": [
+          {
+            "rel": "closeMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/D032/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/ASLV/"
+          },
+          {
+            "rel": "broadMatch",
+            "uri": "http://inspire.ec.europa.eu/theme/ef"
+          }
+        ]
+      },
+      {
+        "id": "idro-correnti",
+        "uri": "https://solve.corila.it/vocabolario/temi/idro-correnti",
+        "label": "Correnti e portate alle bocche",
+        "label_en": "Currents and inlet fluxes",
+        "definizione": "Velocità delle correnti e portate di scambio mare-laguna (ADCP, bocche di porto).",
+        "keyword": "solve-idro-correnti",
+        "match": [
+          {
+            "rel": "closeMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/D030/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/RFVL/"
+          },
+          {
+            "rel": "broadMatch",
+            "uri": "http://inspire.ec.europa.eu/theme/of"
+          }
+        ]
+      },
+      {
+        "id": "idro-onde",
+        "uri": "https://solve.corila.it/vocabolario/temi/idro-onde",
+        "label": "Onde",
+        "label_en": "Waves",
+        "definizione": "Altezza, periodo e direzione del moto ondoso.",
+        "keyword": "solve-idro-onde",
+        "match": [
+          {
+            "rel": "closeMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/D034/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/WVST/"
+          },
+          {
+            "rel": "broadMatch",
+            "uri": "http://inspire.ec.europa.eu/theme/of"
+          }
+        ]
+      },
+      {
+        "id": "idro-opere",
+        "uri": "https://solve.corila.it/vocabolario/temi/idro-opere",
+        "label": "Opere alle bocche e MOSE",
+        "label_en": "Inlet works and MOSE",
+        "definizione": "Strutture alle bocche di porto e funzionamento del sistema MOSE.",
+        "keyword": "solve-idro-opere",
+        "match": [
+          {
+            "rel": "broadMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P08/current/DS12/"
+          },
+          {
+            "rel": "closeMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/H002/"
+          },
+          {
+            "rel": "broadMatch",
+            "uri": "http://inspire.ec.europa.eu/theme/us"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "apporti",
+    "uri": "https://solve.corila.it/vocabolario/temi/apporti",
+    "label": "Apporti e pressioni",
+    "label_en": "Inputs and pressures",
+    "definizione": "Ciò che arriva in laguna dal bacino scolante, dall'atmosfera e dalle attività: acque dolci, carichi, deposizioni, rumore.",
+    "keyword": "solve-apporti",
+    "sottotemi": [
+      {
+        "id": "apporti-fiumi",
+        "uri": "https://solve.corila.it/vocabolario/temi/apporti-fiumi",
+        "label": "Fiumi e portate",
+        "label_en": "Rivers and discharges",
+        "definizione": "Portate e livelli dei corsi d'acqua del bacino scolante e dei fiumi (es. Livenza).",
+        "keyword": "solve-apporti-fiumi",
+        "match": [
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/RVDS/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/LRWL/"
+          },
+          {
+            "rel": "broadMatch",
+            "uri": "http://inspire.ec.europa.eu/theme/hy"
+          }
+        ]
+      },
+      {
+        "id": "apporti-carichi",
+        "uri": "https://solve.corila.it/vocabolario/temi/apporti-carichi",
+        "label": "Carichi dal bacino scolante",
+        "label_en": "Catchment loads",
+        "definizione": "Carichi di nutrienti e contaminanti trasportati dal bacino scolante verso la laguna.",
+        "keyword": "solve-apporti-carichi",
+        "match": [
+          {
+            "rel": "closeMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/C040/"
+          },
+          {
+            "rel": "closeMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/H001/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/CFTM/"
+          },
+          {
+            "rel": "broadMatch",
+            "uri": "http://inspire.ec.europa.eu/theme/hy"
+          }
+        ]
+      },
+      {
+        "id": "apporti-falda",
+        "uri": "https://solve.corila.it/vocabolario/temi/apporti-falda",
+        "label": "Acque sotterranee e cuneo salino",
+        "label_en": "Groundwater and saltwater intrusion",
+        "definizione": "Livello e qualità della falda, risalita del cuneo salino.",
+        "keyword": "solve-apporti-falda",
+        "match": [
+          {
+            "rel": "broadMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P08/current/DS08/"
+          },
+          {
+            "rel": "closeMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/T001/"
+          },
+          {
+            "rel": "broadMatch",
+            "uri": "http://inspire.ec.europa.eu/theme/ge"
+          }
+        ]
+      },
+      {
+        "id": "apporti-aria",
+        "uri": "https://solve.corila.it/vocabolario/temi/apporti-aria",
+        "label": "Qualità dell'aria e deposizioni",
+        "label_en": "Air quality and atmospheric deposition",
+        "definizione": "Polveri (PM10), IPA, metalli e deposizioni atmosferiche.",
+        "keyword": "solve-apporti-aria",
+        "match": [
+          {
+            "rel": "broadMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P08/current/DS05/"
+          },
+          {
+            "rel": "closeMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/M005/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/ATPC/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/ATDP/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/MTAT/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/GP050/"
+          },
+          {
+            "rel": "broadMatch",
+            "uri": "http://inspire.ec.europa.eu/theme/ac"
+          }
+        ]
+      },
+      {
+        "id": "apporti-rumore",
+        "uri": "https://solve.corila.it/vocabolario/temi/apporti-rumore",
+        "label": "Rumore",
+        "label_en": "Noise",
+        "definizione": "Rumore aereo e subacqueo legato a cantieri e traffico.",
+        "keyword": "solve-apporti-rumore",
+        "match": [
+          {
+            "rel": "closeMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/D005/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/NOYS/"
+          },
+          {
+            "rel": "broadMatch",
+            "uri": "http://inspire.ec.europa.eu/theme/hh"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "colonna",
+    "uri": "https://solve.corila.it/vocabolario/temi/colonna",
+    "label": "Colonna d'acqua",
+    "label_en": "Water column",
+    "definizione": "Proprietà fisiche, chimiche e biologiche dell'acqua lagunare e costiera.",
+    "keyword": "solve-colonna",
+    "sottotemi": [
+      {
+        "id": "colonna-ts",
+        "uri": "https://solve.corila.it/vocabolario/temi/colonna-ts",
+        "label": "Temperatura e salinità",
+        "label_en": "Temperature and salinity",
+        "definizione": "Temperatura e salinità dell'acqua (sonde, CTD, stazioni fisse).",
+        "keyword": "solve-colonna-ts",
+        "match": [
+          {
+            "rel": "broadMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P08/current/DS03/"
+          },
+          {
+            "rel": "closeMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/D025/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/TEMP/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/PSAL/"
+          },
+          {
+            "rel": "broadMatch",
+            "uri": "http://inspire.ec.europa.eu/theme/of"
+          }
+        ]
+      },
+      {
+        "id": "colonna-ossigeno",
+        "uri": "https://solve.corila.it/vocabolario/temi/colonna-ossigeno",
+        "label": "Ossigeno disciolto",
+        "label_en": "Dissolved oxygen",
+        "definizione": "Concentrazione e saturazione dell'ossigeno disciolto.",
+        "keyword": "solve-colonna-ossigeno",
+        "match": [
+          {
+            "rel": "closeMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/C015/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/DOXY/"
+          },
+          {
+            "rel": "broadMatch",
+            "uri": "http://inspire.ec.europa.eu/theme/of"
+          }
+        ]
+      },
+      {
+        "id": "colonna-nutrienti",
+        "uri": "https://solve.corila.it/vocabolario/temi/colonna-nutrienti",
+        "label": "Nutrienti",
+        "label_en": "Nutrients",
+        "definizione": "Azoto, fosforo e silice disciolti.",
+        "keyword": "solve-colonna-nutrienti",
+        "match": [
+          {
+            "rel": "closeMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/C040/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/NTRA/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/NTRI/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/PHOS/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/SLCA/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/TDIN/"
+          },
+          {
+            "rel": "broadMatch",
+            "uri": "http://inspire.ec.europa.eu/theme/of"
+          }
+        ]
+      },
+      {
+        "id": "colonna-clorofilla",
+        "uri": "https://solve.corila.it/vocabolario/temi/colonna-clorofilla",
+        "label": "Clorofilla e fitoplancton",
+        "label_en": "Chlorophyll and phytoplankton",
+        "definizione": "Clorofilla e composizione del fitoplancton.",
+        "keyword": "solve-colonna-clorofilla",
+        "match": [
+          {
+            "rel": "broadMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P08/current/DS01/"
+          },
+          {
+            "rel": "closeMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/B035/"
+          },
+          {
+            "rel": "closeMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/B030/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/CPWC/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/PATX/"
+          },
+          {
+            "rel": "broadMatch",
+            "uri": "http://inspire.ec.europa.eu/theme/of"
+          }
+        ]
+      },
+      {
+        "id": "colonna-torbidita",
+        "uri": "https://solve.corila.it/vocabolario/temi/colonna-torbidita",
+        "label": "Torbidità e trasparenza",
+        "label_en": "Turbidity and transparency",
+        "definizione": "Solidi sospesi, torbidità, trasparenza (disco di Secchi).",
+        "keyword": "solve-colonna-torbidita",
+        "match": [
+          {
+            "rel": "closeMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/G015/"
+          },
+          {
+            "rel": "closeMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/D015/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/TSED/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/SECC/"
+          },
+          {
+            "rel": "broadMatch",
+            "uri": "http://inspire.ec.europa.eu/theme/of"
+          }
+        ]
+      },
+      {
+        "id": "colonna-contaminanti",
+        "uri": "https://solve.corila.it/vocabolario/temi/colonna-contaminanti",
+        "label": "Contaminanti nell'acqua",
+        "label_en": "Contaminants in water",
+        "definizione": "Metalli, IPA, PCB, PFAS e altri microinquinanti nell'acqua.",
+        "keyword": "solve-colonna-contaminanti",
+        "match": [
+          {
+            "rel": "closeMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/C035/"
+          },
+          {
+            "rel": "closeMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/C055/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/MTWD/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/MTWT/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/PCHW/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/PPWC/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/WCOC/"
+          },
+          {
+            "rel": "broadMatch",
+            "uri": "http://inspire.ec.europa.eu/theme/of"
+          }
+        ]
+      },
+      {
+        "id": "colonna-stato",
+        "uri": "https://solve.corila.it/vocabolario/temi/colonna-stato",
+        "label": "Stato ecologico e chimico (WFD)",
+        "label_en": "Ecological and chemical status (WFD)",
+        "definizione": "Classificazione dei corpi idrici secondo la Direttiva Quadro Acque.",
+        "keyword": "solve-colonna-stato",
+        "match": [
+          {
+            "rel": "broadMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P08/current/DS10/"
+          },
+          {
+            "rel": "closeMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/H007/"
+          },
+          {
+            "rel": "broadMatch",
+            "uri": "http://inspire.ec.europa.eu/theme/am"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sedimenti",
+    "uri": "https://solve.corila.it/vocabolario/temi/sedimenti",
+    "label": "Sedimenti e fondali",
+    "label_en": "Sediments and seabed",
+    "definizione": "Composizione, contaminazione e dinamica dei sedimenti e del sottosuolo.",
+    "keyword": "solve-sedimenti",
+    "sottotemi": [
+      {
+        "id": "sedimenti-granulometria",
+        "uri": "https://solve.corila.it/vocabolario/temi/sedimenti-granulometria",
+        "label": "Granulometria e proprietà fisiche",
+        "label_en": "Grain size and physical properties",
+        "definizione": "Granulometria, densità, contenuto d'acqua dei sedimenti.",
+        "keyword": "solve-sedimenti-granulometria",
+        "match": [
+          {
+            "rel": "closeMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/G040/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/MNGS/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/WCWT/"
+          },
+          {
+            "rel": "broadMatch",
+            "uri": "http://inspire.ec.europa.eu/theme/so"
+          }
+        ]
+      },
+      {
+        "id": "sedimenti-contaminanti",
+        "uri": "https://solve.corila.it/vocabolario/temi/sedimenti-contaminanti",
+        "label": "Contaminanti nei sedimenti",
+        "label_en": "Contaminants in sediments",
+        "definizione": "Metalli, IPA, PCB e altri inquinanti nei sedimenti.",
+        "keyword": "solve-sedimenti-contaminanti",
+        "match": [
+          {
+            "rel": "closeMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/G035/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/MTSD/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/SCAH/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/SPCB/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/SCOC/"
+          },
+          {
+            "rel": "broadMatch",
+            "uri": "http://inspire.ec.europa.eu/theme/so"
+          }
+        ]
+      },
+      {
+        "id": "sedimenti-organica",
+        "uri": "https://solve.corila.it/vocabolario/temi/sedimenti-organica",
+        "label": "Sostanza organica e nutrienti nei sedimenti",
+        "label_en": "Organic matter and nutrients in sediments",
+        "definizione": "Carbonio, azoto, fosforo e sostanza organica nei sedimenti; domanda di ossigeno.",
+        "keyword": "solve-sedimenti-organica",
+        "match": [
+          {
+            "rel": "closeMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/G035/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/STOM/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/CBSD/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/NTSD/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/PXSD/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/DGPW/"
+          },
+          {
+            "rel": "broadMatch",
+            "uri": "http://inspire.ec.europa.eu/theme/so"
+          }
+        ]
+      },
+      {
+        "id": "sedimenti-stratigrafia",
+        "uri": "https://solve.corila.it/vocabolario/temi/sedimenti-stratigrafia",
+        "label": "Carotaggi e stratigrafia",
+        "label_en": "Cores and stratigraphy",
+        "definizione": "Carote, trivellate, stratigrafia e datazioni.",
+        "keyword": "solve-sedimenti-stratigrafia",
+        "match": [
+          {
+            "rel": "closeMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/G030/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/SSTR/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/SAGE/"
+          },
+          {
+            "rel": "broadMatch",
+            "uri": "http://inspire.ec.europa.eu/theme/ge"
+          }
+        ]
+      },
+      {
+        "id": "sedimenti-sismica",
+        "uri": "https://solve.corila.it/vocabolario/temi/sedimenti-sismica",
+        "label": "Rilievi sismici",
+        "label_en": "Seismic surveys",
+        "definizione": "Profili sismici ad alta risoluzione del sottosuolo lagunare.",
+        "keyword": "solve-sedimenti-sismica",
+        "match": [
+          {
+            "rel": "closeMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/G012/"
+          },
+          {
+            "rel": "broadMatch",
+            "uri": "http://inspire.ec.europa.eu/theme/ge"
+          }
+        ]
+      },
+      {
+        "id": "sedimenti-dinamica",
+        "uri": "https://solve.corila.it/vocabolario/temi/sedimenti-dinamica",
+        "label": "Erosione e sedimentazione",
+        "label_en": "Erosion and sedimentation",
+        "definizione": "Tassi di sedimentazione, risospensione ed erosione dei fondali.",
+        "keyword": "solve-sedimenti-dinamica",
+        "match": [
+          {
+            "rel": "closeMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/G060/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/RACC/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/BEST/"
+          },
+          {
+            "rel": "broadMatch",
+            "uri": "http://inspire.ec.europa.eu/theme/el"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "habitat",
+    "uri": "https://solve.corila.it/vocabolario/temi/habitat",
+    "label": "Habitat e morfologia",
+    "label_en": "Habitats and morphology",
+    "definizione": "Forme del territorio lagunare e habitat che ospitano: barene, velme, praterie, dune.",
+    "keyword": "solve-habitat",
+    "sottotemi": [
+      {
+        "id": "habitat-morfologia",
+        "uri": "https://solve.corila.it/vocabolario/temi/habitat-morfologia",
+        "label": "Batimetria e morfologia",
+        "label_en": "Bathymetry and morphology",
+        "definizione": "Batimetria, quote, morfologia di barene, canali e litorali.",
+        "keyword": "solve-habitat-morfologia",
+        "match": [
+          {
+            "rel": "broadMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P08/current/DS04/"
+          },
+          {
+            "rel": "closeMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/G005/"
+          },
+          {
+            "rel": "closeMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/GMAR/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/MBAN/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/COGE/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/SBGE/"
+          },
+          {
+            "rel": "broadMatch",
+            "uri": "http://inspire.ec.europa.eu/theme/el"
+          }
+        ]
+      },
+      {
+        "id": "habitat-carte",
+        "uri": "https://solve.corila.it/vocabolario/temi/habitat-carte",
+        "label": "Carte degli habitat",
+        "label_en": "Habitat maps",
+        "definizione": "Carte degli habitat (Direttiva Habitat) e della naturalità.",
+        "keyword": "solve-habitat-carte",
+        "match": [
+          {
+            "rel": "closeMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/B050/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/HBCH/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/HBEX/"
+          },
+          {
+            "rel": "broadMatch",
+            "uri": "http://inspire.ec.europa.eu/theme/hb"
+          }
+        ]
+      },
+      {
+        "id": "habitat-fanerogame",
+        "uri": "https://solve.corila.it/vocabolario/temi/habitat-fanerogame",
+        "label": "Fanerogame e macroalghe",
+        "label_en": "Seagrasses and macroalgae",
+        "definizione": "Praterie di fanerogame marine e popolamenti di macroalghe.",
+        "keyword": "solve-habitat-fanerogame",
+        "match": [
+          {
+            "rel": "closeMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/B055/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/ACNT/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/PU02/"
+          },
+          {
+            "rel": "broadMatch",
+            "uri": "http://inspire.ec.europa.eu/theme/hb"
+          }
+        ]
+      },
+      {
+        "id": "habitat-vegetazione",
+        "uri": "https://solve.corila.it/vocabolario/temi/habitat-vegetazione",
+        "label": "Vegetazione di barena e costiera",
+        "label_en": "Saltmarsh and coastal vegetation",
+        "definizione": "Vegetazione alofila, dunale e retrodunale; carte della vegetazione reale e potenziale.",
+        "keyword": "solve-habitat-vegetazione",
+        "match": [
+          {
+            "rel": "broadMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P08/current/DS08/"
+          },
+          {
+            "rel": "closeMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/T001/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/LVEG/"
+          },
+          {
+            "rel": "broadMatch",
+            "uri": "http://inspire.ec.europa.eu/theme/lc"
+          }
+        ]
+      },
+      {
+        "id": "habitat-protette",
+        "uri": "https://solve.corila.it/vocabolario/temi/habitat-protette",
+        "label": "Aree protette",
+        "label_en": "Protected areas",
+        "definizione": "Siti Natura 2000, Ramsar, aree marine protette, elenco EUAP.",
+        "keyword": "solve-habitat-protette",
+        "match": [
+          {
+            "rel": "broadMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P08/current/DS12/"
+          },
+          {
+            "rel": "closeMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/H007/"
+          },
+          {
+            "rel": "broadMatch",
+            "uri": "http://inspire.ec.europa.eu/theme/ps"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "biologia",
+    "uri": "https://solve.corila.it/vocabolario/temi/biologia",
+    "label": "Comunità biologiche",
+    "label_en": "Biological communities",
+    "definizione": "Specie e popolamenti animali e vegetali della laguna e del litorale.",
+    "keyword": "solve-biologia",
+    "sottotemi": [
+      {
+        "id": "biologia-avifauna",
+        "uri": "https://solve.corila.it/vocabolario/temi/biologia-avifauna",
+        "label": "Avifauna",
+        "label_en": "Birds",
+        "definizione": "Censimenti, colonie e nidificazioni di uccelli acquatici.",
+        "keyword": "solve-biologia-avifauna",
+        "match": [
+          {
+            "rel": "closeMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/B015/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/BRDA/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/BRDD/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/GP004/"
+          },
+          {
+            "rel": "broadMatch",
+            "uri": "http://inspire.ec.europa.eu/theme/sd"
+          }
+        ]
+      },
+      {
+        "id": "biologia-pesci",
+        "uri": "https://solve.corila.it/vocabolario/temi/biologia-pesci",
+        "label": "Ittiofauna",
+        "label_en": "Fish",
+        "definizione": "Popolamenti ittici e campionamenti di pesci.",
+        "keyword": "solve-biologia-pesci",
+        "match": [
+          {
+            "rel": "closeMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/B020/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/FATX/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/FCNT/"
+          },
+          {
+            "rel": "broadMatch",
+            "uri": "http://inspire.ec.europa.eu/theme/sd"
+          }
+        ]
+      },
+      {
+        "id": "biologia-benthos",
+        "uri": "https://solve.corila.it/vocabolario/temi/biologia-benthos",
+        "label": "Benthos e molluschi",
+        "label_en": "Benthos and molluscs",
+        "definizione": "Macrozoobenthos, bivalvi e specie bentoniche (es. Pinna nobilis, Chamelea gallina).",
+        "keyword": "solve-biologia-benthos",
+        "match": [
+          {
+            "rel": "closeMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/B070/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/ZBTX/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/MFAB/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/SABB/"
+          },
+          {
+            "rel": "broadMatch",
+            "uri": "http://inspire.ec.europa.eu/theme/sd"
+          }
+        ]
+      },
+      {
+        "id": "biologia-plancton",
+        "uri": "https://solve.corila.it/vocabolario/temi/biologia-plancton",
+        "label": "Plancton",
+        "label_en": "Plankton",
+        "definizione": "Fitoplancton e zooplancton.",
+        "keyword": "solve-biologia-plancton",
+        "match": [
+          {
+            "rel": "closeMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/B030/"
+          },
+          {
+            "rel": "closeMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/B045/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/PATX/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/ZATX/"
+          },
+          {
+            "rel": "broadMatch",
+            "uri": "http://inspire.ec.europa.eu/theme/sd"
+          }
+        ]
+      },
+      {
+        "id": "biologia-alloctone",
+        "uri": "https://solve.corila.it/vocabolario/temi/biologia-alloctone",
+        "label": "Specie alloctone invasive",
+        "label_en": "Invasive alien species",
+        "definizione": "Specie alloctone invasive animali e vegetali e azioni di contrasto.",
+        "keyword": "solve-biologia-alloctone",
+        "match": [
+          {
+            "rel": "closeMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/B007/"
+          },
+          {
+            "rel": "broadMatch",
+            "uri": "http://inspire.ec.europa.eu/theme/sd"
+          }
+        ]
+      },
+      {
+        "id": "biologia-terrestri",
+        "uri": "https://solve.corila.it/vocabolario/temi/biologia-terrestri",
+        "label": "Fauna terrestre e invertebrati",
+        "label_en": "Terrestrial fauna and invertebrates",
+        "definizione": "Invertebrati terrestri (es. coleotteri) e fauna dei litorali.",
+        "keyword": "solve-biologia-terrestri",
+        "match": [
+          {
+            "rel": "broadMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P08/current/DS08/"
+          },
+          {
+            "rel": "closeMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/T001/"
+          },
+          {
+            "rel": "broadMatch",
+            "uri": "http://inspire.ec.europa.eu/theme/sd"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "clima",
+    "uri": "https://solve.corila.it/vocabolario/temi/clima",
+    "label": "Clima e scenari",
+    "label_en": "Climate and scenarios",
+    "definizione": "Condizioni meteorologiche, tendenze climatiche e scenari futuri.",
+    "keyword": "solve-clima",
+    "sottotemi": [
+      {
+        "id": "clima-meteo",
+        "uri": "https://solve.corila.it/vocabolario/temi/clima-meteo",
+        "label": "Meteorologia",
+        "label_en": "Meteorology",
+        "definizione": "Temperatura dell'aria, vento, precipitazioni, pressione.",
+        "keyword": "solve-clima-meteo",
+        "match": [
+          {
+            "rel": "closeMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/M010/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/CDTA/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/EWSB/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/CPRP/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/CAPH/"
+          },
+          {
+            "rel": "broadMatch",
+            "uri": "http://inspire.ec.europa.eu/theme/mf"
+          }
+        ]
+      },
+      {
+        "id": "clima-scenari",
+        "uri": "https://solve.corila.it/vocabolario/temi/clima-scenari",
+        "label": "Scenari e simulazioni",
+        "label_en": "Scenarios and simulations",
+        "definizione": "Scenari climatici e simulazioni modellistiche (es. emissioni, innalzamento del mare).",
+        "keyword": "solve-clima-scenari",
+        "match": [
+          {
+            "rel": "closeMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/M010/"
+          },
+          {
+            "rel": "broadMatch",
+            "uri": "http://inspire.ec.europa.eu/theme/nz"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "usi",
+    "uri": "https://solve.corila.it/vocabolario/temi/usi",
+    "label": "Servizi ecosistemici e usi",
+    "label_en": "Ecosystem services and uses",
+    "definizione": "Attività umane, usi del mare e della laguna, patrimonio, pianificazione.",
+    "keyword": "solve-usi",
+    "sottotemi": [
+      {
+        "id": "usi-pesca",
+        "uri": "https://solve.corila.it/vocabolario/temi/usi-pesca",
+        "label": "Pesca e acquacoltura",
+        "label_en": "Fisheries and aquaculture",
+        "definizione": "Attività di pesca, concessioni, molluschicoltura e ostricoltura.",
+        "keyword": "solve-usi-pesca",
+        "match": [
+          {
+            "rel": "closeMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/H004/"
+          },
+          {
+            "rel": "closeMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/H006/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/FCST/"
+          },
+          {
+            "rel": "narrowMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P02/current/FEFF/"
+          },
+          {
+            "rel": "broadMatch",
+            "uri": "http://inspire.ec.europa.eu/theme/af"
+          }
+        ]
+      },
+      {
+        "id": "usi-trasporti",
+        "uri": "https://solve.corila.it/vocabolario/temi/usi-trasporti",
+        "label": "Navigazione e porti",
+        "label_en": "Shipping and ports",
+        "definizione": "Traffico navale, porti e rotte.",
+        "keyword": "solve-usi-trasporti",
+        "match": [
+          {
+            "rel": "closeMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/H016/"
+          },
+          {
+            "rel": "broadMatch",
+            "uri": "http://inspire.ec.europa.eu/theme/tn"
+          }
+        ]
+      },
+      {
+        "id": "usi-energia",
+        "uri": "https://solve.corila.it/vocabolario/temi/usi-energia",
+        "label": "Energia",
+        "label_en": "Energy",
+        "definizione": "Impianti energetici in mare (es. eolico).",
+        "keyword": "solve-usi-energia",
+        "match": [
+          {
+            "rel": "closeMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/H010/"
+          },
+          {
+            "rel": "broadMatch",
+            "uri": "http://inspire.ec.europa.eu/theme/er"
+          }
+        ]
+      },
+      {
+        "id": "usi-turismo",
+        "uri": "https://solve.corila.it/vocabolario/temi/usi-turismo",
+        "label": "Turismo e fruizione",
+        "label_en": "Tourism and recreation",
+        "definizione": "Turismo, fruizione, percorsi e servizi ai visitatori.",
+        "keyword": "solve-usi-turismo",
+        "match": [
+          {
+            "rel": "closeMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/H015/"
+          },
+          {
+            "rel": "broadMatch",
+            "uri": "http://inspire.ec.europa.eu/theme/us"
+          }
+        ]
+      },
+      {
+        "id": "usi-patrimonio",
+        "uri": "https://solve.corila.it/vocabolario/temi/usi-patrimonio",
+        "label": "Patrimonio culturale",
+        "label_en": "Cultural heritage",
+        "definizione": "Beni culturali, archeologici e paesaggistici, relitti.",
+        "keyword": "solve-usi-patrimonio",
+        "match": [
+          {
+            "rel": "closeMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/H009/"
+          },
+          {
+            "rel": "broadMatch",
+            "uri": "http://inspire.ec.europa.eu/theme/ps"
+          }
+        ]
+      },
+      {
+        "id": "usi-pianificazione",
+        "uri": "https://solve.corila.it/vocabolario/temi/usi-pianificazione",
+        "label": "Pianificazione e vincoli",
+        "label_en": "Planning and restrictions",
+        "definizione": "Pianificazione dello spazio marittimo, zonizzazioni, vincoli, attori.",
+        "keyword": "solve-usi-pianificazione",
+        "match": [
+          {
+            "rel": "closeMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/H007/"
+          },
+          {
+            "rel": "broadMatch",
+            "uri": "http://inspire.ec.europa.eu/theme/am"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "base",
+    "uri": "https://solve.corila.it/vocabolario/temi/base",
+    "label": "Base cartografica",
+    "label_en": "Base mapping",
+    "definizione": "Strati di riferimento: confini, idrografia, toponimi, immagini, griglie.",
+    "keyword": "solve-base",
+    "sottotemi": [
+      {
+        "id": "base-confini",
+        "uri": "https://solve.corila.it/vocabolario/temi/base-confini",
+        "label": "Confini amministrativi",
+        "label_en": "Administrative boundaries",
+        "definizione": "Comuni, regioni, compartimenti, conterminazione lagunare.",
+        "keyword": "solve-base-confini",
+        "match": [
+          {
+            "rel": "closeMatch",
+            "uri": "http://vocab.nerc.ac.uk/collection/P03/current/Z005/"
+          },
+          {
+            "rel": "broadMatch",
+            "uri": "http://inspire.ec.europa.eu/theme/au"
+          }
+        ]
+      },
+      {
+        "id": "base-idrografia",
+        "uri": "https://solve.corila.it/vocabolario/temi/base-idrografia",
+        "label": "Idrografia e bacini",
+        "label_en": "Hydrography and catchments",
+        "definizione": "Reticolo idrografico, bacini idrografici, specchi d'acqua.",
+        "keyword": "solve-base-idrografia",
+        "match": [
+          {
+            "rel": "broadMatch",
+            "uri": "http://inspire.ec.europa.eu/theme/hy"
+          }
+        ]
+      },
+      {
+        "id": "base-immagini",
+        "uri": "https://solve.corila.it/vocabolario/temi/base-immagini",
+        "label": "Immagini e rilievi",
+        "label_en": "Imagery and surveys",
+        "definizione": "Ortofoto, rilievi da drone, raster di riferimento.",
+        "keyword": "solve-base-immagini",
+        "match": [
+          {
+            "rel": "broadMatch",
+            "uri": "http://inspire.ec.europa.eu/theme/oi"
+          }
+        ]
+      }
+    ]
+  }
+]
