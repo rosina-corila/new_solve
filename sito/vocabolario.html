@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SOLVe – grafo del vocabolario dei temi</title>
+<style>
+:root{--ink:var(--text-primary,#1f1f1d);--quiet:var(--text-secondary,#6b6a64);--line:var(--border,#e2e0d8);--card:var(--surface-2,#fff);--neutral:var(--bg-neutral,#f1efe8);--accent:#534AB7}
+body{font-family:var(--font-sans,system-ui,sans-serif);color:var(--ink);margin:0}
+.wrap{max-width:900px;margin:0 auto;padding:0}
+.ctl{display:flex;flex-wrap:wrap;gap:16px;align-items:center;font-size:13px;color:var(--quiet);margin:0 0 8px}
+.ctl label{display:flex;gap:6px;align-items:center;cursor:pointer}
+.lg{display:flex;flex-wrap:wrap;gap:14px;font-size:12px;color:var(--quiet);margin:4px 0 10px}
+.lg span{display:flex;align-items:center;gap:5px}
+.dot{width:10px;height:10px;border-radius:50%;display:inline-block}
+.dash{width:16px;border-top:1.5px dashed #D85A30;display:inline-block}
+#g text{font-size:11px;fill:var(--ink);pointer-events:none}
+#panel{background:var(--card);border:0.5px solid var(--line);border-radius:12px;padding:14px 18px;font-size:13px;line-height:1.55}
+#panel h3{font-size:16px;font-weight:500;margin:0 0 2px}
+#panel .sub{color:var(--quiet);margin:0 0 8px}
+#panel table{width:100%;border-collapse:collapse;margin-top:6px;table-layout:fixed}
+#panel td{padding:5px 0;vertical-align:top;border-top:0.5px solid var(--line)}
+#panel td:first-child{width:38%;color:var(--quiet)}
+.chip{display:inline-block;padding:2px 8px;border-radius:8px;background:var(--neutral);margin:2px 4px 2px 0;font-size:12px}
+.chip.man{background:#FAEEDA;color:#633806}
+.chip.rel{background:#FAECE7;color:#712B13;cursor:pointer}
+.chip.sub{background:#E1F5EE;color:#085041;cursor:pointer}
+.code{font-family:var(--font-mono,monospace);font-size:11px;opacity:.75;margin-right:4px}
+.note{margin-top:8px;color:var(--quiet);font-size:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h2 class="sr-only" style="position:absolute;left:-9999px">Grafo del vocabolario SOLVe: macrotemi, sottotemi, correlazioni e classificazione standard.</h2>
+<div class="ctl">
+  <label><input type="radio" name="vista" value="nav" checked> Navigazione</label>
+  <label><input type="radio" name="vista" value="std"> Con agganci standard</label>
+  <label><input type="checkbox" id="clab" checked> Etichette sottotemi</label>
+</div>
+<svg id="g" width="100%" viewBox="0 0 680 540" role="img"><title>Grafo vocabolario SOLVe</title><desc>Macrotemi, sottotemi, correlazioni e agganci ai vocabolari standard</desc></svg>
+<div class="lg">
+  <span><i class="dot" style="background:#534AB7"></i>Macrotema</span>
+  <span><i class="dot" style="background:#1D9E75"></i>Sottotema</span>
+  <span><i class="dash"></i>Correlato (vedi anche)</span>
+  <span id="lg-std" style="display:none;gap:14px"><span><i class="dot" style="background:#BA7517"></i>Gruppo SeaDataNet P03</span><span><i class="dot" style="background:#888780"></i>Tema INSPIRE</span></span>
+</div>
+<div id="panel"><span style="color:var(--quiet)">Clicca un macrotema o un sottotema. Le linee tratteggiate sono i legami "vedi anche"; gli agganci standard non portano risultati, mostrano solo dove il tema si colloca negli standard.</span></div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<script>
+const EMBED = /*DATA*/null;
+const COL = {m:'#534AB7', s:'#1D9E75', p:'#BA7517', i:'#888780'};
+let DATA, S = {}, M = {}, sim, sel = null;
+const split = x => { const man = x.endsWith('*'); const [code, ...rest] = (man ? x.slice(0, -1) : x).split('|'); return {code, label: rest.join('|'), man}; };
+function chips(list, kind) {
+  if (!list.length) return '<span style="color:var(--quiet)">nessuno</span>';
+  return list.map(split).map(x => `<span class="chip ${x.man ? 'man' : ''}" title="${x.man ? 'aggancio scritto a mano' : 'ricavato dal NERC Vocabulary Server'}"><span class="code">${x.code}</span>${x.label}</span>`).join('');
+}
+function showSub(id) {
+  const s = S[id], m = M[s.m];
+  const rel = s.r.map(r => `<span class="chip rel" data-id="${r}">${S[r].l}</span>`).join('') || '<span style="color:var(--quiet)">nessuno</span>';
+  document.getElementById('panel').innerHTML = `<h3>${s.l}</h3><p class="sub">Sottotema di <b style="font-weight:500">${m.l}</b> · ${s.d}</p>
+  <div><span style="color:var(--quiet)">Vedi anche:</span> ${rel}</div>
+  <table>
+   <tr><td>Parametri SeaDataNet (P02)</td><td>${chips(s.p02)}</td></tr>
+   <tr><td>Gruppo SeaDataNet (P03)</td><td>${chips(s.p03)}</td></tr>
+   <tr><td>Disciplina SeaDataNet (P08)</td><td>${chips(s.p08)}</td></tr>
+   <tr><td>Tema INSPIRE</td><td>${chips(s.in)}</td></tr>
+   <tr><td>Categoria ISO 19115</td><td>${chips(s.iso)}</td></tr>
+   <tr><td>Indicatori Strategia Marina</td><td>${s.ms ? s.ms + ' indicatori MSFD collegati' : '<span style="color:var(--quiet)">nessuno</span>'}</td></tr>
+  </table>
+  ${s.n ? `<div class="note">Nota: ${s.n}</div>` : ''}
+  <div class="note"><span class="chip man" style="margin:0">giallo</span> = aggancio scritto a mano; grigio = ricavato dal NERC Vocabulary Server.</div>`;
+  bind();
+}
+function showMacro(id) {
+  const m = M[id];
+  document.getElementById('panel').innerHTML = `<h3>${m.l}</h3><p class="sub">${m.d}</p><div>${m.s.map(s => `<span class="chip sub" data-id="${s.id}">${s.l}</span>`).join('')}</div>`;
+  bind();
+}
+function bind() { document.querySelectorAll('#panel [data-id]').forEach(e => e.onclick = () => select('s:' + e.dataset.id)); }
+let select = () => {};
+function draw() {
+  const std = document.querySelector('input[name=vista]:checked').value === 'std';
+  const showL = document.getElementById('clab').checked;
+  document.getElementById('lg-std').style.display = std ? 'flex' : 'none';
+  const nodes = [], links = [], seen = {};
+  const add = (id, t, label) => { if (!seen[id]) { seen[id] = 1; nodes.push({id, t, label}); } };
+  DATA.forEach(m => { add('m:' + m.id, 'm', m.l); m.s.forEach(s => { add('s:' + s.id, 's', s.l); links.push({source: 'm:' + m.id, target: 's:' + s.id, k: 'h'}); }); });
+  const done = new Set();
+  DATA.forEach(m => m.s.forEach(s => s.r.forEach(r => { const key = [s.id, r].sort().join('~'); if (!done.has(key)) { done.add(key); links.push({source: 's:' + s.id, target: 's:' + r, k: 'r'}); } })));
+  if (std) DATA.forEach(m => m.s.forEach(s => {
+    s.p03.map(split).forEach(x => { add('p:' + x.code, 'p', x.code + ' ' + x.label); links.push({source: 's:' + s.id, target: 'p:' + x.code, k: 'x'}); });
+    s.in.map(split).forEach(x => { add('i:' + x.code, 'i', x.label); links.push({source: 's:' + s.id, target: 'i:' + x.code, k: 'x'}); });
+  }));
+  const svg = d3.select('#g'); svg.selectAll('g.root').remove();
+  const root = svg.append('g').attr('class', 'root');
+  const L = root.append('g').selectAll('line').data(links).join('line')
+    .attr('stroke', d => d.k === 'h' ? '#7F77DD' : d.k === 'r' ? '#D85A30' : '#B4B2A9')
+    .attr('stroke-width', d => d.k === 'x' ? 0.5 : 1.2).attr('stroke-dasharray', d => d.k === 'r' ? '4 3' : null)
+    .attr('stroke-opacity', d => d.k === 'x' ? 0.5 : 0.8);
+  const N = root.append('g').selectAll('g').data(nodes).join('g').style('cursor', 'pointer');
+  N.append('circle').attr('r', d => d.t === 'm' ? 13 : d.t === 's' ? 6 : 5).attr('fill', d => COL[d.t]).attr('stroke', 'var(--surface-1,#fff)').attr('stroke-width', 1);
+  const lbl = d => d.t === 'm' || (d.t === 's' && showL) ? d.label : '';
+  N.append('text').attr('dx', d => d.t === 'm' ? 16 : 9).attr('dy', 4).text(lbl).style('font-weight', d => d.t === 'm' ? 500 : 400);
+  N.append('title').text(d => d.label);
+  const adj = {}; links.forEach(l => { const a = l.source.id || l.source, b = l.target.id || l.target; (adj[a] = adj[a] || new Set()).add(b); (adj[b] = adj[b] || new Set()).add(a); });
+  select = id => {
+    sel = id; const d = nodes.find(n => n.id === id); if (!d) return;
+    const nb = adj[id] || new Set();
+    N.style('opacity', n => n.id === id || nb.has(n.id) ? 1 : 0.15);
+    L.style('opacity', l => l.source.id === id || l.target.id === id ? 1 : 0.07);
+    N.select('text').text(n => n.id === id || nb.has(n.id) || n.t === 'm' ? n.label : '');
+    if (d.t === 's') showSub(id.slice(2)); else if (d.t === 'm') showMacro(id.slice(2));
+    else document.getElementById('panel').innerHTML = `<h3>${d.label}</h3><p class="sub">${d.t === 'p' ? 'Gruppo SeaDataNet P03' : 'Tema INSPIRE'} · sottotemi collegati: ${[...nb].map(x => nodes.find(n => n.id === x).label).join(', ')}</p><div class="note">Condividere un gruppo o un tema standard non rende due sottotemi correlati: è solo il cassetto in cui li mette lo standard.</div>`;
+  };
+  N.on('click', (e, d) => { select(d.id); e.stopPropagation(); });
+  svg.on('click', () => { sel = null; N.style('opacity', 1); L.style('opacity', null); N.select('text').text(lbl); });
+  N.call(d3.drag().on('start', (e, d) => { if (!e.active) sim.alphaTarget(0.3).restart(); d.fx = d.x; d.fy = d.y; })
+    .on('drag', (e, d) => { d.fx = e.x; d.fy = e.y; }).on('end', (e, d) => { if (!e.active) sim.alphaTarget(0); d.fx = null; d.fy = null; }));
+  if (sim) sim.stop();
+  sim = d3.forceSimulation(nodes)
+    .force('link', d3.forceLink(links).id(d => d.id).distance(l => l.k === 'h' ? 42 : l.k === 'r' ? 90 : 60).strength(l => l.k === 'h' ? 0.9 : l.k === 'r' ? 0.05 : 0.2))
+    .force('charge', d3.forceManyBody().strength(d => d.t === 'm' ? -280 : -70))
+    .force('center', d3.forceCenter(340, 270)).force('collide', d3.forceCollide(d => d.t === 'm' ? 20 : 9))
+    .force('x', d3.forceX(340).strength(0.04)).force('y', d3.forceY(270).strength(0.06))
+    .on('tick', () => {
+      nodes.forEach(d => { d.x = Math.max(14, Math.min(666, d.x)); d.y = Math.max(14, Math.min(526, d.y)); });
+      L.attr('x1', d => d.source.x).attr('y1', d => d.source.y).attr('x2', d => d.target.x).attr('y2', d => d.target.y);
+      N.attr('transform', d => `translate(${d.x},${d.y})`);
+    });
+  if (sel && seen[sel]) setTimeout(() => select(sel), 50);
+}
+function init(data) {
+  DATA = data;
+  data.forEach(m => { M[m.id] = m; m.s.forEach(s => { s.m = m.id; S[s.id] = s; }); });
+  document.querySelectorAll('input[name=vista]').forEach(e => e.addEventListener('change', draw));
+  document.getElementById('clab').addEventListener('change', draw);
+  draw();
+}
+if (EMBED) init(EMBED);
+else fetch('../vocabolario/temi_grafo.json').then(r => r.json()).then(init)
+  .catch(() => document.getElementById('panel').textContent = 'Impossibile leggere vocabolario/temi_grafo.json: apri la pagina da un server (es. python -m http.server) nella cartella del repository.');
+</script>
+</body>
+</html>

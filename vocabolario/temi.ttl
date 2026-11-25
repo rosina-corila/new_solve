@@ -16,46 +16,42 @@ temi:idrodinamica a skos:Concept ;
     skos:narrower temi:idro-livello ;
     skos:narrower temi:idro-correnti ;
     skos:narrower temi:idro-onde ;
-    skos:narrower temi:idro-opere ;
-    skos:broadMatch <http://vocab.nerc.ac.uk/collection/P08/current/DS03/> ;
-    skos:broadMatch <http://inspire.ec.europa.eu/theme/of> .
+    skos:narrower temi:idro-opere .
 
 temi:idro-livello a skos:Concept ;
     skos:inScheme temi: ;
     skos:prefLabel "Livello del mare e maree"@it , "Sea level and tides"@en ;
     skos:definition "Misure di livello e marea: reti mareografiche (RMN, RMLV, ICPSM)."@it ;
     skos:broader temi:idrodinamica ;
-    skos:closeMatch <http://vocab.nerc.ac.uk/collection/P03/current/D032/> ;
-    skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/ASLV/> ;
-    skos:broadMatch <http://inspire.ec.europa.eu/theme/ef> .
+    skos:related temi:clima-scenari ;
+    skos:related temi:idro-opere ;
+    skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/ASLV/> .
 
 temi:idro-correnti a skos:Concept ;
     skos:inScheme temi: ;
     skos:prefLabel "Correnti e portate alle bocche"@it , "Currents and inlet fluxes"@en ;
     skos:definition "Velocità delle correnti e portate di scambio mare-laguna (ADCP, bocche di porto)."@it ;
     skos:broader temi:idrodinamica ;
-    skos:closeMatch <http://vocab.nerc.ac.uk/collection/P03/current/D030/> ;
-    skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/RFVL/> ;
-    skos:broadMatch <http://inspire.ec.europa.eu/theme/of> .
+    skos:related temi:sedimenti-dinamica ;
+    skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/RFVL/> .
 
 temi:idro-onde a skos:Concept ;
     skos:inScheme temi: ;
     skos:prefLabel "Onde"@it , "Waves"@en ;
     skos:definition "Altezza, periodo e direzione del moto ondoso."@it ;
     skos:broader temi:idrodinamica ;
-    skos:closeMatch <http://vocab.nerc.ac.uk/collection/P03/current/D034/> ;
-    skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/WVST/> ;
-    skos:broadMatch <http://inspire.ec.europa.eu/theme/of> .
+    skos:related temi:clima-meteo ;
+    skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/WVST/> .
 
 temi:idro-opere a skos:Concept ;
     skos:inScheme temi: ;
     skos:prefLabel "Opere alle bocche e MOSE"@it , "Inlet works and MOSE"@en ;
     skos:definition "Strutture alle bocche di porto e funzionamento del sistema MOSE."@it ;
     skos:broader temi:idrodinamica ;
-    skos:broadMatch <http://vocab.nerc.ac.uk/collection/P08/current/DS12/> ;
+    skos:related temi:idro-livello ;
     skos:closeMatch <http://vocab.nerc.ac.uk/collection/P03/current/H002/> ;
     skos:broadMatch <http://inspire.ec.europa.eu/theme/us> ;
-    skos:editorialNote "Concetto di contesto: nessun parametro P02 adatto"@it .
+    skos:editorialNote "Nessun parametro P02: aggancio manuale al gruppo e al tema INSPIRE"@it .
 
 temi:apporti a skos:Concept ;
     skos:inScheme temi: ;
@@ -67,8 +63,6 @@ temi:apporti a skos:Concept ;
     skos:narrower temi:apporti-falda ;
     skos:narrower temi:apporti-aria ;
     skos:narrower temi:apporti-rumore ;
-    skos:broadMatch <http://vocab.nerc.ac.uk/collection/P08/current/DS10/> ;
-    skos:closeMatch <http://vocab.nerc.ac.uk/collection/P03/current/H001/> ;
     skos:editorialNote "Include aria e rumore dei cantieri (da confermare)"@it .
 
 temi:apporti-fiumi a skos:Concept ;
@@ -76,52 +70,51 @@ temi:apporti-fiumi a skos:Concept ;
     skos:prefLabel "Fiumi e portate"@it , "Rivers and discharges"@en ;
     skos:definition "Portate e livelli dei corsi d'acqua del bacino scolante e dei fiumi (es. Livenza)."@it ;
     skos:broader temi:apporti ;
+    skos:related temi:apporti-carichi ;
+    skos:related temi:apporti-falda ;
+    skos:related temi:base-idrografia ;
     skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/RVDS/> ;
-    skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/LRWL/> ;
-    skos:broadMatch <http://inspire.ec.europa.eu/theme/hy> .
+    skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/LRWL/> .
 
 temi:apporti-carichi a skos:Concept ;
     skos:inScheme temi: ;
     skos:prefLabel "Carichi dal bacino scolante"@it , "Catchment loads"@en ;
     skos:definition "Carichi di nutrienti e contaminanti trasportati dal bacino scolante verso la laguna."@it ;
     skos:broader temi:apporti ;
-    skos:closeMatch <http://vocab.nerc.ac.uk/collection/P03/current/C040/> ;
-    skos:closeMatch <http://vocab.nerc.ac.uk/collection/P03/current/H001/> ;
-    skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/CFTM/> ;
-    skos:broadMatch <http://inspire.ec.europa.eu/theme/hy> .
+    skos:related temi:apporti-fiumi ;
+    skos:related temi:colonna-nutrienti ;
+    skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/CFTM/> .
 
 temi:apporti-falda a skos:Concept ;
     skos:inScheme temi: ;
     skos:prefLabel "Acque sotterranee e cuneo salino"@it , "Groundwater and saltwater intrusion"@en ;
     skos:definition "Livello e qualità della falda, risalita del cuneo salino."@it ;
     skos:broader temi:apporti ;
-    skos:broadMatch <http://vocab.nerc.ac.uk/collection/P08/current/DS08/> ;
-    skos:closeMatch <http://vocab.nerc.ac.uk/collection/P03/current/T001/> ;
+    skos:related temi:apporti-fiumi ;
+    skos:related temi:habitat-vegetazione ;
     skos:broadMatch <http://inspire.ec.europa.eu/theme/ge> ;
-    skos:editorialNote "Nessun termine P02 specifico per la falda"@it .
+    skos:broadMatch <http://inspire.ec.europa.eu/theme/hy> ;
+    skos:editorialNote "SeaDataNet non copre le acque sotterranee: solo temi INSPIRE"@it .
 
 temi:apporti-aria a skos:Concept ;
     skos:inScheme temi: ;
     skos:prefLabel "Qualità dell'aria e deposizioni"@it , "Air quality and atmospheric deposition"@en ;
     skos:definition "Polveri (PM10), IPA, metalli e deposizioni atmosferiche."@it ;
     skos:broader temi:apporti ;
-    skos:broadMatch <http://vocab.nerc.ac.uk/collection/P08/current/DS05/> ;
-    skos:closeMatch <http://vocab.nerc.ac.uk/collection/P03/current/M005/> ;
+    skos:related temi:clima-meteo ;
     skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/ATPC/> ;
     skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/ATDP/> ;
     skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/MTAT/> ;
-    skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/GP050/> ;
-    skos:broadMatch <http://inspire.ec.europa.eu/theme/ac> .
+    skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/GP050/> .
 
 temi:apporti-rumore a skos:Concept ;
     skos:inScheme temi: ;
     skos:prefLabel "Rumore"@it , "Noise"@en ;
     skos:definition "Rumore aereo e subacqueo legato a cantieri e traffico."@it ;
     skos:broader temi:apporti ;
-    skos:closeMatch <http://vocab.nerc.ac.uk/collection/P03/current/D005/> ;
     skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/NOYS/> ;
     skos:broadMatch <http://inspire.ec.europa.eu/theme/hh> ;
-    skos:editorialNote "NOYS copre solo il rumore subacqueo"@it .
+    skos:editorialNote "NOYS copre solo il rumore subacqueo; per il rumore aereo tema INSPIRE hh"@it .
 
 temi:colonna a skos:Concept ;
     skos:inScheme temi: ;
@@ -134,86 +127,75 @@ temi:colonna a skos:Concept ;
     skos:narrower temi:colonna-clorofilla ;
     skos:narrower temi:colonna-torbidita ;
     skos:narrower temi:colonna-contaminanti ;
-    skos:narrower temi:colonna-stato ;
-    skos:broadMatch <http://vocab.nerc.ac.uk/collection/P08/current/DS02/> ;
-    skos:broadMatch <http://inspire.ec.europa.eu/theme/of> .
+    skos:narrower temi:colonna-stato .
 
 temi:colonna-ts a skos:Concept ;
     skos:inScheme temi: ;
     skos:prefLabel "Temperatura e salinità"@it , "Temperature and salinity"@en ;
     skos:definition "Temperatura e salinità dell'acqua (sonde, CTD, stazioni fisse)."@it ;
     skos:broader temi:colonna ;
-    skos:broadMatch <http://vocab.nerc.ac.uk/collection/P08/current/DS03/> ;
-    skos:closeMatch <http://vocab.nerc.ac.uk/collection/P03/current/D025/> ;
     skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/TEMP/> ;
-    skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/PSAL/> ;
-    skos:broadMatch <http://inspire.ec.europa.eu/theme/of> .
+    skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/PSAL/> .
 
 temi:colonna-ossigeno a skos:Concept ;
     skos:inScheme temi: ;
     skos:prefLabel "Ossigeno disciolto"@it , "Dissolved oxygen"@en ;
     skos:definition "Concentrazione e saturazione dell'ossigeno disciolto."@it ;
     skos:broader temi:colonna ;
-    skos:closeMatch <http://vocab.nerc.ac.uk/collection/P03/current/C015/> ;
-    skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/DOXY/> ;
-    skos:broadMatch <http://inspire.ec.europa.eu/theme/of> .
+    skos:related temi:colonna-clorofilla ;
+    skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/DOXY/> .
 
 temi:colonna-nutrienti a skos:Concept ;
     skos:inScheme temi: ;
     skos:prefLabel "Nutrienti"@it , "Nutrients"@en ;
     skos:definition "Azoto, fosforo e silice disciolti."@it ;
     skos:broader temi:colonna ;
-    skos:closeMatch <http://vocab.nerc.ac.uk/collection/P03/current/C040/> ;
+    skos:related temi:apporti-carichi ;
+    skos:related temi:colonna-clorofilla ;
     skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/NTRA/> ;
     skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/NTRI/> ;
     skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/PHOS/> ;
     skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/SLCA/> ;
-    skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/TDIN/> ;
-    skos:broadMatch <http://inspire.ec.europa.eu/theme/of> .
+    skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/TDIN/> .
 
 temi:colonna-clorofilla a skos:Concept ;
     skos:inScheme temi: ;
     skos:prefLabel "Clorofilla e fitoplancton"@it , "Chlorophyll and phytoplankton"@en ;
     skos:definition "Clorofilla e composizione del fitoplancton."@it ;
     skos:broader temi:colonna ;
-    skos:broadMatch <http://vocab.nerc.ac.uk/collection/P08/current/DS01/> ;
-    skos:closeMatch <http://vocab.nerc.ac.uk/collection/P03/current/B035/> ;
-    skos:closeMatch <http://vocab.nerc.ac.uk/collection/P03/current/B030/> ;
+    skos:related temi:biologia-plancton ;
+    skos:related temi:colonna-nutrienti ;
+    skos:related temi:colonna-ossigeno ;
     skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/CPWC/> ;
-    skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/PATX/> ;
-    skos:broadMatch <http://inspire.ec.europa.eu/theme/of> .
+    skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/PATX/> .
 
 temi:colonna-torbidita a skos:Concept ;
     skos:inScheme temi: ;
     skos:prefLabel "Torbidità e trasparenza"@it , "Turbidity and transparency"@en ;
     skos:definition "Solidi sospesi, torbidità, trasparenza (disco di Secchi)."@it ;
     skos:broader temi:colonna ;
-    skos:closeMatch <http://vocab.nerc.ac.uk/collection/P03/current/G015/> ;
-    skos:closeMatch <http://vocab.nerc.ac.uk/collection/P03/current/D015/> ;
+    skos:related temi:habitat-fanerogame ;
+    skos:related temi:sedimenti-dinamica ;
     skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/TSED/> ;
-    skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/SECC/> ;
-    skos:broadMatch <http://inspire.ec.europa.eu/theme/of> .
+    skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/SECC/> .
 
 temi:colonna-contaminanti a skos:Concept ;
     skos:inScheme temi: ;
     skos:prefLabel "Contaminanti nell'acqua"@it , "Contaminants in water"@en ;
     skos:definition "Metalli, IPA, PCB, PFAS e altri microinquinanti nell'acqua."@it ;
     skos:broader temi:colonna ;
-    skos:closeMatch <http://vocab.nerc.ac.uk/collection/P03/current/C035/> ;
-    skos:closeMatch <http://vocab.nerc.ac.uk/collection/P03/current/C055/> ;
+    skos:related temi:sedimenti-contaminanti ;
     skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/MTWD/> ;
     skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/MTWT/> ;
     skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/PCHW/> ;
     skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/PPWC/> ;
-    skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/WCOC/> ;
-    skos:broadMatch <http://inspire.ec.europa.eu/theme/of> .
+    skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/WCOC/> .
 
 temi:colonna-stato a skos:Concept ;
     skos:inScheme temi: ;
     skos:prefLabel "Stato ecologico e chimico (WFD)"@it , "Ecological and chemical status (WFD)"@en ;
     skos:definition "Classificazione dei corpi idrici secondo la Direttiva Quadro Acque."@it ;
     skos:broader temi:colonna ;
-    skos:broadMatch <http://vocab.nerc.ac.uk/collection/P08/current/DS10/> ;
     skos:closeMatch <http://vocab.nerc.ac.uk/collection/P03/current/H007/> ;
     skos:broadMatch <http://inspire.ec.europa.eu/theme/am> ;
     skos:editorialNote "Concetto normativo: nessun parametro P02"@it .
@@ -228,54 +210,46 @@ temi:sedimenti a skos:Concept ;
     skos:narrower temi:sedimenti-organica ;
     skos:narrower temi:sedimenti-stratigrafia ;
     skos:narrower temi:sedimenti-sismica ;
-    skos:narrower temi:sedimenti-dinamica ;
-    skos:broadMatch <http://vocab.nerc.ac.uk/collection/P08/current/DS04/> ;
-    skos:broadMatch <http://inspire.ec.europa.eu/theme/ge> .
+    skos:narrower temi:sedimenti-dinamica .
 
 temi:sedimenti-granulometria a skos:Concept ;
     skos:inScheme temi: ;
     skos:prefLabel "Granulometria e proprietà fisiche"@it , "Grain size and physical properties"@en ;
     skos:definition "Granulometria, densità, contenuto d'acqua dei sedimenti."@it ;
     skos:broader temi:sedimenti ;
-    skos:closeMatch <http://vocab.nerc.ac.uk/collection/P03/current/G040/> ;
     skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/MNGS/> ;
-    skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/WCWT/> ;
-    skos:broadMatch <http://inspire.ec.europa.eu/theme/so> .
+    skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/WCWT/> .
 
 temi:sedimenti-contaminanti a skos:Concept ;
     skos:inScheme temi: ;
     skos:prefLabel "Contaminanti nei sedimenti"@it , "Contaminants in sediments"@en ;
     skos:definition "Metalli, IPA, PCB e altri inquinanti nei sedimenti."@it ;
     skos:broader temi:sedimenti ;
-    skos:closeMatch <http://vocab.nerc.ac.uk/collection/P03/current/G035/> ;
+    skos:related temi:biologia-benthos ;
+    skos:related temi:colonna-contaminanti ;
     skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/MTSD/> ;
     skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/SCAH/> ;
     skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/SPCB/> ;
-    skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/SCOC/> ;
-    skos:broadMatch <http://inspire.ec.europa.eu/theme/so> .
+    skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/SCOC/> .
 
 temi:sedimenti-organica a skos:Concept ;
     skos:inScheme temi: ;
     skos:prefLabel "Sostanza organica e nutrienti nei sedimenti"@it , "Organic matter and nutrients in sediments"@en ;
     skos:definition "Carbonio, azoto, fosforo e sostanza organica nei sedimenti; domanda di ossigeno."@it ;
     skos:broader temi:sedimenti ;
-    skos:closeMatch <http://vocab.nerc.ac.uk/collection/P03/current/G035/> ;
     skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/STOM/> ;
     skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/CBSD/> ;
     skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/NTSD/> ;
     skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/PXSD/> ;
-    skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/DGPW/> ;
-    skos:broadMatch <http://inspire.ec.europa.eu/theme/so> .
+    skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/DGPW/> .
 
 temi:sedimenti-stratigrafia a skos:Concept ;
     skos:inScheme temi: ;
     skos:prefLabel "Carotaggi e stratigrafia"@it , "Cores and stratigraphy"@en ;
     skos:definition "Carote, trivellate, stratigrafia e datazioni."@it ;
     skos:broader temi:sedimenti ;
-    skos:closeMatch <http://vocab.nerc.ac.uk/collection/P03/current/G030/> ;
     skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/SSTR/> ;
-    skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/SAGE/> ;
-    skos:broadMatch <http://inspire.ec.europa.eu/theme/ge> .
+    skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/SAGE/> .
 
 temi:sedimenti-sismica a skos:Concept ;
     skos:inScheme temi: ;
@@ -283,17 +257,18 @@ temi:sedimenti-sismica a skos:Concept ;
     skos:definition "Profili sismici ad alta risoluzione del sottosuolo lagunare."@it ;
     skos:broader temi:sedimenti ;
     skos:closeMatch <http://vocab.nerc.ac.uk/collection/P03/current/G012/> ;
-    skos:broadMatch <http://inspire.ec.europa.eu/theme/ge> .
+    skos:broadMatch <http://inspire.ec.europa.eu/theme/ge> ;
+    skos:editorialNote "Nessun parametro P02: aggancio manuale"@it .
 
 temi:sedimenti-dinamica a skos:Concept ;
     skos:inScheme temi: ;
     skos:prefLabel "Erosione e sedimentazione"@it , "Erosion and sedimentation"@en ;
     skos:definition "Tassi di sedimentazione, risospensione ed erosione dei fondali."@it ;
     skos:broader temi:sedimenti ;
-    skos:closeMatch <http://vocab.nerc.ac.uk/collection/P03/current/G060/> ;
+    skos:related temi:colonna-torbidita ;
+    skos:related temi:idro-correnti ;
     skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/RACC/> ;
-    skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/BEST/> ;
-    skos:broadMatch <http://inspire.ec.europa.eu/theme/el> .
+    skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/BEST/> .
 
 temi:habitat a skos:Concept ;
     skos:inScheme temi: ;
@@ -304,62 +279,59 @@ temi:habitat a skos:Concept ;
     skos:narrower temi:habitat-carte ;
     skos:narrower temi:habitat-fanerogame ;
     skos:narrower temi:habitat-vegetazione ;
-    skos:narrower temi:habitat-protette ;
-    skos:broadMatch <http://vocab.nerc.ac.uk/collection/P08/current/DS01/> ;
-    skos:closeMatch <http://vocab.nerc.ac.uk/collection/P03/current/B050/> ;
-    skos:broadMatch <http://inspire.ec.europa.eu/theme/hb> .
+    skos:narrower temi:habitat-protette .
 
 temi:habitat-morfologia a skos:Concept ;
     skos:inScheme temi: ;
     skos:prefLabel "Batimetria e morfologia"@it , "Bathymetry and morphology"@en ;
     skos:definition "Batimetria, quote, morfologia di barene, canali e litorali."@it ;
     skos:broader temi:habitat ;
-    skos:broadMatch <http://vocab.nerc.ac.uk/collection/P08/current/DS04/> ;
-    skos:closeMatch <http://vocab.nerc.ac.uk/collection/P03/current/G005/> ;
-    skos:closeMatch <http://vocab.nerc.ac.uk/collection/P03/current/GMAR/> ;
+    skos:related temi:habitat-vegetazione ;
     skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/MBAN/> ;
     skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/COGE/> ;
-    skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/SBGE/> ;
-    skos:broadMatch <http://inspire.ec.europa.eu/theme/el> .
+    skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/SBGE/> .
 
 temi:habitat-carte a skos:Concept ;
     skos:inScheme temi: ;
     skos:prefLabel "Carte degli habitat"@it , "Habitat maps"@en ;
     skos:definition "Carte degli habitat (Direttiva Habitat) e della naturalità."@it ;
     skos:broader temi:habitat ;
-    skos:closeMatch <http://vocab.nerc.ac.uk/collection/P03/current/B050/> ;
+    skos:related temi:habitat-protette ;
     skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/HBCH/> ;
-    skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/HBEX/> ;
-    skos:broadMatch <http://inspire.ec.europa.eu/theme/hb> .
+    skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/HBEX/> .
 
 temi:habitat-fanerogame a skos:Concept ;
     skos:inScheme temi: ;
     skos:prefLabel "Fanerogame e macroalghe"@it , "Seagrasses and macroalgae"@en ;
     skos:definition "Praterie di fanerogame marine e popolamenti di macroalghe."@it ;
     skos:broader temi:habitat ;
-    skos:closeMatch <http://vocab.nerc.ac.uk/collection/P03/current/B055/> ;
+    skos:related temi:biologia-benthos ;
+    skos:related temi:biologia-pesci ;
+    skos:related temi:colonna-torbidita ;
     skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/ACNT/> ;
-    skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/PU02/> ;
-    skos:broadMatch <http://inspire.ec.europa.eu/theme/hb> .
+    skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/PU02/> .
 
 temi:habitat-vegetazione a skos:Concept ;
     skos:inScheme temi: ;
     skos:prefLabel "Vegetazione di barena e costiera"@it , "Saltmarsh and coastal vegetation"@en ;
     skos:definition "Vegetazione alofila, dunale e retrodunale; carte della vegetazione reale e potenziale."@it ;
     skos:broader temi:habitat ;
-    skos:broadMatch <http://vocab.nerc.ac.uk/collection/P08/current/DS08/> ;
-    skos:closeMatch <http://vocab.nerc.ac.uk/collection/P03/current/T001/> ;
-    skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/LVEG/> ;
-    skos:broadMatch <http://inspire.ec.europa.eu/theme/lc> .
+    skos:related temi:apporti-falda ;
+    skos:related temi:biologia-alloctone ;
+    skos:related temi:biologia-avifauna ;
+    skos:related temi:habitat-morfologia ;
+    skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/LVEG/> .
 
 temi:habitat-protette a skos:Concept ;
     skos:inScheme temi: ;
     skos:prefLabel "Aree protette"@it , "Protected areas"@en ;
     skos:definition "Siti Natura 2000, Ramsar, aree marine protette, elenco EUAP."@it ;
     skos:broader temi:habitat ;
-    skos:broadMatch <http://vocab.nerc.ac.uk/collection/P08/current/DS12/> ;
+    skos:related temi:habitat-carte ;
+    skos:related temi:usi-pianificazione ;
     skos:closeMatch <http://vocab.nerc.ac.uk/collection/P03/current/H007/> ;
-    skos:broadMatch <http://inspire.ec.europa.eu/theme/ps> .
+    skos:broadMatch <http://inspire.ec.europa.eu/theme/ps> ;
+    skos:editorialNote "Nessun parametro P02: aggancio manuale"@it .
 
 temi:biologia a skos:Concept ;
     skos:inScheme temi: ;
@@ -371,71 +343,67 @@ temi:biologia a skos:Concept ;
     skos:narrower temi:biologia-benthos ;
     skos:narrower temi:biologia-plancton ;
     skos:narrower temi:biologia-alloctone ;
-    skos:narrower temi:biologia-terrestri ;
-    skos:broadMatch <http://vocab.nerc.ac.uk/collection/P08/current/DS01/> ;
-    skos:closeMatch <http://vocab.nerc.ac.uk/collection/P03/current/B070/> ;
-    skos:broadMatch <http://inspire.ec.europa.eu/theme/sd> .
+    skos:narrower temi:biologia-terrestri .
 
 temi:biologia-avifauna a skos:Concept ;
     skos:inScheme temi: ;
     skos:prefLabel "Avifauna"@it , "Birds"@en ;
     skos:definition "Censimenti, colonie e nidificazioni di uccelli acquatici."@it ;
     skos:broader temi:biologia ;
-    skos:closeMatch <http://vocab.nerc.ac.uk/collection/P03/current/B015/> ;
+    skos:related temi:habitat-vegetazione ;
     skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/BRDA/> ;
     skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/BRDD/> ;
-    skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/GP004/> ;
-    skos:broadMatch <http://inspire.ec.europa.eu/theme/sd> .
+    skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/GP004/> .
 
 temi:biologia-pesci a skos:Concept ;
     skos:inScheme temi: ;
     skos:prefLabel "Ittiofauna"@it , "Fish"@en ;
     skos:definition "Popolamenti ittici e campionamenti di pesci."@it ;
     skos:broader temi:biologia ;
-    skos:closeMatch <http://vocab.nerc.ac.uk/collection/P03/current/B020/> ;
+    skos:related temi:habitat-fanerogame ;
+    skos:related temi:usi-pesca ;
     skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/FATX/> ;
-    skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/FCNT/> ;
-    skos:broadMatch <http://inspire.ec.europa.eu/theme/sd> .
+    skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/FCNT/> .
 
 temi:biologia-benthos a skos:Concept ;
     skos:inScheme temi: ;
     skos:prefLabel "Benthos e molluschi"@it , "Benthos and molluscs"@en ;
     skos:definition "Macrozoobenthos, bivalvi e specie bentoniche (es. Pinna nobilis, Chamelea gallina)."@it ;
     skos:broader temi:biologia ;
-    skos:closeMatch <http://vocab.nerc.ac.uk/collection/P03/current/B070/> ;
+    skos:related temi:habitat-fanerogame ;
+    skos:related temi:sedimenti-contaminanti ;
+    skos:related temi:usi-pesca ;
     skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/ZBTX/> ;
     skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/MFAB/> ;
-    skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/SABB/> ;
-    skos:broadMatch <http://inspire.ec.europa.eu/theme/sd> .
+    skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/SABB/> .
 
 temi:biologia-plancton a skos:Concept ;
     skos:inScheme temi: ;
     skos:prefLabel "Plancton"@it , "Plankton"@en ;
     skos:definition "Fitoplancton e zooplancton."@it ;
     skos:broader temi:biologia ;
-    skos:closeMatch <http://vocab.nerc.ac.uk/collection/P03/current/B030/> ;
-    skos:closeMatch <http://vocab.nerc.ac.uk/collection/P03/current/B045/> ;
+    skos:related temi:colonna-clorofilla ;
     skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/PATX/> ;
-    skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/ZATX/> ;
-    skos:broadMatch <http://inspire.ec.europa.eu/theme/sd> .
+    skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/ZATX/> .
 
 temi:biologia-alloctone a skos:Concept ;
     skos:inScheme temi: ;
     skos:prefLabel "Specie alloctone invasive"@it , "Invasive alien species"@en ;
     skos:definition "Specie alloctone invasive animali e vegetali e azioni di contrasto."@it ;
     skos:broader temi:biologia ;
+    skos:related temi:habitat-vegetazione ;
     skos:closeMatch <http://vocab.nerc.ac.uk/collection/P03/current/B007/> ;
     skos:broadMatch <http://inspire.ec.europa.eu/theme/sd> ;
-    skos:editorialNote "Nessun termine P02 specifico"@it .
+    skos:editorialNote "Nessun parametro P02 specifico"@it .
 
 temi:biologia-terrestri a skos:Concept ;
     skos:inScheme temi: ;
     skos:prefLabel "Fauna terrestre e invertebrati"@it , "Terrestrial fauna and invertebrates"@en ;
     skos:definition "Invertebrati terrestri (es. coleotteri) e fauna dei litorali."@it ;
     skos:broader temi:biologia ;
-    skos:broadMatch <http://vocab.nerc.ac.uk/collection/P08/current/DS08/> ;
     skos:closeMatch <http://vocab.nerc.ac.uk/collection/P03/current/T001/> ;
-    skos:broadMatch <http://inspire.ec.europa.eu/theme/sd> .
+    skos:broadMatch <http://inspire.ec.europa.eu/theme/sd> ;
+    skos:editorialNote "Nessun parametro P02: aggancio manuale"@it .
 
 temi:clima a skos:Concept ;
     skos:inScheme temi: ;
@@ -443,28 +411,26 @@ temi:clima a skos:Concept ;
     skos:definition "Condizioni meteorologiche, tendenze climatiche e scenari futuri."@it ;
     skos:topConceptOf temi: ;
     skos:narrower temi:clima-meteo ;
-    skos:narrower temi:clima-scenari ;
-    skos:broadMatch <http://vocab.nerc.ac.uk/collection/P08/current/DS05/> ;
-    skos:closeMatch <http://vocab.nerc.ac.uk/collection/P03/current/M010/> ;
-    skos:broadMatch <http://inspire.ec.europa.eu/theme/ac> .
+    skos:narrower temi:clima-scenari .
 
 temi:clima-meteo a skos:Concept ;
     skos:inScheme temi: ;
     skos:prefLabel "Meteorologia"@it , "Meteorology"@en ;
     skos:definition "Temperatura dell'aria, vento, precipitazioni, pressione."@it ;
     skos:broader temi:clima ;
-    skos:closeMatch <http://vocab.nerc.ac.uk/collection/P03/current/M010/> ;
+    skos:related temi:apporti-aria ;
+    skos:related temi:idro-onde ;
     skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/CDTA/> ;
     skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/EWSB/> ;
     skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/CPRP/> ;
-    skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/CAPH/> ;
-    skos:broadMatch <http://inspire.ec.europa.eu/theme/mf> .
+    skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/CAPH/> .
 
 temi:clima-scenari a skos:Concept ;
     skos:inScheme temi: ;
     skos:prefLabel "Scenari e simulazioni"@it , "Scenarios and simulations"@en ;
     skos:definition "Scenari climatici e simulazioni modellistiche (es. emissioni, innalzamento del mare)."@it ;
     skos:broader temi:clima ;
+    skos:related temi:idro-livello ;
     skos:closeMatch <http://vocab.nerc.ac.uk/collection/P03/current/M010/> ;
     skos:broadMatch <http://inspire.ec.europa.eu/theme/nz> ;
     skos:editorialNote "Concetto di contesto: nessun parametro P02"@it .
@@ -479,20 +445,20 @@ temi:usi a skos:Concept ;
     skos:narrower temi:usi-energia ;
     skos:narrower temi:usi-turismo ;
     skos:narrower temi:usi-patrimonio ;
-    skos:narrower temi:usi-pianificazione ;
-    skos:broadMatch <http://vocab.nerc.ac.uk/collection/P08/current/DS12/> ;
-    skos:broadMatch <http://inspire.ec.europa.eu/theme/am> .
+    skos:narrower temi:usi-pianificazione .
 
 temi:usi-pesca a skos:Concept ;
     skos:inScheme temi: ;
     skos:prefLabel "Pesca e acquacoltura"@it , "Fisheries and aquaculture"@en ;
     skos:definition "Attività di pesca, concessioni, molluschicoltura e ostricoltura."@it ;
     skos:broader temi:usi ;
-    skos:closeMatch <http://vocab.nerc.ac.uk/collection/P03/current/H004/> ;
-    skos:closeMatch <http://vocab.nerc.ac.uk/collection/P03/current/H006/> ;
+    skos:related temi:biologia-benthos ;
+    skos:related temi:biologia-pesci ;
     skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/FCST/> ;
     skos:narrowMatch <http://vocab.nerc.ac.uk/collection/P02/current/FEFF/> ;
-    skos:broadMatch <http://inspire.ec.europa.eu/theme/af> .
+    skos:closeMatch <http://vocab.nerc.ac.uk/collection/P03/current/H006/> ;
+    skos:broadMatch <http://inspire.ec.europa.eu/theme/af> ;
+    skos:editorialNote "H006 Aquaculture aggiunto a mano: FCST e FEFF coprono solo la pesca"@it .
 
 temi:usi-trasporti a skos:Concept ;
     skos:inScheme temi: ;
@@ -500,7 +466,8 @@ temi:usi-trasporti a skos:Concept ;
     skos:definition "Traffico navale, porti e rotte."@it ;
     skos:broader temi:usi ;
     skos:closeMatch <http://vocab.nerc.ac.uk/collection/P03/current/H016/> ;
-    skos:broadMatch <http://inspire.ec.europa.eu/theme/tn> .
+    skos:broadMatch <http://inspire.ec.europa.eu/theme/tn> ;
+    skos:editorialNote "Nessun parametro P02: aggancio manuale"@it .
 
 temi:usi-energia a skos:Concept ;
     skos:inScheme temi: ;
@@ -508,7 +475,8 @@ temi:usi-energia a skos:Concept ;
     skos:definition "Impianti energetici in mare (es. eolico)."@it ;
     skos:broader temi:usi ;
     skos:closeMatch <http://vocab.nerc.ac.uk/collection/P03/current/H010/> ;
-    skos:broadMatch <http://inspire.ec.europa.eu/theme/er> .
+    skos:broadMatch <http://inspire.ec.europa.eu/theme/er> ;
+    skos:editorialNote "Nessun parametro P02: aggancio manuale"@it .
 
 temi:usi-turismo a skos:Concept ;
     skos:inScheme temi: ;
@@ -516,7 +484,8 @@ temi:usi-turismo a skos:Concept ;
     skos:definition "Turismo, fruizione, percorsi e servizi ai visitatori."@it ;
     skos:broader temi:usi ;
     skos:closeMatch <http://vocab.nerc.ac.uk/collection/P03/current/H015/> ;
-    skos:broadMatch <http://inspire.ec.europa.eu/theme/us> .
+    skos:broadMatch <http://inspire.ec.europa.eu/theme/us> ;
+    skos:editorialNote "Nessun parametro P02: aggancio manuale"@it .
 
 temi:usi-patrimonio a skos:Concept ;
     skos:inScheme temi: ;
@@ -524,15 +493,18 @@ temi:usi-patrimonio a skos:Concept ;
     skos:definition "Beni culturali, archeologici e paesaggistici, relitti."@it ;
     skos:broader temi:usi ;
     skos:closeMatch <http://vocab.nerc.ac.uk/collection/P03/current/H009/> ;
-    skos:broadMatch <http://inspire.ec.europa.eu/theme/ps> .
+    skos:broadMatch <http://inspire.ec.europa.eu/theme/ps> ;
+    skos:editorialNote "Nessun parametro P02: aggancio manuale"@it .
 
 temi:usi-pianificazione a skos:Concept ;
     skos:inScheme temi: ;
     skos:prefLabel "Pianificazione e vincoli"@it , "Planning and restrictions"@en ;
     skos:definition "Pianificazione dello spazio marittimo, zonizzazioni, vincoli, attori."@it ;
     skos:broader temi:usi ;
+    skos:related temi:habitat-protette ;
     skos:closeMatch <http://vocab.nerc.ac.uk/collection/P03/current/H007/> ;
-    skos:broadMatch <http://inspire.ec.europa.eu/theme/am> .
+    skos:broadMatch <http://inspire.ec.europa.eu/theme/am> ;
+    skos:editorialNote "Nessun parametro P02: aggancio manuale"@it .
 
 temi:base a skos:Concept ;
     skos:inScheme temi: ;
@@ -542,9 +514,6 @@ temi:base a skos:Concept ;
     skos:narrower temi:base-confini ;
     skos:narrower temi:base-idrografia ;
     skos:narrower temi:base-immagini ;
-    skos:broadMatch <http://vocab.nerc.ac.uk/collection/P08/current/DS07/> ;
-    skos:closeMatch <http://vocab.nerc.ac.uk/collection/P03/current/Z005/> ;
-    skos:broadMatch <http://inspire.ec.europa.eu/theme/au> ;
     skos:editorialNote "Nodo trasversale: fuori dal grafo o nodo a parte (da decidere)"@it .
 
 temi:base-confini a skos:Concept ;
@@ -560,6 +529,7 @@ temi:base-idrografia a skos:Concept ;
     skos:prefLabel "Idrografia e bacini"@it , "Hydrography and catchments"@en ;
     skos:definition "Reticolo idrografico, bacini idrografici, specchi d'acqua."@it ;
     skos:broader temi:base ;
+    skos:related temi:apporti-fiumi ;
     skos:broadMatch <http://inspire.ec.europa.eu/theme/hy> .
 
 temi:base-immagini a skos:Concept ;
